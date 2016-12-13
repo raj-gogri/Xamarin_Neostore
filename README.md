@@ -3,7 +3,7 @@ Training app
 
 ## Synopsis
 
-This introductory course provides trainee with the opportunity to practice and expereince designing and publishing an android app.
+This introductory course provides trainee with the opportunity to practice and expereince designing and publishing an cross platform app.
 
 ## Design Reference
 
