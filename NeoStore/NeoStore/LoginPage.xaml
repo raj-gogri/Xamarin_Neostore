@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NeoStore.LoginPage">
+  <ScrollView Orientation="Vertical">
+  <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="10,40,10,0">
+    
+  <StackLayout Orientation="Vertical" Padding="20,0,20,0">
+    
+    <Label Text="NeoSTORE" 
+           HorizontalOptions="Center"
+           Font="Bold"
+           FontSize="50"
+           x:Name="lblneostore"/>
+
+    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="0,35,0,0">
+      <Label Text=" + " 
+             Font="Medium" 
+             FontSize="24"
+             TextColor="White"
+             VerticalOptions="Center"/>
+      <Entry x:Name="entrycell1"              
+             Placeholder="UserName           " 
+             HorizontalTextAlignment="Center"
+             FontSize="24"
+             PlaceholderColor="White"
+             TextColor="White"/>
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="StartAndExpand">
+      <Label Text=" + "
+             Font="Medium"
+             FontSize="24"
+             TextColor="White"
+             VerticalOptions="Center"/> 
+      <Entry x:Name="entrycell2"
+             Placeholder="Password           " 
+             HorizontalTextAlignment="Center"
+             FontSize="24"
+             PlaceholderColor="White"
+             TextColor="White"/>
+    </StackLayout>
+    
+    <Button BackgroundColor="White" 
+            Text="    LOGIN    " 
+            Font="Medium"
+            FontSize="48" 
+            x:Name="login"
+            TextColor="Red"
+            BorderRadius="2"/>
+    
+    <Label Text="Forget Password?"
+           x:Name="lblforgetpassword"
+           Font="Medium"
+           FontSize="24"
+           HorizontalOptions="Center"
+           TextColor="White">
+      <Label.GestureRecognizers>
+        <TapGestureRecognizer Tapped="OnTapGestureRecognizerTappedForgetPassword"/>
+      </Label.GestureRecognizers>
+    </Label>
+
+  </StackLayout>
+
+    <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+    <Label Text="DONT HAVE AN ACCOUNT?                            " 
+           HorizontalOptions="Start" 
+           VerticalOptions="Center"
+           Font="Medium"
+           FontSize="10"
+           TextColor="White"/>
+    <Button Text="  +  "
+            x:Name="lblAddnewuser"
+            VerticalOptions="End"
+            HorizontalOptions="End"
+            WidthRequest="60"
+            HeightRequest="60"
+            Font="Medium"
+            FontSize="21"
+            Clicked="OnAddNewUser"
+            TextColor="White"/>
+    </StackLayout>
+  </StackLayout>
+  </ScrollView>
+</ContentPage>

@@ -4,8 +4,20 @@
              xmlns:local="clr-namespace:NeoStore"
              x:Class="NeoStore.MainPage">
 
-  <Label Text="Welcome to Xamarin Forms!"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+  <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+    
+    <Label Text="NeoSTORE"
+           Font="Bold" 
+           FontSize="50"           
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" 
+           x:Name="lblNeostore">
+      <Label.GestureRecognizers>
+        <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped" 
+                              NumberOfTapsRequired="2" />
+      </Label.GestureRecognizers>  
+    </Label>
+  
+  </StackLayout>
 
 </ContentPage>

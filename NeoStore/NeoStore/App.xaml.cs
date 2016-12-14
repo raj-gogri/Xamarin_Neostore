@@ -13,12 +13,14 @@ namespace NeoStore
         {
             InitializeComponent();
 
-            MainPage = new NeoStore.MainPage();
+
+            MainPage = new NavigationPage(new NeoStore.MainPage());
         }
 
         protected override void OnStart()
         {
             // Handle when your app starts
+
         }
 
         protected override void OnSleep()
