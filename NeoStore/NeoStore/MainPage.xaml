@@ -4,8 +4,8 @@
              xmlns:local="clr-namespace:NeoStore"
              x:Class="NeoStore.MainPage">
 
-  <Label Text="Welcome to Xamarin Forms!"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+  <StackLayout >
+    <Button Text="REgister" Clicked="OnRegisterClicked" />
+  </StackLayout>
 
 </ContentPage>

@@ -11,7 +11,12 @@ namespace NeoStore
     {
         public MainPage()
         {
-            InitializeComponent();
+            InitializeComponent();           
+        }
+        public async void OnRegisterClicked(object sender,EventArgs e)
+        {
+          await Navigation.PushAsync(new Register());
+           /*isplayAlert("hi","hi","OK");*/
         }
     }
 }

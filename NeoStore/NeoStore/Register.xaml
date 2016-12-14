@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NeoStore.Register"
+             Title="Register" >
+
+  <StackLayout VerticalOptions="Fill" Padding="100,50,100,50">
+  <StackLayout Orientation="Vertical">
+    <Label Text="NeoSTORE" Font="Bold" FontSize="110" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/>
+    <Entry     x:Name="fname"
+               Placeholder="First Name"
+               PlaceholderColor="White"
+               FontSize="35"
+               TextColor="White"/>
+    
+
+    <Entry     x:Name="lname"
+               Placeholder="Last Name"
+               PlaceholderColor="White"
+               FontSize="35"
+               TextColor="White"/>
+
+    <Entry     x:Name="email"
+               Placeholder=" Email "
+               PlaceholderColor="White"
+               FontSize="35"
+               TextColor="White"/>
+
+    <Entry    x:Name="pass"
+               Placeholder="Password"
+              PlaceholderColor="White"
+              FontSize="35"
+              TextColor="White"/>
+
+    <Entry x:Name="confirm"
+               Placeholder="Confirm Password"
+           PlaceholderColor="White"
+           FontSize="35"
+           TextColor="White"/>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Gender     " VerticalOptions="Start" HorizontalOptions="Start" FontSize="35" TextColor="White"/>
+
+      <Switch x:Name="MaleSwitch" IsToggled="{Binding IsOnMale}" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+      <Label Text="Male" VerticalOptions="Center" HorizontalOptions="StartAndExpand" FontSize="30" TextColor="White"/>
+
+      <Switch x:Name="FemaleSwitch" IsToggled="{Binding IsOnFemale}" VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
+      <Label Text="Female" VerticalOptions="Center" HorizontalOptions="StartAndExpand" FontSize="30" TextColor="White"/>
+      
+    </StackLayout>
+
+    <Entry    x:Name="phone"
+              Placeholder=" Phone Number "
+              PlaceholderColor="White"
+              FontSize="35"
+               Keyboard="Numeric" 
+              TextColor="White"/>
+
+    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+      <Switch x:Name="TermsCondition" IsToggled="{Binding IsOn}" VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
+      <Label Text="I agree the " HorizontalOptions="Start" VerticalOptions="Center" FontSize="34" TextColor="White"/>
+      <Label Text="Terms and Condition" HorizontalOptions="Start" Font="Bold" FontSize="34" TextColor="White">
+        <Label.GestureRecognizers>
+          <TapGestureRecognizer Tapped="OnTapped" />
+        </Label.GestureRecognizers>    
+      </Label>    
+    </StackLayout>
+  </StackLayout>
+    <!--<StackLayout VerticalOptions="End" HorizontalOptions="Center">-->
+    <Button Text="REGISTER" FontSize="70" Clicked="OnRegClicked" TextColor="Red" BorderRadius="" />
+    <!--</StackLayout>-->
+  </StackLayout>
+</ContentPage>
