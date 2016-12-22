@@ -1,54 +1,206 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
+using SQLite;
+using NeoStore.DataModel;
 
 namespace NeoStore.ViewModel
 {
-    public class RegisterViewModel : INotifyPropertyChanged, IValidation
+    public class RegisterViewModel : INotifyPropertyChanged
     {
-        public int MyProperty { get; set; }
+        private string First_name;
+        private string Last_name;
+       
+        private string Email;
+        private string Password;
+        private string Confirm_password;
+        private string Gender;
+        private string isOn;
+        private int Phone_no;
         public event PropertyChangedEventHandler PropertyChanged;
+
+        public ICommand OnRegClicked { get; set; }        
+        string err;
+        RegistrationResponse resp;
+
+        public RegisterViewModel()
+        {
         
+            OnRegClicked = new Command(
+                () =>
+                 {
+                     if (first_name == null)
+                         err = "First Name can not be null";
+                     else if (last_name == null)
+                         err = "Last Name can not be null";
+                     else if (email == null)
+                         err = "Email Id can not be null";
+                     else if (password == null)
+                         err = "Password can not be null";
+                     else if (confirm_password == null || confirm_password != password)
+                         err = "Enter Correct Password";
+                     else if (gender == null)
+                         err = "Select Gender";
+                     else if ((phone_no.ToString()).Length != 9)
+                         err = "Enter Correct Number";
+                     else if (phone_no.ToString() == null)
+                         err = "Enter Correct Number";
+                     else if (IsOn == false)
+                         err = "Check Terms And Conditions";
 
-        public void OnRegClicked(object sender, EventArgs e)
+
+                     if (err==null)
+                         App.dbManager.SaveTaskAsync(this);
+                     else
+                        MessagingCenter.Send<RegisterViewModel, string>(this, "validate1", err);
+                     
+                 });
+
+        }
+        
+        public string first_name
         {
-
-            DisplayAlert("hi", "hi", "Ok");
+            get
+            {
+                return First_name;
+            }
+            set
+            {
+                First_name = value;
+                PropertyChangedEventHandler handler = PropertyChanged;
+                if (handler != null)
+                {
+                    handler(this, new PropertyChangedEventArgs("first_name"));
+                }
+            }
         }
 
-        public void numberLength()
+        public string last_name
         {
-            DisplayAlert("Error", "Enter Correct Contact Number", "Ok");
+            get
+            {
+                return Last_name;
+            }
+            set
+            {
+                Last_name = value;
+                PropertyChangedEventHandler handler = PropertyChanged;
+                if (handler != null)
+                {
+                    handler(this, new PropertyChangedEventArgs("last_name"));
+                }
+            }
+        }
+        [PrimaryKey]
+        public string email
+        {
+            get
+            {
+                return Email;
+            }
+            set
+            {
+                Email = value;
+                PropertyChangedEventHandler handler = PropertyChanged;
+                if (handler != null)
+                {
+                    handler(this, new PropertyChangedEventArgs("email"));
+                }
+            }
         }
 
-        public void Fname()
+        public string password
         {
-            DisplayAlert("Error", "FirstName can not be null", "Ok");
+            get
+            {
+                return Password;
+            }
+            set
+            {
+                Password = value;
+                PropertyChangedEventHandler handler = PropertyChanged;
+                if (handler != null)
+                {
+                    handler(this, new PropertyChangedEventArgs("password"));
+                }
+            }
         }
 
-        public void Lname()
+       
+        public bool IsOn
         {
-            DisplayAlert("Error", "FirstName can not be null", "Ok");
+            get
+            {
+                return bool.Parse ((isOn==null)?"false":isOn);
+            }
+            set
+            {
+                isOn =  (value==false?"false":value.ToString());
+                PropertyChangedEventHandler handler = PropertyChanged;
+                if (handler != null)
+                {
+                    handler(this, new PropertyChangedEventArgs("ison"));
+                }
+            }
         }
 
-        public void EmailID()
+        public string gender
         {
-            DisplayAlert("Error", "FirstName can not be null", "Ok");
+            get
+            {
+                return ((gender1 == false) ? "M" : "F");
+            }
+        }
+        public bool gender1
+        {
+            get
+            {
+                return bool.Parse ((Gender==null)?"false":Gender);
+            }
+            set
+            {
+                Gender =  (value==false?"false":value.ToString());
+                PropertyChangedEventHandler handler = PropertyChanged;
+                if (handler != null)
+                {
+                    handler(this, new PropertyChangedEventArgs("gender1"));
+                }
+            }
         }
 
-        public void Pass()
+        public string confirm_password
         {
-            DisplayAlert("Error", "FirstName can not be null", "Ok");
+            get
+            {
+                return Confirm_password;
+            }
+            set
+            {
+                Confirm_password = value;
+                PropertyChangedEventHandler handler = PropertyChanged;
+                if (handler != null)
+                {
+                    handler(this, new PropertyChangedEventArgs("confirm_password"));
+                }
+            }
         }
 
-        public void ConfirmPass()
+        public int phone_no
         {
-            DisplayAlert("Error", "FirstName can not be null", "Ok");
+            get
+            {
+                return Phone_no;
+            }
+            set
+            {
+                Phone_no = value;
+                PropertyChangedEventHandler handler = PropertyChanged;
+                if (handler != null)
+                {
+                    handler(this, new PropertyChangedEventArgs("phone_no"));
+                }
+            }
         }
-    }
+
+     }
 }

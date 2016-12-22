@@ -38,7 +38,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Behaviours\AwesomeLabel.cs" />
+    <Compile Include="Behaviours\EmailValidation.cs" />
+    <Compile Include="Behaviours\FontAwesome.cs" />
+    <Compile Include="DatabaseManager.cs" />
+    <Compile Include="DataModel\IRestServices.cs" />
+    <Compile Include="DataModel\RegistrationResponse.cs" />
+    <Compile Include="DataModel\RestServices.cs" />
+    <Compile Include="ISQLite.cs" />
     <Compile Include="IValidation.cs" />
+    <Compile Include="LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -46,6 +57,10 @@
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RegistrationDetailDatabase.cs" />
+    <Compile Include="ResponseData.cs" />
+    <Compile Include="Behaviours\RoundedButton.cs" />
+    <Compile Include="ViewModel\MainPageViewModel.cs" />
     <Compile Include="ViewModel\RegisterViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +74,34 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.Connectivity, Version=2.2.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugin.Connectivity.2.2.12\lib\portable-net45+wp80+wp81+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+Xamarin.Mac20+UAP10\Plugin.Connectivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions, Version=2.2.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugin.Connectivity.2.2.12\lib\portable-net45+wp80+wp81+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+Xamarin.Mac20+UAP10\Plugin.Connectivity.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLite-net, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\sqlite-net-pcl.1.2.1\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a84b7dcfb1391f7f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQLitePCLRaw.bundle_green.1.1.0\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQLitePCLRaw.bundle_green.1.1.0\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQLitePCLRaw.core.1.1.0\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6482\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
       <Private>True</Private>
@@ -78,6 +121,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Register.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LoginPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

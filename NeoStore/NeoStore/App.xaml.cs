@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NeoStore.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,13 +10,17 @@ namespace NeoStore
 {
     public partial class App : Application
     {
+
+        public static DatabaseManager dbManager { get; private set; }
         public App()
         {
             InitializeComponent();
-
+        
+            dbManager = new DatabaseManager(new RestServices());
             MainPage = new NavigationPage(new MainPage());
-        }
 
+        }
+        
         protected override void OnStart()
         {
             // Handle when your app starts

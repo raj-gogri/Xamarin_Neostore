@@ -5,7 +5,7 @@
              x:Class="NeoStore.MainPage">
 
   <StackLayout >
-    <Button Text="REgister" Clicked="OnRegisterClicked" />
+    <Button Text="Register" Command="{Binding OnRegisterClicked}" />
   </StackLayout>
 
 </ContentPage>

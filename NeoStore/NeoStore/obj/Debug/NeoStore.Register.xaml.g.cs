@@ -17,6 +17,9 @@ namespace NeoStore {
     public partial class Register : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ResourceDictionary AppDictionary;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Entry fname;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -32,10 +35,13 @@ namespace NeoStore {
         private global::Xamarin.Forms.Entry confirm;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label Male;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Switch MaleSwitch;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Switch FemaleSwitch;
+        private global::Xamarin.Forms.Label Female;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Entry phone;
@@ -46,13 +52,15 @@ namespace NeoStore {
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(Register));
+            AppDictionary = this.FindByName<global::Xamarin.Forms.ResourceDictionary>("AppDictionary");
             fname = this.FindByName<global::Xamarin.Forms.Entry>("fname");
             lname = this.FindByName<global::Xamarin.Forms.Entry>("lname");
             email = this.FindByName<global::Xamarin.Forms.Entry>("email");
             pass = this.FindByName<global::Xamarin.Forms.Entry>("pass");
             confirm = this.FindByName<global::Xamarin.Forms.Entry>("confirm");
+            Male = this.FindByName<global::Xamarin.Forms.Label>("Male");
             MaleSwitch = this.FindByName<global::Xamarin.Forms.Switch>("MaleSwitch");
-            FemaleSwitch = this.FindByName<global::Xamarin.Forms.Switch>("FemaleSwitch");
+            Female = this.FindByName<global::Xamarin.Forms.Label>("Female");
             phone = this.FindByName<global::Xamarin.Forms.Entry>("phone");
             TermsCondition = this.FindByName<global::Xamarin.Forms.Switch>("TermsCondition");
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NeoStore.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,14 +10,22 @@ namespace NeoStore
 {
     public partial class MainPage : ContentPage
     {
+        private LoginPage loginPage;
+
         public MainPage()
         {
-            InitializeComponent();           
+            InitializeComponent();
+            BindingContext = new MainPageViewModel();
+            MessagingCenter.Subscribe<MainPageViewModel>(this, "Navigate", (sender) => {
+                Navigation.PushAsync(new Register());
+            });
         }
-        public async void OnRegisterClicked(object sender,EventArgs e)
-        {
-          await Navigation.PushAsync(new Register());
-           /*isplayAlert("hi","hi","OK");*/
-        }
+
+       
+        //public async void OnRegisterClicked(object sender,EventArgs e)
+        //{
+        //  await Navigation.PushAsync(new Register());
+        
+        //}
     }
 }

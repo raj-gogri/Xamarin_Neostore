@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NeoStore
 {
-    interface IValidation
+    public interface IValidation
     {
         void numberLength();
         void Fname();
