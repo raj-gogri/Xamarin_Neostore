@@ -17,32 +17,36 @@ namespace NeoStore {
     public partial class LoginPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ResourceDictionary AppDictionary;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label lblneostore;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Entry entrycell1;
+        private global::Xamarin.Forms.Entry username;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Entry entrycell2;
+        private global::Xamarin.Forms.Entry password;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Button login;
+        private global::NeoStore.RoundedButton login;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label lblforgetpassword;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Button lblAddnewuser;
+        private global::NeoStore.ColorButton lblAddnewuser;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(LoginPage));
+            AppDictionary = this.FindByName<global::Xamarin.Forms.ResourceDictionary>("AppDictionary");
             lblneostore = this.FindByName<global::Xamarin.Forms.Label>("lblneostore");
-            entrycell1 = this.FindByName<global::Xamarin.Forms.Entry>("entrycell1");
-            entrycell2 = this.FindByName<global::Xamarin.Forms.Entry>("entrycell2");
-            login = this.FindByName<global::Xamarin.Forms.Button>("login");
+            username = this.FindByName<global::Xamarin.Forms.Entry>("username");
+            password = this.FindByName<global::Xamarin.Forms.Entry>("password");
+            login = this.FindByName<global::NeoStore.RoundedButton>("login");
             lblforgetpassword = this.FindByName<global::Xamarin.Forms.Label>("lblforgetpassword");
-            lblAddnewuser = this.FindByName<global::Xamarin.Forms.Button>("lblAddnewuser");
+            lblAddnewuser = this.FindByName<global::NeoStore.ColorButton>("lblAddnewuser");
         }
     }
 }

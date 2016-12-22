@@ -1,9 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NeoStore;assembly=NeoStore"
              x:Class="NeoStore.LoginPage">
+
+  <ContentPage.Resources>
+    <ResourceDictionary x:Name="AppDictionary">
+      
+      <Color x:Key="BackgroundColor">#E91B1A</Color>
+      <Color x:Key="BorderColor">White</Color>
+      
+      <Style x:Key="InternalViewStyle" TargetType="ContentView">
+        <Setter Property="BackgroundColor"
+            Value="{StaticResource BackgroundColor}"/>
+        <Setter Property="VerticalOptions" Value="Fill"/>
+        <Setter Property="Padding" Value="3,3,3,3"></Setter>
+      </Style>
+      
+      <Style x:Key="BorderStyle" TargetType="ContentView">
+        <Setter Property="BackgroundColor" Value="{StaticResource BorderColor}"/>
+        <Setter Property="Padding" Value="1,1,1,1"></Setter>
+      </Style>
+      
+    </ResourceDictionary>
+  </ContentPage.Resources> 
+  
   <ScrollView Orientation="Vertical">
-  <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="10,40,10,0">
+  <StackLayout  Padding="10,40,10,10">
     
   <StackLayout Orientation="Vertical" Padding="20,0,20,0">
     
@@ -12,43 +35,58 @@
            Font="Bold"
            FontSize="50"
            x:Name="lblneostore"/>
-
-    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="0,35,0,0">
-      <Label Text=" + " 
-             Font="Medium" 
-             FontSize="24"
-             TextColor="White"
-             VerticalOptions="Center"/>
-      <Entry x:Name="entrycell1"              
-             Placeholder="UserName           " 
-             HorizontalTextAlignment="Center"
-             FontSize="24"
-             PlaceholderColor="White"
-             TextColor="White"/>
-    </StackLayout>
-
-    <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="StartAndExpand">
-      <Label Text=" + "
-             Font="Medium"
-             FontSize="24"
-             TextColor="White"
-             VerticalOptions="Center"/> 
-      <Entry x:Name="entrycell2"
-             Placeholder="Password           " 
-             HorizontalTextAlignment="Center"
-             FontSize="24"
-             PlaceholderColor="White"
-             TextColor="White"/>
-    </StackLayout>
     
-    <Button BackgroundColor="White" 
-            Text="    LOGIN    " 
+ <StackLayout Padding="0,35,10,10">
+    <ContentView Style="{StaticResource BorderStyle}">
+      <ContentView Style="{StaticResource InternalViewStyle}">
+        <StackLayout Orientation="Horizontal" Padding="5,0,0,0">
+          <local:AwesomeLabel Text="{x:Static local:FontAwesomeForms.FAUser}"
+                 FontFamily="FontAwesomeForms"
+                 FontSize="24"
+                 TextColor="White"
+                 VerticalOptions="Center"/>
+          <Entry x:Name="username"
+                 Placeholder="Username"
+                 PlaceholderColor="White"
+                 FontSize="24"
+                 HorizontalOptions="FillAndExpand"
+                 TextColor="White"
+                 Text="{Binding email}"/>
+        </StackLayout>
+      </ContentView>
+    </ContentView>
+
+    <ContentView Style="{StaticResource BorderStyle}">
+      <ContentView Style="{StaticResource InternalViewStyle}">
+        <StackLayout Orientation="Horizontal" Padding="5,0,0,0">
+          <local:AwesomeLabel Text="{x:Static local:FontAwesomeForms.FALock}"
+                              FontFamily="FontAwesomeForms"
+                 FontSize="24"
+                 TextColor="White"
+                 VerticalOptions="Center"/>
+          <Entry x:Name="password"
+                 Placeholder="Password"
+                 PlaceholderColor="White"
+                 FontSize="24"
+                 HorizontalOptions="FillAndExpand"
+                 TextColor="White"
+                 Text="{Binding password}"
+                 IsPassword="True"/>
+        </StackLayout>
+      </ContentView>
+    </ContentView>
+     
+    
+    <local:RoundedButton BackgroundColor="White" 
+            Text="LOGIN" 
             Font="Medium"
-            FontSize="48" 
+            FontSize="38"
+            HorizontalOptions="FillAndExpand"         
             x:Name="login"
             TextColor="Red"
-            BorderRadius="2"/>
-    
+            BorderRadius="2"
+            Command="{Binding OnloginClicked}"/>
+    </StackLayout> 
     <Label Text="Forget Password?"
            x:Name="lblforgetpassword"
            Font="Medium"
@@ -67,16 +105,17 @@
            HorizontalOptions="Start" 
            VerticalOptions="Center"
            Font="Medium"
-           FontSize="10"
+           FontSize="18"
            TextColor="White"/>
-    <Button Text="  +  "
+    <local:ColorButton Text="{x:Static local:FontAwesomeForms.FAPlus}"
+            FontFamily="FontAwesomeForms"             
             x:Name="lblAddnewuser"
             VerticalOptions="End"
             HorizontalOptions="End"
             WidthRequest="60"
             HeightRequest="60"
             Font="Medium"
-            FontSize="21"
+            FontSize="24"
             Clicked="OnAddNewUser"
             TextColor="White"/>
     </StackLayout>

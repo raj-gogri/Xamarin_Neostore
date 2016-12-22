@@ -5,17 +5,17 @@
              x:Class="NeoStore.MainPage">
 
   <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
-    
+
     <Label Text="NeoSTORE"
-           Font="Bold" 
-           FontSize="50"           
-           VerticalOptions="Center" 
+           Font="Bold"
+           FontSize="50"
+           VerticalOptions="Center"
            HorizontalOptions="Center" 
-           x:Name="lblNeostore">
+           x:Name="lblNeoStore">
       <Label.GestureRecognizers>
-        <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped" 
+        <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"
                               NumberOfTapsRequired="2" />
-      </Label.GestureRecognizers>  
+      </Label.GestureRecognizers>
     </Label>
   
   </StackLayout>

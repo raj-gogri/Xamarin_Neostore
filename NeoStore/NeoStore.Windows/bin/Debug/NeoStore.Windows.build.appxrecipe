@@ -28,6 +28,30 @@
     <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\bin\Debug\NeoStore.dll">
       <PackagePath>NeoStore.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\packages\Xam.Plugin.Connectivity.2.2.12\lib\win8\Plugin.Connectivity.Abstractions.dll">
+      <PackagePath>Plugin.Connectivity.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\packages\Xam.Plugin.Connectivity.2.2.12\lib\win8\Plugin.Connectivity.dll">
+      <PackagePath>Plugin.Connectivity.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\packages\sqlite-net-pcl.1.2.1\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\packages\SQLitePCLRaw.bundle_green.1.1.0\lib\win81\SQLitePCLRaw.batteries_green.dll">
+      <PackagePath>SQLitePCLRaw.batteries_green.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\packages\SQLitePCLRaw.bundle_green.1.1.0\lib\win81\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\packages\SQLitePCLRaw.core.1.1.0\lib\win81\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\packages\SQLitePCLRaw.provider.e_sqlite3.win81.1.1.0\lib\win81\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
     </AppxPackagedFile>

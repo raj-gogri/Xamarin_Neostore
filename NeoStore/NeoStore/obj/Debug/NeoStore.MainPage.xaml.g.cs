@@ -17,12 +17,12 @@ namespace NeoStore {
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label lblNeostore;
+        private global::Xamarin.Forms.Label lblNeoStore;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MainPage));
-            lblNeostore = this.FindByName<global::Xamarin.Forms.Label>("lblNeostore");
+            lblNeoStore = this.FindByName<global::Xamarin.Forms.Label>("lblNeoStore");
         }
     }
 }
