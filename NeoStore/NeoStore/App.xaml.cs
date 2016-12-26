@@ -1,4 +1,4 @@
-﻿using NeoStore.DataModel;
+﻿using NeoStore.RegisterPage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,11 +14,9 @@ namespace NeoStore
         public static DatabaseManager dbManager { get; private set; }
         public App()
         {
-            InitializeComponent();
-        
+            InitializeComponent();        
             dbManager = new DatabaseManager(new RestServices());
             MainPage = new NavigationPage(new MainPage());
-
         }
         
         protected override void OnStart()

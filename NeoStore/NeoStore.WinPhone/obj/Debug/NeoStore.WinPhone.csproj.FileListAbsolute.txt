@@ -1,3 +1,13 @@
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\App.g.i.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\App.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\MainPage.g.i.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\MainPage.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\App.xaml
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\MainPage.xaml
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\App.xbf
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\MainPage.xbf
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\XamlSaveStateFile.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\App.xbf
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\MainPage.xbf
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\NeoStore.WinPhone.xr.xml
@@ -27,16 +37,6 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\Plugin.Connectivity.Abstractions.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\Newtonsoft.Json.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\NeoStore.WinPhone.csprojResolveAssemblyReference.cache
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\App.g.i.cs
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\App.g.cs
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\MainPage.g.i.cs
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\MainPage.g.cs
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\XamlTypeInfo.g.cs
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\App.xaml
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\MainPage.xaml
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\App.xbf
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\MainPage.xbf
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\XamlSaveStateFile.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\NeoStore.WinPhone.exe
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\NeoStore.WinPhone.pdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\NeoStore.WinPhone.csproj.GenerateResource.Cache
@@ -54,3 +54,6 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\Xamarin.Forms.Platform.WinRT.pri.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\Xamarin.Forms.Platform.WinRT.Phone.pri.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\obj\Debug\ProjectArchitectures.txt
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\Plugin.Connectivity.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\Plugin.Connectivity.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\Plugin.Connectivity.xml

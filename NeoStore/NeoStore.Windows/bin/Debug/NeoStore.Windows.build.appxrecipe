@@ -49,6 +49,9 @@
     <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\bin\Debug\Plugin.Connectivity.Abstractions.dll">
       <PackagePath>Plugin.Connectivity.Abstractions.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\bin\Debug\Plugin.Connectivity.dll">
+      <PackagePath>Plugin.Connectivity.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\bin\Debug\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>

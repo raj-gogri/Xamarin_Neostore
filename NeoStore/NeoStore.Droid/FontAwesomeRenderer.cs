@@ -12,7 +12,7 @@ using Android.Widget;
 using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms;
 using NeoStore.Droid;
-using NeoStore.Behaviours;
+using NeoStore.CustomView;
 using Android.Graphics;
 
 [assembly: ExportRenderer(typeof(AwesomeLabel), typeof(FontAwesomeRenderer))]

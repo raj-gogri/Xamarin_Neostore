@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NeoStore.CustomView;assembly=NeoStore"
+             x:Class="NeoStore.RegisterPage.Register"
+             Title="Register" >
+  
+  <ContentPage.Resources>
+    <ResourceDictionary x:Name="AppDictionary">
+      <Color x:Key="BackgroundColor">#E91B1A</Color>
+      <Color x:Key="BorderColor">White</Color>
+      <Style x:Key="InternalViewStyle" TargetType="ContentView">
+        
+        <Setter Property="BackgroundColor"
+            Value="{StaticResource BackgroundColor}"/>
+        <Setter Property="VerticalOptions" Value="Fill"/>
+        <Setter Property="Padding" Value="3,3,3,3"></Setter>
+      </Style>
+      
+      <Style x:Key="BorderStyle" TargetType="ContentView">
+        <Setter Property="BackgroundColor" Value="{StaticResource BorderColor}"/>
+        <Setter Property="Padding" Value="1,1,1,1"></Setter>
+      </Style>
+      
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ScrollView>
+  <StackLayout VerticalOptions="Fill" Padding="10,30,10,10">
+
+    <StackLayout Orientation="Vertical">
+    <Label Text="NeoSTORE" Font="Bold" FontSize="48" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/>
+    <ContentView Style="{StaticResource BorderStyle}" >
+      <ContentView Style="{StaticResource InternalViewStyle}">
+        <StackLayout Orientation="Horizontal" Padding="5,0,0,0">
+          <local:AwesomeLabel Text="{x:Static local:FontAwesome.FAUser}"
+             FontSize="24" VerticalOptions="Center" FontFamily="FontAwesome" TextColor="White" />
+          <Entry     x:Name="fname"
+                Placeholder="First Name"
+                PlaceholderColor="White"
+                HorizontalOptions="FillAndExpand"
+                FontSize="24"
+                TextColor="White"
+                Text="{Binding first_name}"/>
+        </StackLayout>
+      </ContentView>
+    </ContentView>
+
+      <ContentView Style="{StaticResource BorderStyle}" >
+        <ContentView Style="{StaticResource InternalViewStyle}">
+          <StackLayout Orientation="Horizontal" Padding="5,0,0,0">
+            <local:AwesomeLabel Text="{x:Static local:FontAwesome.FAUser}"
+               FontSize="24" VerticalOptions="Center" FontFamily="FontAwesome" TextColor="White" />
+            <Entry     x:Name="lname"
+                   Placeholder="Last Name"
+                   PlaceholderColor="White"
+                   HorizontalOptions="FillAndExpand"
+                   FontSize="24"
+                   TextColor="White"
+                   Text="{Binding last_name}"/>
+          </StackLayout>
+        </ContentView>
+      </ContentView>
+
+      <ContentView Style="{StaticResource BorderStyle}" >
+        <ContentView Style="{StaticResource InternalViewStyle}">
+          <StackLayout Orientation="Horizontal" Padding="5,0,0,0">
+            <local:AwesomeLabel Text="{x:Static local:FontAwesome.FAEnvelope}"
+               FontSize="24" VerticalOptions="Center" FontFamily="FontAwesome" TextColor="White" />
+            <Entry     x:Name="email"
+                   Placeholder="Email"
+                   PlaceholderColor="White"
+                   HorizontalOptions="FillAndExpand"
+                   FontSize="24"
+                   TextColor="White"
+                   Text="{Binding email}">
+
+              <Entry.Behaviors>
+                <local:EmailValidation />
+              </Entry.Behaviors>
+            </Entry>
+          </StackLayout>
+        </ContentView>
+      </ContentView>
+
+      <ContentView Style="{StaticResource BorderStyle}" >
+        <ContentView Style="{StaticResource InternalViewStyle}">
+          <StackLayout Orientation="Horizontal" Padding="5,0,0,0">
+            <local:AwesomeLabel Text="{x:Static local:FontAwesome.FALock}"
+               FontSize="24" VerticalOptions="Center" FontFamily="FontAwesome" TextColor="White" />
+            <Entry    x:Name="pass"
+                  Placeholder="Password"
+                 PlaceholderColor="White"
+                 FontSize="24"
+                 HorizontalOptions="FillAndExpand"
+                 TextColor="White"
+                 Text="{Binding password}"
+                 IsPassword="True"/>
+          </StackLayout>
+        </ContentView>
+      </ContentView>
+
+      <ContentView Style="{StaticResource BorderStyle}" >
+        <ContentView Style="{StaticResource InternalViewStyle}">
+          <StackLayout Orientation="Horizontal" Padding="5,0,0,0">
+            <local:AwesomeLabel Text="&#xf023;"
+               FontSize="24" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="FontAwesome" TextColor="White" />
+            <Entry x:Name="confirm"
+                   Placeholder="Confirm Password"
+               PlaceholderColor="White"
+               HorizontalOptions="FillAndExpand"
+               FontSize="24"
+               TextColor="White"
+               Text="{Binding confirm_password}"
+               IsPassword="True"/>
+          </StackLayout>
+      </ContentView>
+    </ContentView>
+
+    <StackLayout Orientation="Horizontal" >
+      <Label Text=" Gender     " VerticalOptions="Start" HorizontalOptions="Start" FontSize="24" TextColor="White"/>
+      <Label x:Name="Male" Text="Male"  VerticalOptions="Center" HorizontalOptions="StartAndExpand" FontSize="20" TextColor="White"/>
+      <Switch x:Name="MaleSwitch" IsToggled="{Binding gender}" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+      <Label x:Name="Female" Text="Female" VerticalOptions="Center" HorizontalOptions="StartAndExpand" FontSize="20" TextColor="White"/>
+    </StackLayout>
+
+    <ContentView Style="{StaticResource BorderStyle}" >
+      <ContentView Style="{StaticResource InternalViewStyle}">
+        <StackLayout Orientation="Horizontal" Padding="5,0,0,0">
+        <local:AwesomeLabel Text="{x:Static local:FontAwesome.FAPhone}" 
+				   FontSize="24" VerticalOptions="Center" FontFamily="FontAwesome" TextColor="White" />
+          <Entry  x:Name="phone"
+                  Placeholder="Phone Number"
+                  PlaceholderColor="White"
+                  FontSize="24"
+                  HorizontalOptions="FillAndExpand"
+              
+              TextColor="White"
+              Text="{Binding phone_no}"/>
+        </StackLayout>
+      </ContentView>
+    </ContentView>
+    
+    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+      <Switch x:Name="TermsCondition" IsToggled="{Binding IsOn}" VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
+      <Label Text="I agree the " HorizontalOptions="Start" VerticalOptions="Center" FontSize="20" TextColor="White"/>
+
+      <Label Text="Terms and Condition" HorizontalOptions="Start" Font="Bold" FontSize="20" TextColor="White">
+        <Label.GestureRecognizers>
+          <TapGestureRecognizer Tapped="OnTapped" />
+        </Label.GestureRecognizers>    
+      </Label>    
+    </StackLayout> 
+  </StackLayout>
+    
+  <StackLayout VerticalOptions="End">
+    <ContentView>
+      <local:RoundedButton Text="REGISTER" FontSize="35" Command="{Binding OnRegClicked}" TextColor="Red" BackgroundColor="White"/>
+    </ContentView>
+    </StackLayout>
+  </StackLayout>
+  </ScrollView>
+</ContentPage>

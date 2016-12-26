@@ -1,3 +1,7 @@
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.MainPage.xaml.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.App.xaml.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.RegisterPage.Register.xaml.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.LoginPage.xaml.g.cs
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\bin\Debug\NeoStore.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\bin\Debug\NeoStore.pdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\bin\Debug\Newtonsoft.Json.dll
@@ -18,12 +22,9 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\bin\Debug\SQLite-net.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\bin\Debug\Xamarin.Forms.Core.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.csprojResolveAssemblyReference.cache
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.MainPage.xaml.g.cs
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.App.xaml.g.cs
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.Register.xaml.g.cs
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.LoginPage.xaml.g.cs
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.HomePage.Homepage.xaml.g.cs
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\bin\Debug\NeoStore.dll.mdb

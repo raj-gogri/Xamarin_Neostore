@@ -1,4 +1,4 @@
-﻿using NeoStore.ViewModel;
+﻿using NeoStore.RegisterPage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace NeoStore
 {
     public partial class MainPage : ContentPage
     {
-        private LoginPage loginPage;
+       // private LoginPage loginPage;
 
         public MainPage()
         {

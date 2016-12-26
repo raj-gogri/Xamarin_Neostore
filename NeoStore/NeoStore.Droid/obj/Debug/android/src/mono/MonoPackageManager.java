@@ -142,6 +142,7 @@ class MonoPackageManager_Resources {
 		"System.Runtime.InteropServices.dll",
 		"System.Diagnostics.Tools.dll",
 		"Plugin.Connectivity.Abstractions.dll",
+		"Plugin.Connectivity.dll",
 		"System.Net.Primitives.dll",
 		"Newtonsoft.Json.dll",
 		"System.Xml.XDocument.dll",
