@@ -42,6 +42,9 @@
     <Compile Include="CustomView\ColorButton.cs" />
     <Compile Include="CustomView\EmailValidation.cs" />
     <Compile Include="CustomView\FontAwesome.cs" />
+    <Compile Include="ForgetPasswordPage\ForgetPasswordpage.xaml.cs">
+      <DependentUpon>ForgetPasswordpage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HomePage\DetailHomepage.xaml.cs">
       <DependentUpon>DetailHomepage.xaml</DependentUpon>
     </Compile>
@@ -159,6 +162,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="HomePage\Homepage1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ForgetPasswordPage\ForgetPasswordpage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
