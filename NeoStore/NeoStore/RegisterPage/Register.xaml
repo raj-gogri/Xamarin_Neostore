@@ -132,10 +132,9 @@
                   Placeholder="Phone Number"
                   PlaceholderColor="White"
                   FontSize="24"
-                  HorizontalOptions="FillAndExpand"
-              
-              TextColor="White"
-              Text="{Binding phone_no}"/>
+                  HorizontalOptions="FillAndExpand"         
+                  TextColor="White"
+                  Text="{Binding phone_no}"/>
         </StackLayout>
       </ContentView>
     </ContentView>

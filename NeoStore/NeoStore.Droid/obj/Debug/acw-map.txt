@@ -1,3 +1,7 @@
+NeoStore.Droid.ColorButtonRenderer, NeoStore.Droid;md50bcc843ec7830d982358b1e43dc41fea.ColorButtonRenderer
+NeoStore.Droid.ColorButtonRenderer, NeoStore.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50bcc843ec7830d982358b1e43dc41fea.ColorButtonRenderer
+NeoStore.Droid.ColorButtonRenderer;md50bcc843ec7830d982358b1e43dc41fea.ColorButtonRenderer
+neostore.droid.ColorButtonRenderer;md50bcc843ec7830d982358b1e43dc41fea.ColorButtonRenderer
 NeoStore.Droid.CustomeButtonRenderer, NeoStore.Droid;md50bcc843ec7830d982358b1e43dc41fea.CustomeButtonRenderer
 NeoStore.Droid.CustomeButtonRenderer, NeoStore.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50bcc843ec7830d982358b1e43dc41fea.CustomeButtonRenderer
 NeoStore.Droid.CustomeButtonRenderer;md50bcc843ec7830d982358b1e43dc41fea.CustomeButtonRenderer
@@ -14,6 +18,10 @@ NeoStore.Droid.MainActivity, NeoStore.Droid;md50bcc843ec7830d982358b1e43dc41fea.
 NeoStore.Droid.MainActivity, NeoStore.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50bcc843ec7830d982358b1e43dc41fea.MainActivity
 NeoStore.Droid.MainActivity;md50bcc843ec7830d982358b1e43dc41fea.MainActivity
 neostore.droid.MainActivity;md50bcc843ec7830d982358b1e43dc41fea.MainActivity
+Plugin.Connectivity.ConnectivityChangeBroadcastReceiver, Plugin.Connectivity;md5ebcbedcc9f4271e586379ac7977363a7.ConnectivityChangeBroadcastReceiver
+Plugin.Connectivity.ConnectivityChangeBroadcastReceiver, Plugin.Connectivity, Version=2.2.12.0, Culture=neutral, PublicKeyToken=null;md5ebcbedcc9f4271e586379ac7977363a7.ConnectivityChangeBroadcastReceiver
+Plugin.Connectivity.ConnectivityChangeBroadcastReceiver;md5ebcbedcc9f4271e586379ac7977363a7.ConnectivityChangeBroadcastReceiver
+plugin.connectivity.ConnectivityChangeBroadcastReceiver;md5ebcbedcc9f4271e586379ac7977363a7.ConnectivityChangeBroadcastReceiver
 Android.Support.Design.Widget.Snackbar/SnackbarActionClickImplementor, Xamarin.Android.Support.Design;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar+SnackbarActionClickImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar.SnackbarActionClickImplementor;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
