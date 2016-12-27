@@ -2,7 +2,6 @@
 using System.Windows.Input;
 using Xamarin.Forms;
 using SQLite;
-using NeoStore.RegisterPage;
 using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
 using System;
@@ -12,8 +11,7 @@ namespace NeoStore.RegisterPage
     public class RegisterViewModel : INotifyPropertyChanged
     {
         private string First_name;
-        private string Last_name;
-       
+        private string Last_name;      
         private string Email;
         private string Password;
         private string Confirm_password;
@@ -24,17 +22,13 @@ namespace NeoStore.RegisterPage
 
         public ICommand OnRegClicked { get; set; }        
         string err;
-        RegistrationResponse resp;
-
         public RegisterViewModel()
-        {
-
-        
+        {                    
             OnRegClicked = new Command(
                 () =>
                  {
                      CrossConnectivity.Current.ConnectivityChanged += Current_ConnectivityChanged;
-
+                     
                      if (first_name == null)
                          err = "First Name can not be null";
                      else if (last_name == null)
@@ -66,9 +60,9 @@ namespace NeoStore.RegisterPage
         private void Current_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
         {
             if (!e.IsConnected)
-                MessagingCenter.Send<RegisterViewModel, string>(this, "InternetConnection", "PLease Check Internet Conncetion");
+                MessagingCenter.Send<RegisterViewModel, string>
+                    (this, "InternetConnection", "PLease Check Internet Conncetion");
         }
-
         public string first_name
         {
             get

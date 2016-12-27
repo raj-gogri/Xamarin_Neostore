@@ -39,6 +39,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomView\AwesomeLabel.cs" />
+    <Compile Include="CustomView\ColorButton.cs" />
     <Compile Include="CustomView\EmailValidation.cs" />
     <Compile Include="CustomView\FontAwesome.cs" />
     <Compile Include="HomePage\DetailHomepage.xaml.cs">
@@ -47,13 +48,23 @@
     <Compile Include="HomePage\Homepage.xaml.cs">
       <DependentUpon>Homepage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HomePage\Homepage1.xaml.cs">
+      <DependentUpon>Homepage1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HomePage\HomepageModelView.cs" />
+    <Compile Include="Loginpage\IRestService.cs" />
+    <Compile Include="Loginpage\LoginManager.cs" />
+    <Compile Include="Loginpage\LoginResponse.cs" />
+    <Compile Include="Loginpage\LoginViewModel.cs" />
+    <Compile Include="Loginpage\RegistrationDetailDatabase.cs" />
+    <Compile Include="Loginpage\RestService.cs" />
+    <Compile Include="Loginpage\UserDetailsResponseData.cs" />
     <Compile Include="RegisterPage\DatabaseManager.cs" />
     <Compile Include="RegisterPage\IRestServices.cs" />
     <Compile Include="RegisterPage\RegistrationResponse.cs" />
     <Compile Include="RegisterPage\RestServices.cs" />
     <Compile Include="ISQLite.cs" />
-    <Compile Include="LoginPage.xaml.cs">
+    <Compile Include="Loginpage\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
@@ -63,9 +74,7 @@
     <Compile Include="RegisterPage\Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RegisterPage\RegistrationDetailDatabase.cs" />
     <Compile Include="CustomView\RoundedButton.cs" />
-    <Compile Include="RegisterPage\MainPageViewModel.cs" />
     <Compile Include="RegisterPage\RegisterViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -131,7 +140,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="LoginPage.xaml">
+    <EmbeddedResource Include="Loginpage\LoginPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -144,6 +153,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="HomePage\DetailHomepage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HomePage\Homepage1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

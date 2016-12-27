@@ -1,31 +1,26 @@
-﻿using NeoStore.RegisterPage;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using Plugin.Connectivity;
+using Plugin.Connectivity.Abstractions;
 using Xamarin.Forms;
 
 namespace NeoStore
 {
     public partial class MainPage : ContentPage
     {
-       // private LoginPage loginPage;
-
         public MainPage()
         {
             InitializeComponent();
-            BindingContext = new MainPageViewModel();
-            MessagingCenter.Subscribe<MainPageViewModel>(this, "Navigate", (sender) => {
-                Navigation.PushAsync(new Register());
-            });
+            BackgroundColor = Color.FromHex("#E91B1A");
+            lblNeoStore.TextColor = Color.FromHex("#FFFFFF");
+            CrossConnectivity.Current.ConnectivityChanged += Current_ConnectivityChanged;
         }
 
-       
-        //public async void OnRegisterClicked(object sender,EventArgs e)
-        //{
-        //  await Navigation.PushAsync(new Register());
-        
-        //}
+        private async void Current_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
+        {
+            if (!e.IsConnected)
+            {
+                await DisplayAlert("Error", "Check Internet Connection", "Ok");
+            }
+        }
     }
 }
