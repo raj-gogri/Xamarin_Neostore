@@ -44,10 +44,15 @@
     <Compile Include="HomePage\DetailHomepage.xaml.cs">
       <DependentUpon>DetailHomepage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HomePage\DetailHomepageModelView.cs" />
     <Compile Include="HomePage\Homepage.xaml.cs">
       <DependentUpon>Homepage.xaml</DependentUpon>
     </Compile>
     <Compile Include="HomePage\HomepageModelView.cs" />
+    <Compile Include="HomePage\HomePageResponse.cs" />
+    <Compile Include="HomePage\IRestServices.cs" />
+    <Compile Include="HomePage\RestServices.cs" />
+    <Compile Include="HomePage\UserDetailsResponseData.cs" />
     <Compile Include="RegisterPage\DatabaseManager.cs" />
     <Compile Include="RegisterPage\IRestServices.cs" />
     <Compile Include="RegisterPage\RegistrationResponse.cs" />

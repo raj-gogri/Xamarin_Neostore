@@ -21,6 +21,8 @@ namespace NeoStore.RegisterPage
         }
         public string MEssage { get; set; }
         public string User_Msg { get; set; }
-        
+
+        public UserDetailsResponseData UserData { get; set; }
+
     }
 }

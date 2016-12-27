@@ -12,6 +12,7 @@ namespace NeoStore.HomePage
     {
         public DetailHomepage()
         {
+            BindingContext = new DetailHomepageModelView();
             InitializeComponent();
         }
     }
