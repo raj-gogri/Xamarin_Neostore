@@ -42,9 +42,14 @@
     <Compile Include="CustomView\ColorButton.cs" />
     <Compile Include="CustomView\EmailValidation.cs" />
     <Compile Include="CustomView\FontAwesome.cs" />
+    <Compile Include="ForgetPasswordPage\ForgetPasswordManager.cs" />
     <Compile Include="ForgetPasswordPage\ForgetPasswordpage.xaml.cs">
       <DependentUpon>ForgetPasswordpage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ForgetPasswordPage\ForgetPasswordResponse.cs" />
+    <Compile Include="ForgetPasswordPage\ForgetPasswordRestService.cs" />
+    <Compile Include="ForgetPasswordPage\ForgetPasswordViewModel.cs" />
+    <Compile Include="ForgetPasswordPage\IRestServiceForgetPassword.cs" />
     <Compile Include="HomePage\DetailHomepage.xaml.cs">
       <DependentUpon>DetailHomepage.xaml</DependentUpon>
     </Compile>
@@ -166,6 +171,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="ForgetPasswordPage\ForgetPasswordpage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>

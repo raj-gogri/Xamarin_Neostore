@@ -26,7 +26,7 @@ namespace NeoStore.ForgetPasswordPage {
         private global::Xamarin.Forms.Entry username;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::NeoStore.RoundedButton SendMail;
+        private global::NeoStore.CustomView.RoundedButton SendMail;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
@@ -34,7 +34,7 @@ namespace NeoStore.ForgetPasswordPage {
             AppDictionary = this.FindByName<global::Xamarin.Forms.ResourceDictionary>("AppDictionary");
             lblNeoStore = this.FindByName<global::Xamarin.Forms.Label>("lblNeoStore");
             username = this.FindByName<global::Xamarin.Forms.Entry>("username");
-            SendMail = this.FindByName<global::NeoStore.RoundedButton>("SendMail");
+            SendMail = this.FindByName<global::NeoStore.CustomView.RoundedButton>("SendMail");
         }
     }
 }

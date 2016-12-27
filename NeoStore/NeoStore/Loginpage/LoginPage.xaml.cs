@@ -42,7 +42,7 @@ namespace NeoStore.Loginpage
         }
         void OnTapGestureRecognizerTappedForgetPassword(object sender, EventArgs e)
         {
-           // Navigation.PushAsync(new ForgetPasswordPage());
+            Navigation.PushAsync(new ForgetPasswordPage.ForgetPasswordpage());
         }
         void OnAddNewUser(object sender, EventArgs e)
         {
