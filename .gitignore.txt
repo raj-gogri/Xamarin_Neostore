@@ -1,5 +1,13 @@
 
-# Created by https://www.gitignore.io/api/android,visualstudio,windows
+# Created by https://www.gitignore.io/api/vis,visualstudio,xamarinstudio,android,windows
+
+#!! ERROR: vis is undefined. Use list command to see defined gitignore types !!#
+
+### XamarinStudio ###
+bin/
+obj/
+*.userprefs
+
 
 ### Android ###
 # Built application files
@@ -13,7 +21,6 @@
 *.class
 
 # Generated files
-bin/
 gen/
 out/
 
@@ -87,7 +94,6 @@ $RECYCLE.BIN/
 *.vcxproj.filters
 
 # User-specific files (MonoDevelop/Xamarin Studio)
-*.userprefs
 
 # Build results
 [Dd]ebug/

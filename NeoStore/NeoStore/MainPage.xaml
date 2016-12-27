@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:NeoStore"
              x:Class="NeoStore.MainPage">
-
-  <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+  
+<StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
 
     <Label Text="NeoSTORE"
            Font="Bold"
@@ -12,12 +12,11 @@
            VerticalOptions="Center"
            HorizontalOptions="Center" 
            x:Name="lblNeoStore">
-      <Label.GestureRecognizers>
-        <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"
-                              NumberOfTapsRequired="2" />
-      </Label.GestureRecognizers>
     </Label>
-  
+    
+    <!--<ActivityIndicator Color="Black"
+                       IsVisible="{Binding Isbusy}"
+                       IsRunning="{Binding Isbusy}"/>-->
   </StackLayout>
 
 </ContentPage>

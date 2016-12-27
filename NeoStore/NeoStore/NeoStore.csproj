@@ -5,7 +5,7 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{136107D6-2F2A-46E8-8FD9-72D4502BCA24}</ProjectGuid>
+    <ProjectGuid>{46EE06D4-3873-4429-BFA2-07B1A4F96949}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NeoStore</RootNamespace>
@@ -38,28 +38,44 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AwesomeLabel.cs" />
-    <Compile Include="ColorButton.cs" />
-    <Compile Include="Data1\LoginManager.cs" />
-    <Compile Include="Data1\LoginResponse.cs" />
-    <Compile Include="Data1\RestService.cs" />
-    <Compile Include="FontAwesomeForms.cs" />
-    <Compile Include="HomePage.xaml.cs">
-      <DependentUpon>HomePage.xaml</DependentUpon>
+    <Compile Include="CustomView\AwesomeLabel.cs" />
+    <Compile Include="CustomView\ColorButton.cs" />
+    <Compile Include="CustomView\EmailValidation.cs" />
+    <Compile Include="CustomView\FontAwesome.cs" />
+    <Compile Include="HomePage\DetailHomepage.xaml.cs">
+      <DependentUpon>DetailHomepage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Data1\IRestService.cs" />
+    <Compile Include="HomePage\Homepage.xaml.cs">
+      <DependentUpon>Homepage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage\Homepage1.xaml.cs">
+      <DependentUpon>Homepage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage\HomepageModelView.cs" />
+    <Compile Include="Loginpage\IRestService.cs" />
+    <Compile Include="Loginpage\LoginManager.cs" />
+    <Compile Include="Loginpage\LoginResponse.cs" />
+    <Compile Include="Loginpage\LoginViewModel.cs" />
+    <Compile Include="Loginpage\RegistrationDetailDatabase.cs" />
+    <Compile Include="Loginpage\RestService.cs" />
+    <Compile Include="Loginpage\UserDetailsResponseData.cs" />
+    <Compile Include="RegisterPage\DatabaseManager.cs" />
+    <Compile Include="RegisterPage\IRestServices.cs" />
+    <Compile Include="RegisterPage\RegistrationResponse.cs" />
+    <Compile Include="RegisterPage\RestServices.cs" />
     <Compile Include="ISQLite.cs" />
-    <Compile Include="LoginViewModel.cs" />
-    <Compile Include="LoginPage.xaml.cs">
+    <Compile Include="Loginpage\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Data1\ResponseData.cs" />
-    <Compile Include="RegistrationDetailDatabase.cs" />
-    <Compile Include="RoundedButton.cs" />
+    <Compile Include="RegisterPage\Register.xaml.cs">
+      <DependentUpon>Register.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomView\RoundedButton.cs" />
+    <Compile Include="RegisterPage\RegisterViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -118,18 +134,35 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="LoginPage.xaml">
+    <EmbeddedResource Include="RegisterPage\Register.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="HomePage.xaml">
+    <EmbeddedResource Include="Loginpage\LoginPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="HomePage\Homepage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HomePage\DetailHomepage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HomePage\Homepage1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

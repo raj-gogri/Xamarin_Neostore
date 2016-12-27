@@ -7,8 +7,8 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="6f990a3e-b50b-42b5-beba-35c42d5746a1" Publisher="CN=user" Version="1.0.0.0" ProcessorArchitecture="neutral" />
-  <mp:PhoneIdentity PhoneProductId="6f990a3e-b50b-42b5-beba-35c42d5746a1" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="5a9a548f-d0d6-4c3d-a73c-e2a4e8bca639" Publisher="CN=user" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <mp:PhoneIdentity PhoneProductId="5a9a548f-d0d6-4c3d-a73c-e2a4e8bca639" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>NeoStore.WinPhone</DisplayName>
     <PublisherDisplayName>user</PublisherDisplayName>
@@ -38,7 +38,7 @@
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Professional 2015" />
     <build:Item Name="OperatingSystem" Version="10.0.14393.0 (rs1_release.160715-1616)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25431.1" />
-    <build:Item Name="ProjectGUID" Value="{ACF3F90C-9BE1-42E6-AB98-A804E7D4981E}" />
+    <build:Item Name="ProjectGUID" Value="{BEDFDEE6-3047-44E6-9C26-0B422F7F0243}" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.81.Build.Tasks.dll" Version="14.0.22705.1" />
     <build:Item Name="MakePri.exe" Version="6.3.9600.17336 (winblue.150226-1500)" />
   </build:Metadata>

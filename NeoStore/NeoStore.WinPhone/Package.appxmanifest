@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
 
-  <Identity Name="6f990a3e-b50b-42b5-beba-35c42d5746a1"
+  <Identity Name="5a9a548f-d0d6-4c3d-a73c-e2a4e8bca639"
             Publisher="CN=user"
             Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="6f990a3e-b50b-42b5-beba-35c42d5746a1" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="5a9a548f-d0d6-4c3d-a73c-e2a4e8bca639" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>NeoStore.WinPhone</DisplayName>

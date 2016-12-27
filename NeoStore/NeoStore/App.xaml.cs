@@ -1,30 +1,38 @@
-﻿using NeoStore.Data;
+﻿using NeoStore.HomePage;
+using NeoStore.Loginpage;
+using NeoStore.RegisterPage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+
 using Xamarin.Forms;
-using Plugin.Connectivity;
 
 namespace NeoStore
 {
     public partial class App : Application
     {
-        public static bool IsUserLoggedIn { get; set; }
-        public static LoginManager Loginmanager { get; set; }
-        static RegistrationDetailDatabase database;
+        public static DatabaseManager dbManager { get; private set; }
+        public static UserDetailsResponseData UserLoggedInDetails { get; set; }
+        public static RegistrationDetailDatabase database;
         public App()
         {
             InitializeComponent();
-            Loginmanager = new LoginManager(new RestService());
-            //if (!IsUserLoggedIn) {
-            //    MainPage = new LoginPage(); }
-            //else {
-                MainPage = new NavigationPage(new MainPage()); 
-            //MainPage =new MainPage();
+            UserLoggedInDetails = App.Database.GetItems().FirstOrDefault();
+            dbManager = new DatabaseManager(new RestServices());
+            if (UserLoggedInDetails == null)
+            {
+                MainPage = new NavigationPage(new LoginPage());
+            }
+            else
+            {
+                MainPage = new HomePage.Homepage();
+            }
         }
-        public static RegistrationDetailDatabase Database {
-            get {
+        public static RegistrationDetailDatabase Database
+        {
+            get
+            {
                 if (database == null)
                 {
                     database = new RegistrationDetailDatabase();
@@ -32,22 +40,10 @@ namespace NeoStore
                 return database;
             }
         }
-        public void ShowMainPage()
-        {
-            MainPage = new LoginPage();
-        }
 
-        //private  void Current_ConnectivityChanged(object sender, Plugin.Connectivity.Abstractions.ConnectivityChangedEventArgs e)
-        //{
-        //    if (!e.IsConnected)
-        //    {
-        //        MessagingCenter.Send<App, string>(this,"InternetConnection","No internet Connectivity");
-        //    }
-        //}
         protected override void OnStart()
         {
             // Handle when your app starts
-
         }
 
         protected override void OnSleep()
@@ -59,6 +55,5 @@ namespace NeoStore
         {
             // Handle when your app resumes
         }
-
     }
 }

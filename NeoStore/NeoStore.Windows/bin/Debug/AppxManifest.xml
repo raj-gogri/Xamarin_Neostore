@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="1770b9e3-17ae-42f8-a747-cb70c3f1d4d2" Publisher="CN=user" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <Identity Name="d3b5f1d5-3f8a-4b9f-a8e5-e7f84d97df6d" Publisher="CN=user" Version="1.0.0.0" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>NeoStore.Windows</DisplayName>
     <PublisherDisplayName>user</PublisherDisplayName>
@@ -36,7 +36,7 @@
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Professional 2015" />
     <build:Item Name="OperatingSystem" Version="10.0.14393.0 (rs1_release.160715-1616)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25431.1" />
-    <build:Item Name="ProjectGUID" Value="{E79BE772-E611-4A96-BD57-081FBE8A8295}" />
+    <build:Item Name="ProjectGUID" Value="{8D5279B7-6B62-4BD8-AD1C-63FB88D030FA}" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.81.Build.Tasks.dll" Version="14.0.22705.1" />
     <build:Item Name="MakePri.exe" Version="6.3.9600.17336 (winblue.150226-1500)" />
   </build:Metadata>
