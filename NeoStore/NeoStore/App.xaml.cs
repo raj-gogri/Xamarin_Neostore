@@ -1,10 +1,7 @@
-﻿using NeoStore.HomePage;
-using NeoStore.Loginpage;
+﻿using NeoStore.Loginpage;
+using NeoStore.Products;
 using NeoStore.RegisterPage;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 using Xamarin.Forms;
 
@@ -18,11 +15,13 @@ namespace NeoStore
         public App()
         {
             InitializeComponent();
+
             UserLoggedInDetails = App.Database.GetItems().FirstOrDefault();
             dbManager = new DatabaseManager(new RestServices());
             if (UserLoggedInDetails == null)
             {
-                MainPage = new NavigationPage(new LoginPage());
+                //MainPage = new NavigationPage(new LoginPage());
+                MainPage = new Product_List_Page();
             }
             else
             {
