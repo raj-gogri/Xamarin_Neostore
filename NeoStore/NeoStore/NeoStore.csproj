@@ -67,15 +67,18 @@
     <Compile Include="Loginpage\RegistrationDetailDatabase.cs" />
     <Compile Include="Loginpage\RestService.cs" />
     <Compile Include="Loginpage\UserDetailsResponseData.cs" />
-    <Compile Include="Products\IProduct_List_PageRestService.cs" />
-    <Compile Include="Products\Product_List_Page.xaml.cs">
-      <DependentUpon>Product_List_Page.xaml</DependentUpon>
+    <Compile Include="Products\IProductListPageRestService.cs" />
+    <Compile Include="Products\ProductDetailPage.xaml.cs">
+      <DependentUpon>ProductDetailPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Products\Product_List_PageManager.cs" />
-    <Compile Include="Products\Product_List_PageResponse.cs" />
-    <Compile Include="Products\Product_List_PageResponseData.cs" />
-    <Compile Include="Products\Product_List_PageRestService.cs" />
-    <Compile Include="Products\Product_List_PageViewModel.cs" />
+    <Compile Include="Products\ProductListPage.xaml.cs">
+      <DependentUpon>ProductListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Products\ProductListPageManager.cs" />
+    <Compile Include="Products\ProductListPageResponse.cs" />
+    <Compile Include="Products\ProductListPageResponseData.cs" />
+    <Compile Include="Products\ProductListPageRestService.cs" />
+    <Compile Include="Products\ProductListPageViewModel.cs" />
     <Compile Include="RegisterPage\DatabaseManager.cs" />
     <Compile Include="RegisterPage\IRestServices.cs" />
     <Compile Include="RegisterPage\RegistrationResponse.cs" />
@@ -180,7 +183,12 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Products\ProductDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ForgetPasswordPage\ForgetPasswordpage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -188,7 +196,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Products\Product_List_Page.xaml">
+    <EmbeddedResource Include="Products\ProductListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NeoStore.CustomView;assembly=NeoStore"
+             x:Class="NeoStore.Products.ProductDetailPage"
+             Title="ProductDetailPage">
+  <ScrollView>
+    <StackLayout Orientation="Vertical" BackgroundColor="Gray">
+      <StackLayout BackgroundColor="White">
+        <StackLayout Orientation="Vertical"  Padding="10,15,10,10">
+
+          <Label Text="Binding ProductName"
+                 FontSize="25"
+                 TextColor="Black"/>
+
+          <Label Text="Binding ProducerName"
+                 FontSize="21"
+                 TextColor="Black"/>
+
+          <Label Text="Binding ProducerName"
+                 FontSize="14"
+                 TextColor="Black"/>
+        </StackLayout>
+      </StackLayout>
+
+      <StackLayout Padding="10,10,10,10" BackgroundColor="White">
+        <StackLayout Padding="10,10,10,10" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+          <Label Text="Rs. Cost                                "
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               Font="Medium"
+               FontSize="22"
+               TextColor="Red"/>
+          <local:AwesomeLabel Text="{x:Static local:FontAwesome.FAShare}"
+                  FontFamily="FontAwesomeForms"
+                  VerticalOptions="End"
+                  HorizontalOptions="End"
+                  Font="Medium"
+                  FontSize="24"
+                  TextColor="Gray"/>
+        </StackLayout>
+      <StackLayout Padding="35,0,35,0">
+          <Image Source="three.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+      </StackLayout>
+          <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <Image Source="three.png" WidthRequest="105"/>
+            <Image Source="three.png" WidthRequest="105"/>
+            <Image Source="three.png" WidthRequest="105"/>
+          </StackLayout>
+      </StackLayout>
+
+      <StackLayout BackgroundColor="White" Padding="10,0,10,15">
+        <Label Text="Description"
+                FontSize="24"
+                TextColor="Black"/>
+        <Label Text="Description asdjad jsadjasdn da ddhadhfd  ggsdgadga gdgasgda gydweuid sahdadh hiashd eyurcdn  hdashuda idiasd
+               sjdhahdahd  daducajcbagsc dfsdbf swadjadu hassshdahdi sdadioada ksdaksdioa"
+                FontSize="13"
+                TextColor="Black"/>
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal" Padding="10,10,10,10">
+        <local:ColorButton Text="BUY NOW"
+                Font="Medium"
+                FontSize="22"
+                 HorizontalOptions="FillAndExpand"
+                x:Name="buynow"
+                TextColor="Black"/>
+        <local:RoundedButton Text=" RATE "
+                Font="Medium"
+                FontSize="22"
+                 HorizontalOptions="FillAndExpand"
+                x:Name="rate"
+                TextColor="Black"/>
+      </StackLayout>
+
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

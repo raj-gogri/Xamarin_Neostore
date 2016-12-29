@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NeoStore;assembly=NeoStore"
+             x:Class="NeoStore.Products.ProductListPage"
+             Title="Tables">
+
+  <StackLayout Orientation="Vertical" Padding="10,10,10,10">
+        <ListView x:Name="listview" 
+                  ItemsSource="{Binding productList}" 
+                  RowHeight="120" 
+                  SeparatorColor="Black" 
+                  ItemSelected="ProductSelected">
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Horizontal" Padding="10,10,10,10">
+                                <Image Source="{Binding ProductImages}" 
+                                       WidthRequest="110"/>
+                              
+  <StackLayout Orientation="Vertical" Padding="5,5,0,5">
+                                 <Label Text="{Binding ProductName}" 
+                                        FontSize="21"
+                                        TextColor="Black"
+                                        Font="Bold"/>
+                                 
+                                 <Label Text="{Binding ProducerName}"
+                                        FontSize="12"
+                                        TextColor="Black"/>
+                                 
+                                 <StackLayout Orientation="Horizontal">
+                                   <Label Text="Rs. "
+                                        FontSize="24"
+                                        TextColor="Red"/>
+                                 <Label Text="{Binding Cost}"
+                                        FontSize="24"
+                                        TextColor="Red"/>
+                                   
+                                 <!--Space For Rating Star-->
+                                 </StackLayout>
+                               </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+  </StackLayout>
+</ContentPage>

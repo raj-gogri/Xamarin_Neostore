@@ -77,6 +77,7 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\bin\Debug\Newtonsoft.Json.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\bin\Debug\SQLitePCLRaw.core.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\bin\Debug\NeoStore.pdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\bin\Debug\Plugin.Connectivity.pdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\bin\Debug\Plugin.Connectivity.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\bin\Debug\Plugin.Connectivity.Abstractions.pdb
@@ -87,6 +88,7 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\bin\Debug\SQLite-net.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\obj\Debug\NeoStore.Windows.csprojResolveAssemblyReference.cache
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\obj\Debug\App.g.i.cs
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\obj\Debug\App.g.cs
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\obj\Debug\MainPage.g.i.cs
@@ -114,4 +116,3 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\obj\Debug\Xamarin.Forms.Platform.WinRT.pri.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\obj\Debug\Xamarin.Forms.Platform.WinRT.Tablet.pri.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\obj\Debug\ProjectArchitectures.txt
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Windows\obj\Debug\NeoStore.Windows.csprojResolveAssemblyReference.cache

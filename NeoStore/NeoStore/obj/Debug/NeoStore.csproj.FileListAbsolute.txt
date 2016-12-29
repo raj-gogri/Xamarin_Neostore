@@ -29,6 +29,7 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore\bin\Debug\NeoStore.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\bin\Debug\NeoStore.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\bin\Debug\NeoStore.pdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\bin\Debug\Newtonsoft.Json.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\bin\Debug\Plugin.Connectivity.Abstractions.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\bin\Debug\Plugin.Connectivity.dll
@@ -54,12 +55,11 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.HomePage.Homepage.xaml.g.cs
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.HomePage.DetailHomepage.xaml.g.cs
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.HomePage.Homepage1.xaml.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.Products.ProductDetailPage.xaml.g.cs
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.ForgetPasswordPage.ForgetPasswordpage.xaml.g.cs
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.Products.Product_List_Page.xaml.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.Products.ProductListPage.xaml.g.cs
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.pdb
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.dll.mdb
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\bin\Debug\NeoStore.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.csprojResolveAssemblyReference.cache
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\bin\Debug\NeoStore.dll.mdb
