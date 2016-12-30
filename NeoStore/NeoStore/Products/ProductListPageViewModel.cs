@@ -5,6 +5,7 @@ namespace NeoStore.Products
 {
     class ProductListPageViewModel : INotifyPropertyChanged
     {
+        
         public ProductListPageManager ProductListpageManager { get; set;}
         public ObservableCollection<ProductListPageResponseData> ProductList;
         public ObservableCollection<ProductListPageResponseData> productList
@@ -30,6 +31,7 @@ namespace NeoStore.Products
         private async void GetProductList()
         {
             await ProductListpageManager.ProductListPageTaskAsync(this);
+            
         }        
     }
 }

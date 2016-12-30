@@ -5,7 +5,7 @@ using System;
 namespace NeoStore.Products
 {
     [Table("ProductResponse")]
-    class ProductListPageResponseData
+    public class ProductListPageResponseData
     {
         [PrimaryKey]
         public int id { get; set; }
@@ -37,7 +37,12 @@ namespace NeoStore.Products
         [JsonProperty(PropertyName = "modified")]
         public DateTime Modified { get; set; }
 
+        //[JsonProperty(PropertyName = "product_images")]
+        //public string ProductImages { get; set; }
+
         [JsonProperty(PropertyName = "product_images")]
-        public string ProductImages { get; set; }
+        public ProductImagesList[] ProductImageslist { get; set; }
+
+
     }
 }

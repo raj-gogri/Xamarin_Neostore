@@ -21,7 +21,7 @@ namespace NeoStore
             if (UserLoggedInDetails == null)
             {
                 //MainPage = new NavigationPage(new LoginPage());
-                MainPage = new NavigationPage(new ProductListPage());
+                MainPage = new NavigationPage(new ProductDetailPage());
             }
             else
             {

@@ -17,7 +17,6 @@ namespace NeoStore.Products
         {
             InitializeComponent();
             BindingContext = new ProductListPageViewModel();
-            //var list = new Product_List_PageViewModel();
             CrossConnectivity.Current.ConnectivityChanged += Current_ConnectivityChanged;
         }                
         private async void Current_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)

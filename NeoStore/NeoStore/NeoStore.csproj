@@ -67,10 +67,16 @@
     <Compile Include="Loginpage\RegistrationDetailDatabase.cs" />
     <Compile Include="Loginpage\RestService.cs" />
     <Compile Include="Loginpage\UserDetailsResponseData.cs" />
+    <Compile Include="Products\IProductDetailPageRestService.cs" />
     <Compile Include="Products\IProductListPageRestService.cs" />
     <Compile Include="Products\ProductDetailPage.xaml.cs">
       <DependentUpon>ProductDetailPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Products\ProductDetailPageManager.cs" />
+    <Compile Include="Products\ProductDetailPageResponse.cs" />
+    <Compile Include="Products\ProductDetailPageViewModel.cs" />
+    <Compile Include="Products\ProductDetailsPageRestService.cs" />
+    <Compile Include="Products\ProductImagesList.cs" />
     <Compile Include="Products\ProductListPage.xaml.cs">
       <DependentUpon>ProductListPage.xaml</DependentUpon>
     </Compile>
