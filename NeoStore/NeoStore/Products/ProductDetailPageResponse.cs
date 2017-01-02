@@ -4,6 +4,6 @@
     {
         public int status { get; set; }
 
-        public ProductListPageResponseData data { get; set; }
+        public ProductDetailsPageResponseData data { get; set; }
     }
 }

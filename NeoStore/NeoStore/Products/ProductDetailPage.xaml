@@ -2,8 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:NeoStore.CustomView;assembly=NeoStore"
-             x:Class="NeoStore.Products.ProductDetailPage"
-             Title="{Binding ProductName}">
+             xmlns:ViewModel="clr-namespace:NeoStore.Products;assembly=NeoStore"
+             x:Class="NeoStore.Products.ProductDetailPage" >
   
 <StackLayout x:Name="stck">
   <ScrollView Padding="0,0,0,10"  >
@@ -13,7 +13,8 @@
 
           <Label Text="{Binding ProductName}"
                  FontSize="25"
-                 TextColor="Black"/>
+                 TextColor="Black"
+          x:Name="lbl"/>
 
           <Label Text="Binding CategoryName"
                  FontSize="21"
@@ -36,7 +37,7 @@
                Font="Medium"
                FontSize="22"
                TextColor="Red"/>
-          <local:AwesomeLabel Text="{x:Static local:FontAwesome.FAShare}"
+          <local:AwesomeLabel Text="{x:Static local:FontAwesome.FASareIt}"
                   FontFamily="FontAwesomeForms"
                   VerticalOptions="End"
                   HorizontalOptions="End"
@@ -46,11 +47,16 @@
         </StackLayout>
         
       <StackLayout Padding="35,0,35,0">
-          <Image Source="three.jpg" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+          <Image x:Name="MainImage" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
       </StackLayout>
-        <StackLayout x:Name="Imagelist" Orientation="Horizontal"></StackLayout>
-        
-        </StackLayout>
+        <StackLayout>
+        <ScrollView Orientation="Horizontal">
+          <StackLayout Padding="0,10,0,0" x:Name="Imagelist" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" >
+           
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      </StackLayout>
 
       <StackLayout BackgroundColor="White" Padding="10,0,10,15">
         <Label Text="Description"
@@ -66,7 +72,8 @@
     </StackLayout>
   </ScrollView>
 
-  <Grid  BackgroundColor="White" VerticalOptions="End">
+  <StackLayout VerticalOptions="End" BackgroundColor="White" >
+  <Grid  BackgroundColor="White" VerticalOptions="End" HeightRequest="60" Padding="10,10,10,10">
        <Grid.RowDefinitions>
          <RowDefinition Height="*" />
        </Grid.RowDefinitions>
@@ -83,7 +90,7 @@
                 x:Name="buynow"
                 TextColor="White"
                  Grid.Row="0" Grid.Column="0"/>
-        <local:RoundedButton Text=" RATE "
+        <local:GrayButton Text=" RATE "
                 Font="Medium"
                 FontSize="22"
                  HorizontalOptions="FillAndExpand"
@@ -91,6 +98,7 @@
                 TextColor="Black"
                 Grid.Row="0" Grid.Column="1"/>
   </Grid>
+  </StackLayout>
 </StackLayout>
 
 </ContentPage>

@@ -2281,11 +2281,12 @@ containing a value of this type.
         public static int mr_ic_play_light=0x7f020062;
         public static int mr_ic_settings_dark=0x7f020063;
         public static int mr_ic_settings_light=0x7f020064;
-        public static int notification_template_icon_bg=0x7f020069;
+        public static int notification_template_icon_bg=0x7f02006a;
         public static int one=0x7f020065;
-        public static int rounded_corner_shape=0x7f020066;
-        public static int three=0x7f020067;
-        public static int two=0x7f020068;
+        public static int rounded_button_for_productdetails=0x7f020066;
+        public static int rounded_corner_shape=0x7f020067;
+        public static int three=0x7f020068;
+        public static int two=0x7f020069;
     }
     public static final class id {
         public static int action0=0x7f0b0074;

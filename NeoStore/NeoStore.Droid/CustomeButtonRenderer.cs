@@ -12,24 +12,6 @@ namespace NeoStore.Droid
     {
         protected override void OnElementChanged(ElementChangedEventArgs<Button> e)
         {
-            //base.OnElementChanged(e);
-            //if (e.NewElement!=null)
-            //{
-
-            //}
-            //else if (e.OldElement != null)
-            //{
-
-            //}
-
-            //if (Control != null)
-            //{
-            //    GradientDrawable gradientDrwable = new GradientDrawable();
-            //    gradientDrwable.SetShape(ShapeType.Rectangle);
-            //    gradientDrwable.SetCornerRadius(20f);
-            //    gradientDrwable.SetColor(Element.BackgroundColor.ToAndroid());
-            //    Control.SetBackgroundDrawable(gradientDrwable);
-            //}
             base.OnElementChanged(e);
             var font = Typeface.CreateFromAsset(Xamarin.Forms.Forms.Context.ApplicationContext.Assets, "fontawesome-webfont.ttf");
             Control.Typeface = font;

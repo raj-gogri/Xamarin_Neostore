@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace NeoStore.Products
 {
-     class ProductListPageManager
+     public class ProductListPageManager
     {
         IProductListPageRestService restService;
 

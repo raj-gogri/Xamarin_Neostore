@@ -42,6 +42,7 @@
     <Compile Include="CustomView\ColorButton.cs" />
     <Compile Include="CustomView\EmailValidation.cs" />
     <Compile Include="CustomView\FontAwesome.cs" />
+    <Compile Include="CustomView\GrayButton.cs" />
     <Compile Include="ForgetPasswordPage\ForgetPasswordManager.cs" />
     <Compile Include="ForgetPasswordPage\ForgetPasswordpage.xaml.cs">
       <DependentUpon>ForgetPasswordpage.xaml</DependentUpon>
@@ -75,6 +76,7 @@
     <Compile Include="Products\ProductDetailPageManager.cs" />
     <Compile Include="Products\ProductDetailPageResponse.cs" />
     <Compile Include="Products\ProductDetailPageViewModel.cs" />
+    <Compile Include="Products\ProductDetailsPageResponseData.cs" />
     <Compile Include="Products\ProductDetailsPageRestService.cs" />
     <Compile Include="Products\ProductImagesList.cs" />
     <Compile Include="Products\ProductListPage.xaml.cs">

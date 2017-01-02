@@ -1,7 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="c:\users\user\documents\visual studio 2015\projects\xamarin-neostore\neostore\neostore.windows\obj\debug\intermediatexaml\neostore.windows.exe" HashGuid="ddcee48c-8b70-b0b8-377b-0349d86cadb6" />
-    <ReferenceAssembly PathName="c:\users\user\documents\visual studio 2015\projects\xamarin-neostore\neostore\neostore\bin\debug\neostore.dll" HashGuid="975b0c8c-9bf9-8987-c26b-de32617cbef9" />
+    <ReferenceAssembly PathName="c:\users\user\documents\visual studio 2015\projects\xamarin-neostore\neostore\neostore\bin\debug\neostore.dll" HashGuid="4e8c9702-6256-da3a-e8e2-3dbc88934c5a" />
     <ReferenceAssembly PathName="c:\users\user\documents\visual studio 2015\projects\xamarin-neostore\packages\xam.plugin.connectivity.2.2.12\lib\win8\plugin.connectivity.abstractions.dll" HashGuid="4e4bd94f-773b-8622-55aa-d505d3ad2f69" />
     <ReferenceAssembly PathName="c:\users\user\documents\visual studio 2015\projects\xamarin-neostore\packages\xam.plugin.connectivity.2.2.12\lib\win8\plugin.connectivity.dll" HashGuid="6d6107c2-4468-a956-921d-2d37819a5088" />
     <ReferenceAssembly PathName="c:\users\user\documents\visual studio 2015\projects\xamarin-neostore\packages\xamarin.forms.2.0.0.6482\lib\win81\xamarin.forms.core.dll" HashGuid="c8a30eb8-5ae8-352d-b94f-7c913a7557ba" />

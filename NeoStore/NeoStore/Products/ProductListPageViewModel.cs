@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 namespace NeoStore.Products
 {
-    class ProductListPageViewModel : INotifyPropertyChanged
+    public class ProductListPageViewModel : INotifyPropertyChanged
     {
         
         public ProductListPageManager ProductListpageManager { get; set;}

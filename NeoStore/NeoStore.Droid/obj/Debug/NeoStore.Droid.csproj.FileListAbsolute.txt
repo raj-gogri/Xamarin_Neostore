@@ -53,8 +53,8 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\bin\Debug\NeoStore.Droid.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\bin\Debug\NeoStore.Droid.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\bin\Debug\NeoStore.Droid.pdb
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\bin\Debug\NeoStore.Droid.apk
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\bin\Debug\NeoStore.Droid-Signed.apk
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\bin\Debug\com.neo.store.apk
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\bin\Debug\com.neo.store-Signed.apk
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\bin\Debug\FormsViewGroup.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\bin\Debug\NeoStore.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\bin\Debug\Plugin.Connectivity.Abstractions.dll
@@ -94,8 +94,7 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\NeoStore.Droid.csprojResolveAssemblyReference.cache
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\NeoStore.Droid.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\NeoStore.Droid.pdb
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\bin\NeoStore.Droid.apk
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\res\drawable\icon.png
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\bin\com.neo.store.apk
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\res\drawable-hdpi\icon.png
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\res\drawable-xhdpi\icon.png
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
@@ -108,6 +107,8 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\res\drawable\three.jpg
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\res\drawable\rounded_corner_shape.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\res\drawable\color_btn.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\res\drawable\rounded_button_for_productdetails.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\res\drawable\icon.png
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\R.cs.flag
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\uploadflags.txt
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\bin\Debug\NeoStore.Droid.dll.mdb

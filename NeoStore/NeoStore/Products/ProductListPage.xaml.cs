@@ -13,8 +13,14 @@ namespace NeoStore.Products
 {
     public partial class ProductListPage : ContentPage
     {
+        public static int pd;
         public ProductListPage()
         {
+            //ActivityIndicator ai = new ActivityIndicator();
+            //ai.IsRunning = true;
+            //ai.IsEnabled = true;
+            //ai.BindingContext = IsBusy;
+
             InitializeComponent();
             BindingContext = new ProductListPageViewModel();
             CrossConnectivity.Current.ConnectivityChanged += Current_ConnectivityChanged;
@@ -29,9 +35,10 @@ namespace NeoStore.Products
 
         void ProductSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var productselected = (ProductListPageResponseData)e.SelectedItem;
-            var selectedpage = new ProductDetailPage();
-            selectedpage.BindingContext = productselected;
+            var selecteditem = (ProductListPageResponseData)e.SelectedItem;
+            pd = selecteditem.id;
+            var selectedpage = new ProductDetailPage { Title=selecteditem.ProductName };           
+            selectedpage.BindingContext = selecteditem;
             Navigation.PushAsync(selectedpage);
         }
     }

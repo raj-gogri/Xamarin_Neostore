@@ -15,20 +15,15 @@ namespace NeoStore.Products
         }
         public async Task ProductDetailPageTaskAsync(ProductDetailPageViewModel productDetailPageViewModel)
         {
-            
             var items = await restservice.ProductDetailsPageTodoAsync(productDetailPageViewModel);
             if (items != null)
             {
                 productDetailPageViewModel.productdetails = new System.Collections.ObjectModel.ObservableCollection<ProductImagesList>();
-
                 foreach (var Product in items.data.ProductImageslist)
                 {
                     productDetailPageViewModel.productdetails.Add(Product);
-                    
                     MessagingCenter.Send<ProductDetailPageManager, ProductImagesList>(this, "Images", Product);
                 }
-
-                
             }
         }
     }

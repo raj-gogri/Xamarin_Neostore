@@ -18,10 +18,11 @@ namespace NeoStore.Products
         {
             ProductDetailPageResponse Items = null;
             var uri = new Uri("http://staging.php-dev.in:8844/trainingapp/api/products/getDetail");
+            var id = ProductListPage.pd;
             try
             {
                 var json = JsonConvert.SerializeObject(item);
-                HttpResponseMessage response = await client.GetAsync(uri + "?product_id=1");
+                HttpResponseMessage response = await client.GetAsync(uri + "?product_id=" + id );
                 var result = await response.Content.ReadAsStringAsync();
                 Items = JsonConvert.DeserializeObject<ProductDetailPageResponse>(result);
                 if (Items.status == 200)

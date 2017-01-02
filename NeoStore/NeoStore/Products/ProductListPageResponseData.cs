@@ -37,11 +37,8 @@ namespace NeoStore.Products
         [JsonProperty(PropertyName = "modified")]
         public DateTime Modified { get; set; }
 
-        //[JsonProperty(PropertyName = "product_images")]
-        //public string ProductImages { get; set; }
-
         [JsonProperty(PropertyName = "product_images")]
-        public ProductImagesList[] ProductImageslist { get; set; }
+        public string ProductImages { get; set; }
 
 
     }

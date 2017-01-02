@@ -15,17 +15,16 @@ namespace NeoStore
         public App()
         {
             InitializeComponent();
-
             UserLoggedInDetails = App.Database.GetItems().FirstOrDefault();
             dbManager = new DatabaseManager(new RestServices());
             if (UserLoggedInDetails == null)
             {
                 //MainPage = new NavigationPage(new LoginPage());
-                MainPage = new NavigationPage(new ProductDetailPage());
+                MainPage = new NavigationPage(new LoginPage());
             }
             else
             {
-                MainPage = new HomePage.Homepage();
+                MainPage = new NavigationPage(new ProductListPage());
             }
         }
         public static RegistrationDetailDatabase Database
