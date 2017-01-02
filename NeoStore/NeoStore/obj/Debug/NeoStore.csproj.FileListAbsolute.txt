@@ -63,3 +63,5 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.pdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\bin\Debug\NeoStore.dll.mdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\obj\Debug\NeoStore.dll.mdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\bin\Debug\NeoStore.dll.mdb
