@@ -20,9 +20,28 @@
                  FontSize="21"
                  TextColor="Black"/>
 
+          <StackLayout Orientation="Horizontal">
           <Label Text="{Binding ProducerName}"
                  FontSize="14"
                  TextColor="Black"/>
+        
+        <StackLayout Orientation="Horizontal">
+          
+                      <Label Text="Rating:"
+                             HorizontalOptions="End"
+                             FontSize="12"
+                             TextColor="Black"/>
+                      <Label Text="{Binding Rating}"
+                             HorizontalOptions="End"
+                             FontSize="12"
+                             TextColor="Black"/>
+                      <Label Text="/5"
+                             HorizontalOptions="End"
+                             FontSize="12"
+                             TextColor="Black"/>
+        </StackLayout>
+          
+          </StackLayout>
         </StackLayout>
       </StackLayout>
       
@@ -47,7 +66,7 @@
         </StackLayout>
         
       <StackLayout Padding="35,0,35,0">
-          <Image x:Name="MainImage" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+          <Image x:Name="MainImage" Source="{Binding ProductImages}" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
       </StackLayout>
         <StackLayout>
         <ScrollView Orientation="Horizontal">

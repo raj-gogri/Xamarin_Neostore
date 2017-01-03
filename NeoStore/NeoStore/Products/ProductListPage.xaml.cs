@@ -16,14 +16,9 @@ namespace NeoStore.Products
         public static int pd;
         public ProductListPage()
         {
-            //ActivityIndicator ai = new ActivityIndicator();
-            //ai.IsRunning = true;
-            //ai.IsEnabled = true;
-            //ai.BindingContext = IsBusy;
-
-            InitializeComponent();
-            BindingContext = new ProductListPageViewModel();
             CrossConnectivity.Current.ConnectivityChanged += Current_ConnectivityChanged;
+            InitializeComponent();           
+            BindingContext = new ProductListPageViewModel();
         }                
         private async void Current_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
         {

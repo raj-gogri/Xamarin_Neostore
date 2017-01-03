@@ -28,17 +28,34 @@
                   <Label Text="{Binding ProducerName}"
                          FontSize="12"
                          TextColor="Black"/>
-
-                  <StackLayout Orientation="Horizontal">
-                    <Label Text="Rs. "
-                         FontSize="24"
-                         TextColor="Red"/>
-                    <Label Text="{Binding Cost}"
-                           FontSize="24"
-                           TextColor="Red"/>
-
-                    <!--Space For Rating Star-->
+                  
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+                      <Label Text="Rs. "
+                             FontSize="24"
+                             TextColor="Red"/>
+                      <Label Text="{Binding Cost}"
+                             FontSize="24"
+                             TextColor="Red"/>
+                      <StackLayout Orientation="Horizontal">
+                        <Label Text="Rating:"
+                               VerticalOptions="Center"
+                               HorizontalOptions="End"
+                               FontSize="12"
+                               TextColor="Black"/>
+                        <Label Text="{Binding Rating}"
+                               VerticalOptions="Center"
+                               HorizontalOptions="End"
+                                 FontSize="12"
+                                 TextColor="Black"/>
+                        <Label Text="/5"
+                               VerticalOptions="Center"
+                               HorizontalOptions="End"
+                               FontSize="12"
+                               TextColor="Black"/>
+                      </StackLayout>
+                      
                   </StackLayout>
+                  
                 </StackLayout>
               </StackLayout>
             </StackLayout>
@@ -46,5 +63,7 @@
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
+    <ActivityIndicator BindingContext="{x:Reference listview}" IsRunning="{Binding IsLoading}"
+                       IsVisible="{Binding IsLoading}"/>
   </StackLayout>
 </ContentPage>

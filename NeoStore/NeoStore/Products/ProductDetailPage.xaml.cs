@@ -21,9 +21,17 @@ namespace NeoStore.Products
             MessagingCenter.Subscribe<ProductDetailPageManager, ProductImagesList>(this, "Images", (sender, Product) => {
                 var image = new Image { Source =Product.ProductImages};
                 image.WidthRequest = 110;
-                Imagelist.Children.Add(image);                                         
+                Imagelist.Children.Add(image);
+                var tapGestureRecognizer = new TapGestureRecognizer {
+                 Command=new Command(
+                     () => {
+                         MainImage.Source = image.Source;
+                     })
+                };
+                image.GestureRecognizers.Add(tapGestureRecognizer);
+                //MainImage.Source = image.Source;                                
             });
-           
+
         }
         private async void Current_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
         {

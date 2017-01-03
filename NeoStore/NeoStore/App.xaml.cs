@@ -15,16 +15,27 @@ namespace NeoStore
         public App()
         {
             InitializeComponent();
+            ActivityIndicator indicator = new ActivityIndicator
+            {
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                Color = Color.Black,
+                IsVisible = true,
+                IsRunning=true
+            };
             UserLoggedInDetails = App.Database.GetItems().FirstOrDefault();
             dbManager = new DatabaseManager(new RestServices());
             if (UserLoggedInDetails == null)
             {
-                //MainPage = new NavigationPage(new LoginPage());
+                indicator.IsVisible = false;
+                indicator.IsRunning = false;
                 MainPage = new NavigationPage(new LoginPage());
             }
             else
             {
                 MainPage = new NavigationPage(new ProductListPage());
+                indicator.IsVisible = false;
+                indicator.IsRunning = false;
             }
         }
         public static RegistrationDetailDatabase Database

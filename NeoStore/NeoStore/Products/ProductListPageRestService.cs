@@ -23,7 +23,7 @@ namespace NeoStore.Products
             try
             {
                 var json = JsonConvert.SerializeObject(item);
-                HttpResponseMessage response = await client.GetAsync(uri+ "?product_category_id=1");
+                HttpResponseMessage response = await client.GetAsync(uri+ "?product_category_id=3");
                 var result = await response.Content.ReadAsStringAsync();
                 Items = JsonConvert.DeserializeObject<ProductListPageResponse>(result);
                 if (Items.status == 200)

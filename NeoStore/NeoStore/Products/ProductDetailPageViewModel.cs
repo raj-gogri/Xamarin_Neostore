@@ -8,10 +8,34 @@ namespace NeoStore.Products
 {
     class ProductDetailPageViewModel: INotifyPropertyChanged
     {
+
         private string productname;
         private string producername;
         private int cost;
         public string description;
+        private bool isLoading;
+        public bool IsLoading
+        {
+            get
+            {
+                return this.isLoading;
+            }
+
+            set
+            {
+                this.isLoading = value;
+                RaisePropertyChanged("IsLoading");
+            }
+        }
+
+        private void RaisePropertyChanged(string v)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(v));
+            }
+        }
+
         public string ProductName
         {
             get { return productname; }
