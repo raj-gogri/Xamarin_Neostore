@@ -68,6 +68,9 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\NeoStore.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\Plugin.Connectivity.Abstractions.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\Plugin.Connectivity.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\Rg.Plugins.Popup.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\Rg.Plugins.Popup.Platform.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\Rg.Plugins.Popup.WinPhone.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\Xamarin.Forms.Core.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\Xamarin.Forms.Platform.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\Xamarin.Forms.Platform.WinRT.dll

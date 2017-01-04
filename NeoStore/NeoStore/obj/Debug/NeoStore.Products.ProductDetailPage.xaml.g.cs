@@ -23,6 +23,9 @@ namespace NeoStore.Products {
         private global::Xamarin.Forms.Label lbl;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout DetailsRating;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Image MainImage;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -39,6 +42,7 @@ namespace NeoStore.Products {
             this.LoadFromXaml(typeof(ProductDetailPage));
             stck = this.FindByName<global::Xamarin.Forms.StackLayout>("stck");
             lbl = this.FindByName<global::Xamarin.Forms.Label>("lbl");
+            DetailsRating = this.FindByName<global::Xamarin.Forms.StackLayout>("DetailsRating");
             MainImage = this.FindByName<global::Xamarin.Forms.Image>("MainImage");
             Imagelist = this.FindByName<global::Xamarin.Forms.StackLayout>("Imagelist");
             buynow = this.FindByName<global::NeoStore.CustomView.ColorButton>("buynow");

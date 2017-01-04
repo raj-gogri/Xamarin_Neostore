@@ -8,7 +8,7 @@ namespace NeoStore.Products
 {
     class ProductDetailPageViewModel: INotifyPropertyChanged
     {
-
+        public static ProductDetailPageResponse rp { get; set; }
         private string productname;
         private string producername;
         private int cost;
@@ -41,7 +41,7 @@ namespace NeoStore.Products
             get { return productname; }
             set
             {
-                productname = value;
+                productname = rp.data.ProductName; 
                     PropertyChangedEventHandler handler = PropertyChanged;
                     if (handler != null)
                     {
@@ -54,7 +54,7 @@ namespace NeoStore.Products
             get { return producername; }
             set
             {
-                producername = value;
+                producername = rp.data.ProducerName;
                     PropertyChangedEventHandler handler = PropertyChanged;
                     if (handler != null)
                     {
@@ -67,7 +67,7 @@ namespace NeoStore.Products
             get { return cost; }
             set
             {
-                cost = value;
+                cost = rp.data.Cost;
                     PropertyChangedEventHandler handler = PropertyChanged;
                     if (handler != null)
                     {
@@ -80,7 +80,7 @@ namespace NeoStore.Products
             get { return description; }
             set
             {
-                description = value;
+                description = rp.data.Description;
                     PropertyChangedEventHandler handler = PropertyChanged;
                     if (handler != null)
                     {

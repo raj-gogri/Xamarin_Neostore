@@ -1,4 +1,5 @@
-﻿using Plugin.Connectivity;
+﻿using NeoStore.CustomView;
+using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,18 @@ namespace NeoStore.Products
             CrossConnectivity.Current.ConnectivityChanged += Current_ConnectivityChanged;
             InitializeComponent();           
             BindingContext = new ProductListPageViewModel();
+            MessagingCenter.Subscribe<ProductListPageManager,int>(this, "StarRating", (sender, Rating)=> 
+            {
+                for (int i=0; i<Rating; i++)
+                {
+                    
+                    var star = new Label { Text = FontAwesome.FAStar};
+                    star.TextColor = Color.Yellow;
+                    //starrating.Childern.Add(star);
+                }
+            });
+           
+           
         }                
         private async void Current_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
         {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace NeoStore.Products
 {
@@ -17,10 +18,12 @@ namespace NeoStore.Products
             if (items != null)
             {
                 productListPageViewModel.productList = new System.Collections.ObjectModel.ObservableCollection<ProductListPageResponseData>();
-
+               
                 foreach (var Product in items.data)
                 {
                     productListPageViewModel.productList.Add(Product);
+                    var Rating = Product.Rating;
+                    MessagingCenter.Send<ProductListPageManager, int>(this,"StarRating", Rating);
                 }
             }
         }

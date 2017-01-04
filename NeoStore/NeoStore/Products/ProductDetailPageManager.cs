@@ -18,12 +18,15 @@ namespace NeoStore.Products
             var items = await restservice.ProductDetailsPageTodoAsync(productDetailPageViewModel);
             if (items != null)
             {
+                //ProductDetailPageViewModel.rp = items;
+                int rating = items.data.Rating;
                 productDetailPageViewModel.productdetails = new System.Collections.ObjectModel.ObservableCollection<ProductImagesList>();
                 foreach (var Product in items.data.ProductImageslist)
                 {
                     productDetailPageViewModel.productdetails.Add(Product);
                     MessagingCenter.Send<ProductDetailPageManager, ProductImagesList>(this, "Images", Product);
                 }
+                MessagingCenter.Send<ProductDetailPageManager, int>(this, "ProductDetailRating", rating);
             }
         }
     }

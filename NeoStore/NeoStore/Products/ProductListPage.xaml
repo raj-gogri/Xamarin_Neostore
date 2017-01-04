@@ -28,34 +28,19 @@
                   <Label Text="{Binding ProducerName}"
                          FontSize="12"
                          TextColor="Black"/>
-                  
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
-                      <Label Text="Rs. "
-                             FontSize="24"
-                             TextColor="Red"/>
-                      <Label Text="{Binding Cost}"
-                             FontSize="24"
-                             TextColor="Red"/>
-                      <StackLayout Orientation="Horizontal">
-                        <Label Text="Rating:"
-                               VerticalOptions="Center"
-                               HorizontalOptions="End"
-                               FontSize="12"
-                               TextColor="Black"/>
-                        <Label Text="{Binding Rating}"
-                               VerticalOptions="Center"
-                               HorizontalOptions="End"
-                                 FontSize="12"
-                                 TextColor="Black"/>
-                        <Label Text="/5"
-                               VerticalOptions="Center"
-                               HorizontalOptions="End"
-                               FontSize="12"
-                               TextColor="Black"/>
-                      </StackLayout>
-                      
+
+                  <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+                    <Label Text="Rs. "
+                           FontSize="24"
+                           TextColor="Red"/>
+                    <Label Text="{Binding Cost}"
+                           FontSize="24"
+                           TextColor="Red"/>
+                    <StackLayout x:Name="starrating" Orientation="Horizontal">
+
+                    </StackLayout>
+
                   </StackLayout>
-                  
                 </StackLayout>
               </StackLayout>
             </StackLayout>

@@ -20,27 +20,14 @@
                  FontSize="21"
                  TextColor="Black"/>
 
-          <StackLayout Orientation="Horizontal">
-          <Label Text="{Binding ProducerName}"
-                 FontSize="14"
-                 TextColor="Black"/>
-        
-        <StackLayout Orientation="Horizontal">
-          
-                      <Label Text="Rating:"
-                             HorizontalOptions="End"
-                             FontSize="12"
-                             TextColor="Black"/>
-                      <Label Text="{Binding Rating}"
-                             HorizontalOptions="End"
-                             FontSize="12"
-                             TextColor="Black"/>
-                      <Label Text="/5"
-                             HorizontalOptions="End"
-                             FontSize="12"
-                             TextColor="Black"/>
-        </StackLayout>
-          
+          <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+            <Label Text="{Binding ProducerName}"
+                   FontSize="14"
+                   TextColor="Black"/>
+
+            <StackLayout x:Name="DetailsRating" Orientation="Horizontal" VerticalOptions="EndAndExpand">
+            </StackLayout>
+
           </StackLayout>
         </StackLayout>
       </StackLayout>
@@ -69,12 +56,12 @@
           <Image x:Name="MainImage" Source="{Binding ProductImages}" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
       </StackLayout>
         <StackLayout>
-        <ScrollView Orientation="Horizontal">
-          <StackLayout Padding="0,10,0,0" x:Name="Imagelist" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" >
-           
-          </StackLayout>
-        </ScrollView>
-      </StackLayout>
+          <ScrollView Orientation="Horizontal">
+            <StackLayout Padding="0,10,0,0" x:Name="Imagelist" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" >
+
+            </StackLayout>
+          </ScrollView>
+        </StackLayout>
       </StackLayout>
 
       <StackLayout BackgroundColor="White" Padding="10,0,10,15">
@@ -106,7 +93,7 @@
                 Font="Medium"
                 FontSize="22"
                  HorizontalOptions="FillAndExpand"
-                x:Name="buynow"
+                       x:Name="buynow"
                 TextColor="White"
                  Grid.Row="0" Grid.Column="0"/>
         <local:GrayButton Text=" RATE "
