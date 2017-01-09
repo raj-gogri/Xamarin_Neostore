@@ -1,18 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-           x:Class="NeoStore.Products.RatingPage" Padding="20,20,20,20">
-  
-  
-  <ContentPage.Content>
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-      <StackLayout Orientation="Horizontal">
-        <Label Text="Name:" FontSize="Medium" HorizontalOptions="FillAndExpand" />
-        <Label Text="Binding Name" FontSize="Medium" FontAttributes="Bold" />
-      </StackLayout>
-      
-      <Button x:Name="dismissButton" Text="Dismiss"  />
-    </StackLayout>
-  </ContentPage.Content>  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NeoStore.CustomView;assembly=NeoStore"
+             x:Class="NeoStore.Products.RatingPage" Padding="20,20,20,20" BackgroundColor="Transparent">
 
+  <StackLayout>
+    <local:GothamLabelText Text="{Binding ProductName}"
+                           HorizontalOptions="CenterAndExpand"
+                           FontSize="21"
+                           TextColor="Black"
+                           Font="Bold" />
+    
+    <Image x:Name="MainImage"
+           Source="{Binding ProductImages}"
+           VerticalOptions="CenterAndExpand"
+           HorizontalOptions="CenterAndExpand"/>
+    
+    <StackLayout x:Name="DetailsRating"
+                 Orientation="Horizontal"
+                 VerticalOptions="CenterAndExpand"
+                 HorizontalOptions="CenterAndExpand"/>
+    
+    <local:ColorButton Text="BUY NOW"
+                       Font="Medium"
+                       FontSize="22"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="FillAndExpand"
+                       x:Name="buynow"
+                       TextColor="White"/>
+
+  </StackLayout>
 </ContentPage>

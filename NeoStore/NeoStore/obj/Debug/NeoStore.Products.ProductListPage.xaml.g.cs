@@ -20,9 +20,13 @@ namespace NeoStore.Products {
         private global::Xamarin.Forms.ListView listview;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.DataTemplate listview1;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(ProductListPage));
             listview = this.FindByName<global::Xamarin.Forms.ListView>("listview");
+            listview1 = this.FindByName<global::Xamarin.Forms.DataTemplate>("listview1");
         }
     }
 }

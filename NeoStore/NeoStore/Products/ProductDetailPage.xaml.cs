@@ -15,44 +15,32 @@ namespace NeoStore.Products
     {
       
         public ProductDetailPage()
-        {           
-           InitializeComponent();
-             BindingContext = new ProductDetailPageViewModel();
+        {
+            InitializeComponent();
+            BindingContext = new ProductDetailPageViewModel();
             CrossConnectivity.Current.ConnectivityChanged += Current_ConnectivityChanged;
             MessagingCenter.Subscribe<ProductDetailPageManager, ProductImagesList>(this, "Images", (sender, Product) => {
                 var image = new Image { Source =Product.ProductImages};
                 image.WidthRequest = 110;
                 Imagelist.Children.Add(image);
                 var tapGestureRecognizer = new TapGestureRecognizer {
-                 Command=new Command(
-                     () => {
-                         MainImage.Source = image.Source;
-                     })
+                    Command =new Command(
+                        () => {
+                            MainImage.Source = image.Source;
+                        })
                 };
-                image.GestureRecognizers.Add(tapGestureRecognizer);                               
+                image.GestureRecognizers.Add(tapGestureRecognizer);
             });
 
             MessagingCenter.Subscribe<ProductDetailPageManager, int>(this, "ProductDetailRating", (sender, rating) => 
             {
                 for (int i = 0; i < rating; i++)
                 {
-                    var star = new Label { Text = "*", };
-                    star.TextColor = Color.Yellow;
+                    var star = new AwesomeLabel { Text = FontAwesome.FAStar };
+                    star.TextColor = Color.FromHex("#ddd71f") ;
                     star.FontSize = 30;
-                    star.VerticalOptions = LayoutOptions.Center;
                     star.HorizontalOptions = LayoutOptions.End;
                     DetailsRating.Children.Add(star);
-
-                    var startapGestureRecognizer = new TapGestureRecognizer {
-                        Command = new Command(
-                            () => {
-
-                                Navigation.PushModalAsync(new RatingPage());
-                                
-                            })
-                    };
-
-                    star.GestureRecognizers.Add(startapGestureRecognizer);
                 }
             });
 
@@ -63,6 +51,13 @@ namespace NeoStore.Products
             {
                 await DisplayAlert("Error", "Check Internet Connection", "Ok");
             }
+        }
+        void OnRateClicked(object sender, EventArgs e)
+        {
+            var selected = BindingContext;
+            var ratingpage = new RatingPage();
+            ratingpage.BindingContext = selected;
+            Navigation.PushModalAsync(ratingpage);
         }
     }
 }

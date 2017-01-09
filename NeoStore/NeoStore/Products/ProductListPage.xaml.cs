@@ -24,8 +24,7 @@ namespace NeoStore.Products
             {
                 for (int i=0; i<Rating; i++)
                 {
-                    
-                    var star = new Label { Text = FontAwesome.FAStar};
+                    var star = new AwesomeLabel { Text = FontAwesome.FAStar};
                     star.TextColor = Color.Yellow;
                     //starrating.Childern.Add(star);
                 }

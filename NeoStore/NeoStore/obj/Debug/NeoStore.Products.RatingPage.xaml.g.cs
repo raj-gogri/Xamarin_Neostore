@@ -17,12 +17,20 @@ namespace NeoStore.Products {
     public partial class RatingPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Button dismissButton;
+        private global::Xamarin.Forms.Image MainImage;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout DetailsRating;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::NeoStore.CustomView.ColorButton buynow;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(RatingPage));
-            dismissButton = this.FindByName<global::Xamarin.Forms.Button>("dismissButton");
+            MainImage = this.FindByName<global::Xamarin.Forms.Image>("MainImage");
+            DetailsRating = this.FindByName<global::Xamarin.Forms.StackLayout>("DetailsRating");
+            buynow = this.FindByName<global::NeoStore.CustomView.ColorButton>("buynow");
         }
     }
 }

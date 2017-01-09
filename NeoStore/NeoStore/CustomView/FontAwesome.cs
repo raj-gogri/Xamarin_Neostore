@@ -8,7 +8,7 @@ namespace NeoStore.CustomView
 {
     public class FontAwesome
     {
-        public static string FASareIt = "\uf1e0";
+        public static string FAShareIt = "\uf1e0";
         public static string FAGlass = "\uf000";
         public static string FAMusic = "\uf001";
         public static string FASearch = "\uf002";

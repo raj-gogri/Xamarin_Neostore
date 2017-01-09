@@ -11,19 +11,21 @@
       <StackLayout BackgroundColor="White">
         <StackLayout Orientation="Vertical" Padding="10,15,10,10">
 
-          <Label Text="{Binding ProductName}"
+          <local:GothamLabelText Text="{Binding ProductName}"
                  FontSize="25"
                  TextColor="Black"
           x:Name="lbl"/>
 
-          <Label Text="Binding CategoryName"
+          <local:GothamLabelText Text="Binding CategoryName"
                  FontSize="21"
                  TextColor="Black"/>
 
           <StackLayout Orientation="Horizontal" VerticalOptions="Center">
-            <Label Text="{Binding ProducerName}"
+            <local:GothamLabelText Text="{Binding ProducerName}"
                    FontSize="14"
-                   TextColor="Black"/>
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   HorizontalOptions="StartAndExpand"/>
 
             <StackLayout x:Name="DetailsRating" Orientation="Horizontal" VerticalOptions="EndAndExpand">
             </StackLayout>
@@ -34,16 +36,16 @@
       
       <StackLayout Padding="10,10,10,10" BackgroundColor="White">
         <StackLayout Padding="10,10,10,10" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-          <Label Text="Rs. "
+          <local:GothamLabelText Text="Rs. "
                Font="Medium"
                FontSize="22"
                TextColor="Red"/>
-          <Label Text="{Binding Cost}"              
+          <local:GothamLabelText Text="{Binding Cost}"              
                HorizontalOptions="StartAndExpand"
                Font="Medium"
                FontSize="22"
                TextColor="Red"/>
-          <local:AwesomeLabel Text="{x:Static local:FontAwesome.FASareIt}"
+          <local:AwesomeLabel Text="{x:Static local:FontAwesome.FAShareIt}"
                   FontFamily="FontAwesomeForms"
                   VerticalOptions="End"
                   HorizontalOptions="End"
@@ -65,10 +67,10 @@
       </StackLayout>
 
       <StackLayout BackgroundColor="White" Padding="10,0,10,15">
-        <Label Text="Description"
+        <local:GothamLabelText Text="Description"
                 FontSize="24"
                 TextColor="Black"/>
-        <Label Text="{Binding Description}"
+        <local:GothamLabelText Text="{Binding Description}"
                 FontSize="13"
                 TextColor="Black"/>
       </StackLayout>
@@ -90,19 +92,20 @@
     </Grid.ColumnDefinitions>
     
     <local:ColorButton Text="BUY NOW"
-                Font="Medium"
-                FontSize="22"
-                 HorizontalOptions="FillAndExpand"
+                       Font="Medium"
+                       FontSize="22"
+                       HorizontalOptions="FillAndExpand"
                        x:Name="buynow"
-                TextColor="White"
-                 Grid.Row="0" Grid.Column="0"/>
+                       TextColor="White"
+                       Grid.Row="0" Grid.Column="0"/>
         <local:GrayButton Text=" RATE "
-                Font="Medium"
-                FontSize="22"
-                 HorizontalOptions="FillAndExpand"
-                x:Name="rate"
-                TextColor="Black"
-                Grid.Row="0" Grid.Column="1"/>
+                          Font="Medium"
+                          FontSize="22"
+                          HorizontalOptions="FillAndExpand"
+                          x:Name="rate"
+                          TextColor="Black"
+                          Grid.Row="0" Grid.Column="1"
+                          Clicked="OnRateClicked" />
   </Grid>
   </StackLayout>
 </StackLayout>

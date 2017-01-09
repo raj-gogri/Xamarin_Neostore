@@ -20,7 +20,7 @@ namespace NeoStore.Products {
         private global::Xamarin.Forms.StackLayout stck;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label lbl;
+        private global::NeoStore.CustomView.GothamLabelText lbl;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.StackLayout DetailsRating;
@@ -41,7 +41,7 @@ namespace NeoStore.Products {
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(ProductDetailPage));
             stck = this.FindByName<global::Xamarin.Forms.StackLayout>("stck");
-            lbl = this.FindByName<global::Xamarin.Forms.Label>("lbl");
+            lbl = this.FindByName<global::NeoStore.CustomView.GothamLabelText>("lbl");
             DetailsRating = this.FindByName<global::Xamarin.Forms.StackLayout>("DetailsRating");
             MainImage = this.FindByName<global::Xamarin.Forms.Image>("MainImage");
             Imagelist = this.FindByName<global::Xamarin.Forms.StackLayout>("Imagelist");

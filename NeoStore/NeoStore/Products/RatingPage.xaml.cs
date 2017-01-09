@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NeoStore.CustomView;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,8 @@ namespace NeoStore.Products
         public RatingPage()
         {
             InitializeComponent();
+            var star = new StarRatingContentView { OutOffRated = 10, Rating = 3 };
+            DetailsRating.Children.Add(star);
         }
     }
 }
