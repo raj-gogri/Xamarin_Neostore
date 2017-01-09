@@ -1,5 +1,4 @@
-﻿using NeoStore.RegisterPage;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +8,6 @@ namespace NeoStore.HomePage
 {
     interface IRestServices
     {
-        Task<HomePageResponse> RegisterUserDetails(HomepageModelView regResponse);
+        Task<HomeResponse> ItemDeatils();
     }
 }

@@ -1,87 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NeoStore.HomePage.DetailHomepage">
-  <StackLayout Padding="10,0,10,0">
-    <CarouselPage>
-      <CarouselPage.Children>
+             xmlns:cv="clr-namespace:NeoStore.HomePage;assembly=NeoStore"
+             x:Class="NeoStore.HomePage.DetailHomepage" Padding="0,0,0,0"
+             Title="Homepage">
+  <ScrollView Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  >    
+    <StackLayout>
+      <ScrollView Orientation="Horizontal"  >
+        <StackLayout x:Name="CarouselSource" Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand">
+
+        </StackLayout>
+      </ScrollView>    
+      
+      <StackLayout x:Name="det" Padding="5,5,15,5" >
         
-        <ContentPage>
-          <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-            <Image Source="{Binding ImgUrl}" 
-                   HorizontalOptions="CenterAndExpand" 
-                   VerticalOptions="Center" 
-                   Aspect="AspectFit" />
-          </StackLayout>
-        </ContentPage>
-
-        <ContentPage>
-          <Image Source="http://staging.php-dev.in:8844/trainingapp/uploads/cat_icon_img/thumb/medium/a4340b6e08070902ad7f2838c.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Aspect="AspectFit" />
-        </ContentPage>
-
-        <ContentPage>
-          <Image Source="http://staging.php-dev.in:8844/trainingapp/uploads/cat_icon_img/thumb/medium/699489da778c514dd6a321587.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Aspect="AspectFit" />
-        </ContentPage>
-
-        <ContentPage>
-          <Image Source="http://staging.php-dev.in:8844/trainingapp/uploads/cat_icon_img/thumb/medium/e273cd55d0317778efa26078b.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Aspect="AspectFit" />
-        </ContentPage>
-      
-      </CarouselPage.Children>
-    </CarouselPage>
-
-    <Grid>
-      <Grid.RowDefinitions>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="*"/>
-      </Grid.RowDefinitions>
-
-      <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="*"/>
-        <ColumnDefinition Width="*"/>
-        <ColumnDefinition Width="*"/>
-      </Grid.ColumnDefinitions>
-
-      <Button     Text="Tables"
-                  VerticalOptions="Start"
-                  HorizontalOptions="End"
-                  FontSize="15"
-                  Image="http://staging.php-dev.in:8844/trainingapp/uploads/cat_icon_img/thumb/medium/a4340b6e08070902ad7f2838c.jpg"
-                  Opacity="50"
-                  Grid.Column="0"
-                  Grid.Row="0"  />      
-
-      <Button     Text="Sofas"
-                  VerticalOptions="End"
-                  HorizontalOptions="Start"
-                  FontSize="15"
-                  Image="http://staging.php-dev.in:8844/trainingapp/uploads/cat_icon_img/thumb/medium/a4340b6e08070902ad7f2838c.jpg"
-                  Opacity="50"
-                  Grid.Column="1"
-                  Grid.Row="0"  />
-
-      <Button     Text="Chairs"
-                  VerticalOptions="Start"
-                  HorizontalOptions="Start"
-                  FontSize="15"
-                  Image="http://staging.php-dev.in:8844/trainingapp/uploads/cat_icon_img/thumb/medium/a4340b6e08070902ad7f2838c.jpg"
-                  Opacity="50"
-                  Grid.Column="0"
-                  Grid.Row="1"  />
-
-      <Button     Text="Cupboards"
-                  VerticalOptions="Center"
-                  HorizontalOptions="Center"
-                  FontSize="15"
-                  Opacity="50"
-                  Image="http://staging.php-dev.in:8844/trainingapp/uploads/cat_icon_img/thumb/medium/a4340b6e08070902ad7f2838c.jpg"                  
-                  Grid.Column="1"
-                  Grid.Row="1"  />                  
-      
-    </Grid>
-    
-  </StackLayout>  
-  
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
 </ContentPage>
+

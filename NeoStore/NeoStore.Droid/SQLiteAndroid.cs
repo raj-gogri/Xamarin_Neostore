@@ -9,21 +9,28 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using NeoStore.Droid;
 using SQLite;
 using System.IO;
+using Xamarin.Forms;
+using System.Runtime.CompilerServices;
 
+[assembly: Xamarin.Forms.Dependency(typeof(SQLiteAndroid))]
 namespace NeoStore.Droid
 {
     class SQLiteAndroid : ISQLite
     {
+        public SQLiteAndroid()
+        { }
         public SQLiteConnection GetConnection()
         {
-            var FileName = "SomeItemList.db";
-            var documentPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-            var path = Path.Combine(documentPath, FileName);
+            var sqlitefilename = "NeoStore.db3";
+            string documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            var path = Path.Combine(documentsPath, sqlitefilename);
 
-            var con = new SQLite.SQLiteConnection(path);
-            return con;
+            var conn = new SQLite.SQLiteConnection(path);
+
+            return conn;
         }
     }
 }

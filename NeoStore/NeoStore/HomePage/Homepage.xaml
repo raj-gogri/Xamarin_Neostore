@@ -1,27 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                  xmlns:masterDetail="clr-namespace:NeoStore;assembly=NeoStore"
-                  x:Class="NeoStore.HomePage.Homepage">
-  
+                  xmlns:masterDetail="clr-namespace:NeoStore.HomePage;assembly=NeoStore"
+                  x:Class="NeoStore.HomePage.Homepage"
+                  Icon="down.jpg"
+                  Title="Homepage">  
   <MasterDetailPage.Master>
-    <ContentPage Title = "NeoSTORE">
-      <StackLayout Orientation="Vertical">
-        <Button Text="My Cart" Command="{Binding MycartClick}"/>
-        <Button Text="Table" Command="{Binding TablesClick}"/>
-        <Button Text="Sofas " Command="{Binding SofasClick}"/>
-        <Button Text="Chair " Command="{Binding ChairClick}"/>
-        <Button Text="Cupboard " Command="{Binding CupboardClick}"/>
-        <Button Text="My Account " Command="{Binding AccountClick}"/>
-        <Button Text="Store Location " Command="{Binding StoreLocationClick}"/>
-        <Button Text="My Orders " Command="{Binding MyOrdersClick}"/>
-        <Button Text="Logout " Command="{Binding LogoutClick}"/>
-
-      </StackLayout>
-    </ContentPage>
+      <masterDetail:MasterPage />
   </MasterDetailPage.Master>
-  <MasterDetailPage.Detail>
-    <masterDetail:DetailHomepage />    
-  </MasterDetailPage.Detail>
-
+  
+  
+  
 </MasterDetailPage>
