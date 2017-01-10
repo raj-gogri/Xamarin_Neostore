@@ -10,12 +10,17 @@ using Xamarin.Forms;
 
 namespace NeoStore.Products
 {
-    public class RatingPageViewModel
+    public class RatingPageViewModel:INotifyPropertyChanged
     {
         public static RatingPageManger ratingpagemanager { get; set; }
         int rate;
+        string productname;
+        string productimage;
         public static int ratingpageviewmodelrating;
         public StarRatingContentView rating;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public ICommand OnRateClicked { get; set; }
         public RatingPageViewModel()
         {
@@ -34,8 +39,36 @@ namespace NeoStore.Products
             }
             set
             {
-                rate = rating.Rating;
+                rate = value;
                 ratingpageviewmodelrating = rate;
+                PropertyChangedEventHandler handler = PropertyChanged;
+                if (handler != null)
+                {
+                    handler(this, new PropertyChangedEventArgs("Rate"));
+                }
+            }
+        }
+        public string ProductName
+        {
+            get
+            {
+                return productname;
+            }
+            set
+            {
+                productname = value;
+            }
+        }
+
+        public string ProductImg
+        {
+            get
+            {
+                return productimage;
+            }
+            set
+            {
+                productimage = value;
             }
         }
     }

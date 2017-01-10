@@ -86,9 +86,10 @@ namespace NeoStore.Products
         public ProductDetailPageViewModel()
         {
             productdetailmanager = new ProductDetailPageManager();
+
             GetProductDetails();
         }
-        private async void GetProductDetails()
+        public async void GetProductDetails()
         {
             await productdetailmanager.ProductDetailPageTaskAsync(this);
         }

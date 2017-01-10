@@ -6,7 +6,7 @@ namespace NeoStore.Products
 {
      class ProductDetailPageManager
     {
-       
+        public static ProductDetailsPageResponseData rp;
         IProductDetailPageRestService restservice;
 
         public ProductDetailPageManager()
@@ -18,9 +18,10 @@ namespace NeoStore.Products
             var items = await restservice.ProductDetailsPageTodoAsync(productDetailPageViewModel);
             if (items != null)
             {
-                //ProductDetailPageViewModel.rp = items;
-                int rating = items.data.Rating;
+                rp = items.data;
+                int rating = Convert.ToInt32(items.data.Rating);
                 productDetailPageViewModel.productdetails = new System.Collections.ObjectModel.ObservableCollection<ProductImagesList>();
+                productDetailPageViewModel.productdetails.Clear();
                 foreach (var Product in items.data.ProductImageslist)
                 {
                     productDetailPageViewModel.productdetails.Add(Product);

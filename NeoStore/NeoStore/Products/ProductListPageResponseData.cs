@@ -26,7 +26,7 @@ namespace NeoStore.Products
         public int Cost { get; set; }
 
         [JsonProperty(PropertyName = "rating")]
-        public int Rating { get; set; }
+        public float Rating { get; set; }
 
         [JsonProperty(PropertyName = "view_count")]
         public int ViewCount { get; set; }

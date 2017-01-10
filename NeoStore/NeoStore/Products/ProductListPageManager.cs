@@ -23,7 +23,7 @@ namespace NeoStore.Products
                 {
                     productListPageViewModel.productList.Add(Product);
                     var Rating = Product.Rating;
-                    MessagingCenter.Send<ProductListPageManager, int>(this,"StarRating", Rating);
+                    MessagingCenter.Send<ProductListPageManager, float>(this,"StarRating", Rating);
                 }
             }
         }

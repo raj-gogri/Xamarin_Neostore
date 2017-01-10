@@ -1,5 +1,7 @@
-﻿using Newtonsoft.Json;
+﻿using NeoStore.CustomView;
+using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -18,11 +20,15 @@ namespace NeoStore.Products
             ProductDetailPageResponse Items = null;
             var uri = new Uri("http://staging.php-dev.in:8844/trainingapp/api/products/setRating");
             var id = ProductListPage.pd;
-            var rating = RatingPageViewModel.ratingpageviewmodelrating;
+            var rating = StarRatingContentView.x;
             try
             {
                 var json = JsonConvert.SerializeObject(item);
-                HttpResponseMessage response = await client.GetAsync(uri + "?product_id=" + id + "?rating=" + rating);
+                IList<KeyValuePair<string, string>> formDataList = new List<KeyValuePair<string, string>>();
+                formDataList.Add(new KeyValuePair<string, string>("product_id", id.ToString()));
+                formDataList.Add(new KeyValuePair<string, string>("rating", rating.ToString()));
+                var content = new FormUrlEncodedContent(formDataList);
+                HttpResponseMessage response = await client.PostAsync(uri,content);
                 var result = await response.Content.ReadAsStringAsync();
                 Items = JsonConvert.DeserializeObject<ProductDetailPageResponse>(result);
                 if (Items.status == 200)

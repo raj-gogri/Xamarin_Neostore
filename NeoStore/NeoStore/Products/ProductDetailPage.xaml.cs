@@ -14,11 +14,12 @@ namespace NeoStore.Products
 {
     public partial class ProductDetailPage : ContentPage
     {
-      
+        //public int r;
+        ProductDetailPageViewModel x=new ProductDetailPageViewModel();
         public ProductDetailPage()
         {
             InitializeComponent();
-            BindingContext = new ProductDetailPageViewModel();
+            BindingContext = x;
             CrossConnectivity.Current.ConnectivityChanged += Current_ConnectivityChanged;
             MessagingCenter.Subscribe<ProductDetailPageManager, ProductImagesList>(this, "Images", (sender, Product) => {
                 var image = new Image { Source =Product.ProductImages};
@@ -35,6 +36,7 @@ namespace NeoStore.Products
 
             MessagingCenter.Subscribe<ProductDetailPageManager, int>(this, "ProductDetailRating", (sender, rating) => 
             {
+                DetailsRating.Children.Clear();
                 for (int i = 0; i < rating; i++)
                 {
                     var star = new AwesomeLabel { Text = FontAwesome.FAStar };
@@ -45,7 +47,14 @@ namespace NeoStore.Products
                 }
             });
 
-            }
+
+            MessagingCenter.Subscribe<RatingPageManger>(this, "Rating", (sender) => {
+                Navigation.PopPopupAsync();
+                DisplayAlert("Success", "Successfully Rated", "OK");
+                Imagelist.Children.Clear();
+                x.GetProductDetails();
+            });
+        }
         private async void Current_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
         {
             if (!e.IsConnected)
@@ -53,7 +62,7 @@ namespace NeoStore.Products
                 await DisplayAlert("Error", "Check Internet Connection", "Ok");
             }
         }
-        async void OnRateClicked(object sender, EventArgs e)
+        async void OnRateClicked1(object sender, EventArgs e)
         {
             var selected = BindingContext;
             var ratingpage = new RatingPage();

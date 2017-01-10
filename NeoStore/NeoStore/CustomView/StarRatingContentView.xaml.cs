@@ -10,9 +10,9 @@ namespace NeoStore.CustomView
 {
     public partial class StarRatingContentView : ContentView
     {
+        public static int x;
         int rating;
         int outoffRated;
-
         public int OutOffRated
         {
             set
@@ -48,6 +48,7 @@ namespace NeoStore.CustomView
                         Command = new Command<int>((parmeter) => {
                             currentRating.Children.Clear();
                             currentRating.Children.Add(new StarRatingContentView { OutOffRated = outoffRated, Rating = parmeter });
+                            x = parmeter;
                         })
                     };
                     star.GestureRecognizers.Add(startapGestureRecognizer);

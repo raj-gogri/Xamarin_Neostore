@@ -1,4 +1,5 @@
 ﻿using NeoStore.CustomView;
+using Rg.Plugins.Popup.Extensions;
 using Rg.Plugins.Popup.Pages;
 using System;
 using System.Collections.Generic;
@@ -16,16 +17,10 @@ namespace NeoStore.Products
         public RatingPage()
         {
             InitializeComponent();
-
-            var star = new StarRatingContentView { OutOffRated = 5, Rating = 3 };
+            rate.BindingContext = new RatingPageViewModel();
+            //BindingContext = new RatingPageViewModel();
+            var star = new StarRatingContentView { OutOffRated = 5, Rating =  0 };
             DetailsRating.Children.Add(star);
-
-            BindingContext = new RatingPageViewModel();
-
-            MessagingCenter.Subscribe<RatingPageManger>(this, "Rating", (sender) => {
-                DisplayAlert("Success", "Successfully Rated", "OK");
-                Navigation.PopModalAsync();
-            });
         }
         protected override void OnAppearing()
         {
