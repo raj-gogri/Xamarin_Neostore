@@ -26,6 +26,16 @@ namespace NeoStore.HomePage
                 Detail = new NavigationPage(Child);
                
             });
+
+            MessagingCenter.Subscribe<MasterPage>(this, "homepage Select", (sender) => {
+                IsPresented = false;
+                //DetailHomepageModelView det = new DetailHomepageModelView();
+               
+                Detail = new NavigationPage(new DetailHomepage());
+                MessagingCenter.Send<Homepage>(this, "Child Data1");
+
+                
+            });
             GetProductList();
             
         }

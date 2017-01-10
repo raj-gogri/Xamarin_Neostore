@@ -17,16 +17,16 @@ namespace NeoStore.CustomView {
     public partial class CustomGridView : global::Xamarin.Forms.ContentView {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Image IconImageCat;
+        private global::Xamarin.Forms.Label ItemNameCat;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label ItemNameCat;
+        private global::Xamarin.Forms.Image IconImageCat;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(CustomGridView));
-            IconImageCat = this.FindByName<global::Xamarin.Forms.Image>("IconImageCat");
             ItemNameCat = this.FindByName<global::Xamarin.Forms.Label>("ItemNameCat");
+            IconImageCat = this.FindByName<global::Xamarin.Forms.Image>("IconImageCat");
         }
     }
 }

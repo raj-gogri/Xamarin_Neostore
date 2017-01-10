@@ -10,7 +10,7 @@ using ImageCircle;
 
 namespace NeoStore.HomePage
 {
-    class HomepageManager
+    public class HomepageManager
     {   
         IRestServices restservice;
         public HomepageManager()
@@ -87,6 +87,9 @@ namespace NeoStore.HomePage
 
                 MessagingCenter.Send<HomepageManager, DetailHomepageModelView>(this,"Child Data",detail);
                 MessagingCenter.Send<HomepageManager,MasterPageViewModel>(this, "Data Available", mstr);
+                MessagingCenter.Subscribe<Homepage>(this, "Child Data1", (sender) => {
+                    MessagingCenter.Send<HomepageManager, DetailHomepageModelView>(this, "Child Data", detail);
+                });
             }
            
         }

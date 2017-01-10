@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:NeoStore.CustomView;assembly=NeoStore"
              x:Class="NeoStore.CustomView.CustomGridView">
-     <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-      <Image x:Name="IconImageCat" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Opacity="50" Aspect="Fill"/>
-      <Label x:Name="ItemNameCat" Font="Bold " FontSize="20" TextColor="White" VerticalOptions="Start" HorizontalOptions="End" BackgroundColor="Transparent" />
-    </AbsoluteLayout>
+     <StackLayout  Padding="5,5,5,5">      
+      <Label x:Name="ItemNameCat" Font="Bold " FontSize="20" TextColor="White" HorizontalOptions="End"  />
+       <Image x:Name="IconImageCat"/>
+    </StackLayout>
  </ContentView>

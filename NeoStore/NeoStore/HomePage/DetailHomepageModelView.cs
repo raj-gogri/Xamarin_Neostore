@@ -29,18 +29,6 @@ namespace NeoStore.HomePage
         public DetailHomepageModelView()
         {
             homepageManager = new HomepageManager();
-            //GetProductList();
-            //OnMyCartSelected = new Command(
-            //     () =>
-            //     {
-            //         MessagingCenter.Send<DetailHomepageModelView>(this, "NavigateCart");
-
-            //     });
         }
-
-      //  public async void GetProductList()
-        //{
-     //       await homepageManager.ProductDetailAsync();
-        //}
     }
 }

@@ -11,6 +11,8 @@ namespace NeoStore
     {
 
         public static DatabaseManager dbManager { get; private set; }
+
+        public static HomepageManager hpManager { get; private set; }
         public static UserDetailsResponseData UserLoggedInDetails { get; set; }
         public static RegistrationDetailDatabase database;        
         public App()
@@ -18,6 +20,7 @@ namespace NeoStore
             InitializeComponent();
             UserLoggedInDetails = App.Database.GetItems().FirstOrDefault();
             dbManager = new DatabaseManager(new RestServices());
+            hpManager = new HomepageManager();
            // hpManager = new HomepageManager(new HomepageRestServices());
             if (UserLoggedInDetails == null)
             {
@@ -25,7 +28,7 @@ namespace NeoStore
             }
             else
             {
-                MainPage = ( new HomePage.Homepage());
+                MainPage = new HomePage.Homepage();
 
             }
 

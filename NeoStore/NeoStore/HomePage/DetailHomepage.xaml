@@ -11,9 +11,10 @@
 
         </StackLayout>
       </ScrollView>    
-      
-      <StackLayout x:Name="det" Padding="5,5,15,5" >
+      <StackLayout Padding="5,5,5,5">
+      <Grid x:Name="grid" Padding="5,5,5,5" ColumnSpacing="10" RowSpacing="10" >
         
+      </Grid>
       </StackLayout>
     </StackLayout>
   </ScrollView>
