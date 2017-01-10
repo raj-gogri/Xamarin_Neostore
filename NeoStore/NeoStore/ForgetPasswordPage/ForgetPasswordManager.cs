@@ -7,9 +7,6 @@ namespace NeoStore.ForgetPasswordPage
     class ForgetPasswordManager
     {
         IRestServiceForgetPassword restservice;
-
-        public ForgetPasswordRestService forgetPasswordRestService;
-
         public ForgetPasswordManager(IRestServiceForgetPassword service)
         {
             restservice = service;

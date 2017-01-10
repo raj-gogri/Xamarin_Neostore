@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Plugin.Connectivity.Abstractions;
 using NeoStore.CustomView;
+using Rg.Plugins.Popup.Extensions;
 
 namespace NeoStore.Products
 {
@@ -52,12 +53,12 @@ namespace NeoStore.Products
                 await DisplayAlert("Error", "Check Internet Connection", "Ok");
             }
         }
-        void OnRateClicked(object sender, EventArgs e)
+        async void OnRateClicked(object sender, EventArgs e)
         {
             var selected = BindingContext;
             var ratingpage = new RatingPage();
             ratingpage.BindingContext = selected;
-            Navigation.PushModalAsync(ratingpage);
+            await Navigation.PushPopupAsync(ratingpage);
         }
     }
 }

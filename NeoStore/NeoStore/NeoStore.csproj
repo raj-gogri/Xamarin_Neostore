@@ -74,6 +74,7 @@
     <Compile Include="Loginpage\UserDetailsResponseData.cs" />
     <Compile Include="Products\IProductDetailPageRestService.cs" />
     <Compile Include="Products\IProductListPageRestService.cs" />
+    <Compile Include="Products\IRatingPage.cs" />
     <Compile Include="Products\ProductDetailPage.xaml.cs">
       <DependentUpon>ProductDetailPage.xaml</DependentUpon>
     </Compile>
@@ -94,6 +95,9 @@
     <Compile Include="Products\RatingPage.xaml.cs">
       <DependentUpon>RatingPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Products\RatingPageManger.cs" />
+    <Compile Include="Products\RatingPageRestService.cs" />
+    <Compile Include="Products\RatingPageViewModel.cs" />
     <Compile Include="RegisterPage\DatabaseManager.cs" />
     <Compile Include="RegisterPage\IRestServices.cs" />
     <Compile Include="RegisterPage\RegistrationResponse.cs" />

@@ -51,7 +51,6 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\bin\Debug\Plugin.Connectivity.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\obj\Debug\NeoStore.Droid.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\bin\Debug\NeoStore.Droid.dll.mdb
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\NeoStore.Droid.csprojResolveAssemblyReference.cache
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\bin\Debug\NeoStore.Droid.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\bin\Debug\NeoStore.Droid.pdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\bin\Debug\com.neo.store.apk
@@ -106,6 +105,7 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\bin\Debug\Xamarin.iOS.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\bin\Debug\Xamarin.iOS.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\NeoStore.Droid.csprojResolveAssemblyReference.cache
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\NeoStore.Droid.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\NeoStore.Droid.pdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\bin\com.neo.store.apk

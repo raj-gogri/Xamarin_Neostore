@@ -35,11 +35,11 @@ namespace NeoStore.CustomView
 
                     if (i <= rating)
                     {
-                        star = new AwesomeLabel { Text = FontAwesome.FAStar, TextColor = Color.Yellow, FontSize = 35 };
+                        star = new AwesomeLabel { Text = FontAwesome.FAStar, TextColor = Color.Yellow, FontSize = 40 };
                     }
                     else
                     {
-                        star = new AwesomeLabel { Text = FontAwesome.FAStar, TextColor = Color.Black, FontSize = 35 };
+                        star = new AwesomeLabel { Text = FontAwesome.FAStar, TextColor = Color.Gray, FontSize = 40 };
                     }
                     currentRating.Children.Add(star);
                     var startapGestureRecognizer = new TapGestureRecognizer

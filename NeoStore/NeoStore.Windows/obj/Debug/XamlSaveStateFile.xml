@@ -1,7 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="c:\users\user\documents\visual studio 2015\projects\xamarin-neostore\neostore\neostore.windows\obj\debug\intermediatexaml\neostore.windows.exe" HashGuid="ddcee48c-8b70-b0b8-377b-0349d86cadb6" />
-    <ReferenceAssembly PathName="c:\users\user\documents\visual studio 2015\projects\xamarin-neostore\neostore\neostore\bin\debug\neostore.dll" HashGuid="ee2a1518-aafd-e3ef-db87-df20c949b498" />
+    <ReferenceAssembly PathName="c:\users\user\documents\visual studio 2015\projects\xamarin-neostore\neostore\neostore\bin\debug\neostore.dll" HashGuid="0dfc276a-9a64-225b-4628-c3035332a614" />
     <ReferenceAssembly PathName="c:\users\user\documents\visual studio 2015\projects\xamarin-neostore\packages\xam.plugin.connectivity.2.2.12\lib\win8\plugin.connectivity.abstractions.dll" HashGuid="4e4bd94f-773b-8622-55aa-d505d3ad2f69" />
     <ReferenceAssembly PathName="c:\users\user\documents\visual studio 2015\projects\xamarin-neostore\packages\xam.plugin.connectivity.2.2.12\lib\win8\plugin.connectivity.dll" HashGuid="6d6107c2-4468-a956-921d-2d37819a5088" />
     <ReferenceAssembly PathName="c:\users\user\documents\visual studio 2015\projects\xamarin-neostore\packages\rg.plugins.popup.1.0.4\lib\portable-win+net45+wp8+win8+wpa81\rg.plugins.popup.dll" HashGuid="88b1f10e-6bed-d1c7-a475-918edcbe4d06" />

@@ -14,7 +14,7 @@ namespace NeoStore.Products {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class RatingPage : global::Xamarin.Forms.ContentPage {
+    public partial class RatingPage : global::Rg.Plugins.Popup.Pages.PopupPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Image MainImage;
@@ -23,14 +23,14 @@ namespace NeoStore.Products {
         private global::Xamarin.Forms.StackLayout DetailsRating;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::NeoStore.CustomView.ColorButton buynow;
+        private global::NeoStore.CustomView.ColorButton rate;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(RatingPage));
             MainImage = this.FindByName<global::Xamarin.Forms.Image>("MainImage");
             DetailsRating = this.FindByName<global::Xamarin.Forms.StackLayout>("DetailsRating");
-            buynow = this.FindByName<global::NeoStore.CustomView.ColorButton>("buynow");
+            rate = this.FindByName<global::NeoStore.CustomView.ColorButton>("rate");
         }
     }
 }
