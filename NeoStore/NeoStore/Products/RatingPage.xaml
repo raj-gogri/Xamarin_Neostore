@@ -4,18 +4,18 @@
             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
             xmlns:local="clr-namespace:NeoStore.CustomView;assembly=NeoStore"
-            x:Class="NeoStore.Products.RatingPage" Padding="50,20,100,20">
+            x:Class="NeoStore.Products.RatingPage" Padding="50,20,50,100">
 
-  <StackLayout BackgroundColor="White">
+  <StackLayout BackgroundColor="White" Padding="20,20,20,20">
     <local:GothamLabelText Text="{Binding ProductName}"
                            HorizontalOptions="CenterAndExpand"
                            FontSize="26"
                            TextColor="Black"/>
-    
+    <StackLayout Padding="0,10,0,20">
     <Image x:Name="MainImage"
            Source="{Binding ProductImages}"
-           VerticalOptions="Center"
-           HorizontalOptions="CenterAndExpand"/>
+           VerticalOptions="Center"/>
+    </StackLayout>
     
     <StackLayout x:Name="DetailsRating"
                  Orientation="Horizontal"
@@ -27,7 +27,6 @@
                        FontSize="30"
                        TextColor="White"
                        VerticalOptions="CenterAndExpand"
-                       HorizontalOptions="FillAndExpand"
                        x:Name="rate"
                        Command="{Binding OnRateClicked}"/>
   </StackLayout>

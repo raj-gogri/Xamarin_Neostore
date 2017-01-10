@@ -26,7 +26,7 @@ namespace NeoStore.Products
                 {
                     var star = new AwesomeLabel { Text = FontAwesome.FAStar};
                     star.TextColor = Color.Yellow;
-                    //starrating.Childern.Add(star);
+                    //DetailsRating.Childern.Add(star);
                 }
             });
            

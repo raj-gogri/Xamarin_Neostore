@@ -12,7 +12,7 @@
               SeparatorColor="Black"
               ItemSelected="ProductSelected">
       <ListView.ItemTemplate >
-        <DataTemplate x:Name="listview1" >
+        <DataTemplate >
           <ViewCell>
             <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
               <StackLayout Orientation="Horizontal" Padding="10,10,10,10">
@@ -36,7 +36,8 @@
                     <local:GothamLabelText Text="{Binding Cost}"
                                            FontSize="24"
                                            TextColor="Red"/>
-                    <!--<local:GothamLabelText x:Name="starRating" Text="{Binding Rating}" VerticalOptions="Center" HorizontalOptions="End"/>-->
+                    <!--<StackLayout x:Name="Ratings" Orientation="Horizontal" VerticalOptions="EndAndExpand">
+                    </StackLayout>-->
                   </StackLayout>
                 </StackLayout>
               </StackLayout>
