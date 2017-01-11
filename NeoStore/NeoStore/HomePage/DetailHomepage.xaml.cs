@@ -30,8 +30,9 @@ namespace NeoStore.HomePage
                 grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
                 grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
                 int addCount = 0;    
-                    int count = detail.ProductCategory.Count;
-                    for (int row = 0; row < count/2; row++)
+                int count = detail.ProductCategory.Count;
+                int ccount =Convert.ToInt32(count / 2);
+                    for (int row = 0; row < ccount; row++)
                     {
                         for (int column = 0; column <= 1; column++)
                         {
@@ -49,7 +50,7 @@ namespace NeoStore.HomePage
                         name.GestureRecognizers.Add(tgr);
 
                     }
-                    if (addCount > (3))
+                    if (addCount > (count-1))
                         break;
                     }
             });
