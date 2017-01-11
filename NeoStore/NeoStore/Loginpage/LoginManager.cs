@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NeoStore.Products;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,7 +30,7 @@ namespace NeoStore.Loginpage
                 msg = "Login Successfull";
                 MessagingCenter.Send<LoginManager, string>(this, "Login", msg);
                // MessagingCenter.Send<LoginManager>(this, "Navigate");
-                Application.Current.MainPage = new HomePage.Homepage();
+                Application.Current.MainPage =new NavigationPage( new ProductListPage());
             }
         }
     }

@@ -1,10 +1,7 @@
-﻿using NeoStore.HomePage;
-using NeoStore.Loginpage;
+﻿using NeoStore.Loginpage;
+using NeoStore.Products;
 using NeoStore.RegisterPage;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 using Xamarin.Forms;
 
@@ -26,7 +23,7 @@ namespace NeoStore
             }
             else
             {
-                MainPage = new HomePage.Homepage();
+                MainPage = new NavigationPage(new ProductListPage());
             }
         }
         public static RegistrationDetailDatabase Database
