@@ -49,6 +49,18 @@
     <Compile Include="CustomView\GothamLabelText.cs" />
     <Compile Include="HomePage\MasterList.cs" />
     <Compile Include="HomePage\CombineData.cs" />
+    <Compile Include="CustomView\GrayButton.cs" />
+    <Compile Include="CustomView\StarRatingContentView.xaml.cs">
+      <DependentUpon>StarRatingContentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPasswordPage\ForgetPasswordManager.cs" />
+    <Compile Include="ForgetPasswordPage\ForgetPasswordpage.xaml.cs">
+      <DependentUpon>ForgetPasswordpage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPasswordPage\ForgetPasswordResponse.cs" />
+    <Compile Include="ForgetPasswordPage\ForgetPasswordRestService.cs" />
+    <Compile Include="ForgetPasswordPage\ForgetPasswordViewModel.cs" />
+    <Compile Include="ForgetPasswordPage\IRestServiceForgetPassword.cs" />
     <Compile Include="HomePage\DetailHomepage.xaml.cs">
       <DependentUpon>DetailHomepage.xaml</DependentUpon>
     </Compile>
@@ -77,9 +89,32 @@
     <Compile Include="Loginpage\RegistrationDetailDatabase.cs" />
     <Compile Include="Loginpage\RestService.cs" />
     <Compile Include="Loginpage\UserDetailsResponseData.cs" />
+    <Compile Include="Products\IProductDetailPageRestService.cs" />
+    <Compile Include="Products\IProductListPageRestService.cs" />
+    <Compile Include="Products\IRatingPage.cs" />
+    <Compile Include="Products\ProductDetailPage.xaml.cs">
+      <DependentUpon>ProductDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Products\ProductDetailPageManager.cs" />
+    <Compile Include="Products\ProductDetailPageResponse.cs" />
+    <Compile Include="Products\ProductDetailPageViewModel.cs" />
+    <Compile Include="Products\ProductDetailsPageResponseData.cs" />
+    <Compile Include="Products\ProductDetailsPageRestService.cs" />
+    <Compile Include="Products\ProductImagesList.cs" />
     <Compile Include="Products\ProductListPage.xaml.cs">
       <DependentUpon>ProductListPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Products\ProductListPageManager.cs" />
+    <Compile Include="Products\ProductListPageResponse.cs" />
+    <Compile Include="Products\ProductListPageResponseData.cs" />
+    <Compile Include="Products\ProductListPageRestService.cs" />
+    <Compile Include="Products\ProductListPageViewModel.cs" />
+    <Compile Include="Products\RatingPage.xaml.cs">
+      <DependentUpon>RatingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Products\RatingPageManger.cs" />
+    <Compile Include="Products\RatingPageRestService.cs" />
+    <Compile Include="Products\RatingPageViewModel.cs" />
     <Compile Include="RegisterPage\DatabaseManager.cs" />
     <Compile Include="RegisterPage\IRestServices.cs" />
     <Compile Include="RegisterPage\RegistrationResponse.cs" />
@@ -123,6 +158,14 @@
     </Reference>
     <Reference Include="Plugin.Connectivity.Abstractions, Version=2.2.12.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugin.Connectivity.2.2.12\lib\portable-net45+wp80+wp81+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+Xamarin.Mac20+UAP10\Plugin.Connectivity.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Rg.Plugins.Popup, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Rg.Plugins.Popup.1.0.4\lib\portable-win+net45+wp8+win8+wpa81\Rg.Plugins.Popup.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Rg.Plugins.Popup.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Rg.Plugins.Popup.1.0.4\lib\portable-win+net45+wp8+win8+wpa81\Rg.Plugins.Popup.Platform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="SQLite-net, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -199,13 +242,37 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Products\ProductListPage.xaml">
+    <EmbeddedResource Include="CustomView\CustomGridView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CustomView\CustomGridView.xaml">
+    <EmbeddedResource Include="Products\ProductDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ForgetPasswordPage\ForgetPasswordpage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Products\RatingPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomView\StarRatingContentView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Products\ProductListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

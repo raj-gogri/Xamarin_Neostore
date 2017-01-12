@@ -44,9 +44,20 @@ namespace NeoStore.HomePage
                       
                         grid.Children.Add(name, row, column);
                         addCount++;
-                      
-                        var tgr = new TapGestureRecognizer { NumberOfTapsRequired = 1 };
-                        tgr.Tapped += OnTapGestureRecognizerTapped;
+
+                        var tgr = new TapGestureRecognizer {
+                         CommandParameter= detail.ProductCategory.AsEnumerable().ElementAt(addCount-1).id,
+                            
+                            Command =new Command<int>(
+                            (parameter) =>
+                            {   
+                                MasterPage.tempId = parameter;
+                                var selectedPage = new ProductListPage { Title= detail.ProductCategory.AsEnumerable().ElementAt(parameter-1).Name};
+                                MessagingCenter.Send<DetailHomepage, Page>(this, "Child Select detail", selectedPage);
+                            }
+                            )};
+                        
+                        //tgr.Tapped += OnTapGestureRecognizerTapped;
                         name.GestureRecognizers.Add(tgr);
 
                     }
@@ -56,11 +67,7 @@ namespace NeoStore.HomePage
             });
         }
 
-        void OnTapGestureRecognizerTapped(object sender, EventArgs e)
-        {
-            var selectedPage = new ProductListPage();
-            Navigation.PushAsync(selectedPage);
-        }
+       
     }
 }
 

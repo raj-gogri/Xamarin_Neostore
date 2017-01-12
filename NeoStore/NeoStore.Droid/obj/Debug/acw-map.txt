@@ -22,6 +22,10 @@ NeoStore.Droid.MainActivity, NeoStore.Droid;md50bcc843ec7830d982358b1e43dc41fea.
 NeoStore.Droid.MainActivity, NeoStore.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50bcc843ec7830d982358b1e43dc41fea.MainActivity
 NeoStore.Droid.MainActivity;md50bcc843ec7830d982358b1e43dc41fea.MainActivity
 neostore.droid.MainActivity;md50bcc843ec7830d982358b1e43dc41fea.MainActivity
+NeoStore.Droid.Roundedbuttonforproductdetails, NeoStore.Droid;md50bcc843ec7830d982358b1e43dc41fea.Roundedbuttonforproductdetails
+NeoStore.Droid.Roundedbuttonforproductdetails, NeoStore.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50bcc843ec7830d982358b1e43dc41fea.Roundedbuttonforproductdetails
+NeoStore.Droid.Roundedbuttonforproductdetails;md50bcc843ec7830d982358b1e43dc41fea.Roundedbuttonforproductdetails
+neostore.droid.Roundedbuttonforproductdetails;md50bcc843ec7830d982358b1e43dc41fea.Roundedbuttonforproductdetails
 ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer, ImageCircle.Forms.Plugin.Android;md5712d199f8d3b5f8e54019b9c57a3e3ca.ImageCircleRenderer
 ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer, ImageCircle.Forms.Plugin.Android, Version=1.8.0.5, Culture=neutral, PublicKeyToken=null;md5712d199f8d3b5f8e54019b9c57a3e3ca.ImageCircleRenderer
 ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer;md5712d199f8d3b5f8e54019b9c57a3e3ca.ImageCircleRenderer
@@ -30,6 +34,10 @@ Plugin.Connectivity.ConnectivityChangeBroadcastReceiver, Plugin.Connectivity;md5
 Plugin.Connectivity.ConnectivityChangeBroadcastReceiver, Plugin.Connectivity, Version=2.2.12.0, Culture=neutral, PublicKeyToken=null;md5ebcbedcc9f4271e586379ac7977363a7.ConnectivityChangeBroadcastReceiver
 Plugin.Connectivity.ConnectivityChangeBroadcastReceiver;md5ebcbedcc9f4271e586379ac7977363a7.ConnectivityChangeBroadcastReceiver
 plugin.connectivity.ConnectivityChangeBroadcastReceiver;md5ebcbedcc9f4271e586379ac7977363a7.ConnectivityChangeBroadcastReceiver
+Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer, Rg.Plugins.Popup.Droid;md5d3faaefeebcb93e0145f431f44dc199e.PopupPageRenderer
+Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer, Rg.Plugins.Popup.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d3faaefeebcb93e0145f431f44dc199e.PopupPageRenderer
+Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer;md5d3faaefeebcb93e0145f431f44dc199e.PopupPageRenderer
+rg.plugins.popup.droid.renderers.PopupPageRenderer;md5d3faaefeebcb93e0145f431f44dc199e.PopupPageRenderer
 Android.Support.Design.Widget.Snackbar/SnackbarActionClickImplementor, Xamarin.Android.Support.Design;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar+SnackbarActionClickImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar.SnackbarActionClickImplementor;android.support.design.widget.Snackbar_SnackbarActionClickImplementor

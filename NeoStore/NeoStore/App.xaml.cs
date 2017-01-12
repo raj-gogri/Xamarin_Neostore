@@ -1,8 +1,8 @@
 using NeoStore.HomePage;
 using NeoStore.Loginpage;
+using NeoStore.Products;
 using NeoStore.RegisterPage;
 using System.Linq;
-
 using Xamarin.Forms;
 
 namespace NeoStore
@@ -24,12 +24,11 @@ namespace NeoStore
            // hpManager = new HomepageManager(new HomepageRestServices());
             if (UserLoggedInDetails == null)
             {
-                MainPage = new NavigationPage(new LoginPage());
+                MainPage =new NavigationPage(new LoginPage());
             }
             else
             {
                 MainPage = new HomePage.Homepage();
-
             }
 
         }

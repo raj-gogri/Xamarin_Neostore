@@ -24,7 +24,7 @@ namespace NeoStore.RegisterPage
         public event PropertyChangedEventHandler PropertyChanged;
 
         public ICommand OnRegClicked { get; set; }        
-        string err;
+        string err=null;
 
         public RegisterViewModel()
         {                    
@@ -46,7 +46,7 @@ namespace NeoStore.RegisterPage
                          err = "Enter Correct Password";
                      else if (gender == null)
                          err = "Select Gender";
-                     else if ((phone_no.ToString()).Length != 9)
+                     else if ((phone_no.ToString()).Length != 10)
                          err = "Enter Correct Number";
                      else if (phone_no.ToString() == null)
                          err = "Enter Correct Number";

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NeoStore.CustomView;assembly=NeoStore"
+             xmlns:ViewModel="clr-namespace:NeoStore.Products;assembly=NeoStore"
+             x:Class="NeoStore.Products.ProductDetailPage" >
+  
+<StackLayout x:Name="stck">
+  <ScrollView Padding="0,0,0,10"  >
+    <StackLayout Orientation="Vertical">
+      <StackLayout BackgroundColor="White">
+        <StackLayout Orientation="Vertical" Padding="10,15,10,10">
+
+          <local:GothamLabelText Text="{Binding ProductName}"
+                 FontSize="25"
+                 TextColor="Black"
+          x:Name="lbl"/>
+
+          <local:GothamLabelText Text="Binding CategoryName"
+                 FontSize="21"
+                 TextColor="Black"/>
+
+          <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+            <local:GothamLabelText Text="{Binding ProducerName}"
+                   FontSize="14"
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   HorizontalOptions="StartAndExpand"/>
+
+            <StackLayout x:Name="DetailsRating" Orientation="Horizontal" VerticalOptions="EndAndExpand">
+            </StackLayout>
+
+          </StackLayout>
+        </StackLayout>
+      </StackLayout>
+      
+      <StackLayout Padding="10,10,10,10" BackgroundColor="White">
+        <StackLayout Padding="10,10,10,10" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+          <local:GothamLabelText Text="Rs. "
+               Font="Medium"
+               FontSize="22"
+               TextColor="Red"/>
+          <local:GothamLabelText Text="{Binding Cost}"              
+               HorizontalOptions="StartAndExpand"
+               Font="Medium"
+               FontSize="22"
+               TextColor="Red"/>
+          <local:AwesomeLabel Text="{x:Static local:FontAwesome.FAShareIt}"
+                  FontFamily="FontAwesomeForms"
+                  VerticalOptions="End"
+                  HorizontalOptions="End"
+                  Font="Medium"
+                  FontSize="24"
+                  TextColor="Gray"/>
+        </StackLayout>
+        
+      <StackLayout Padding="35,0,35,0">
+          <Image x:Name="MainImage" Source="{Binding ProductImages}" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+      </StackLayout>
+        <StackLayout>
+          <ScrollView Orientation="Horizontal">
+            <StackLayout Padding="0,10,0,0" x:Name="Imagelist" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" >
+
+            </StackLayout>
+          </ScrollView>
+        </StackLayout>
+      </StackLayout>
+
+      <StackLayout BackgroundColor="White" Padding="10,0,10,15">
+        <local:GothamLabelText Text="Description"
+                FontSize="24"
+                TextColor="Black"/>
+        <local:GothamLabelText Text="{Binding Description}"
+                FontSize="13"
+                TextColor="Black"/>
+      </StackLayout>
+    
+      
+
+    </StackLayout>
+  </ScrollView>
+
+  <StackLayout VerticalOptions="End" BackgroundColor="White" >
+  <Grid  BackgroundColor="White" VerticalOptions="End" HeightRequest="60" Padding="10,10,10,10">
+       <Grid.RowDefinitions>
+         <RowDefinition Height="*" />
+       </Grid.RowDefinitions>
+    
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    
+    <local:ColorButton Text="BUY NOW"
+                       Font="Medium"
+                       FontSize="22"
+                       HorizontalOptions="FillAndExpand"
+                       x:Name="buynow"
+                       TextColor="White"
+                       Grid.Row="0" Grid.Column="0"/>
+        <local:GrayButton Text=" RATE "
+                          Font="Medium"
+                          FontSize="22"
+                          HorizontalOptions="FillAndExpand"
+                          x:Name="rate"
+                          TextColor="Black"
+                          Grid.Row="0" Grid.Column="1"
+                          Clicked="OnRateClicked1" />
+  </Grid>
+  </StackLayout>
+</StackLayout>
+
+</ContentPage>

@@ -84,7 +84,7 @@ namespace NeoStore.HomePage
                 {
                     detail.ProductCategory.Add(products);
                 }
-
+               
                 MessagingCenter.Send<HomepageManager, DetailHomepageModelView>(this,"Child Data",detail);
                 MessagingCenter.Send<HomepageManager,MasterPageViewModel>(this, "Data Available", mstr);
                 MessagingCenter.Subscribe<Homepage>(this, "Child Data1", (sender) => {

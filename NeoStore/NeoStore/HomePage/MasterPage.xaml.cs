@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using ImageCircle;
 
 using Xamarin.Forms;
+using NeoStore.Loginpage;
 
 namespace NeoStore.HomePage
 {
@@ -28,15 +29,20 @@ namespace NeoStore.HomePage
         {
            DetailHomepage det =new DetailHomepage();
             var selected = (MasterList)args.SelectedItem;
-            tempId = selected.id;
-            var selectedPage = new ProductListPage();
+            if(selected.id!=0)
+                tempId = selected.id;           
+            var selectedPage = new ProductListPage { Title = selected.name };
             if (selected.name == "Homepage")
             {
                 MessagingCenter.Send<MasterPage>(this, "homepage Select");
             }
+            else if (selected.name == "Logout")
+            {
+                App.Database.DeleteUserDetails(App.UserLoggedInDetails);
+                App.Current.MainPage = new LoginPage();
+            }
             else
             {
-                // App.Current.MainPage = (new Homepage());
                 MessagingCenter.Send<MasterPage,Page>(this, "Child Select",selectedPage);
             }
         }

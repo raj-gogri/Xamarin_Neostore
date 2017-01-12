@@ -62,7 +62,7 @@
           <StackLayout  Padding="0,10,0,10">
             <ContentView Style="{StaticResource BorderStyle}">
               <ContentView Style="{StaticResource InternalViewStyle}">
-                <StackLayout Orientation="Horizontal" Padding="5,0,0,0">
+                <StackLayout Orientation="Horizontal" Padding="5,0,5,0">
                   <local:AwesomeLabel Text="{x:Static local:FontAwesome.FALock}"
                                       FontFamily="FontAwesomeForms"
                          FontSize="24"
@@ -74,8 +74,16 @@
                          FontSize="24"
                          HorizontalOptions="FillAndExpand"
                          TextColor="White"
-                         Text="{Binding password}"
-                         IsPassword="True"/>
+                         IsPassword="True"
+                         Text="{Binding password}" />
+                  <local:AwesomeLabel Text="{x:Static local:FontAwesome.FAEye}"
+                                      FontFamily="FontAwesomeForms"
+                                      FontSize="24"
+                                      TextColor="White"
+                                      VerticalOptions="Center"
+                                      HorizontalOptions="End">
+
+                  </local:AwesomeLabel>
                 </StackLayout>
               </ContentView>
             </ContentView>

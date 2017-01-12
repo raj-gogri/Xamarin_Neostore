@@ -3,12 +3,8 @@
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:masterDetail="clr-namespace:NeoStore.HomePage;assembly=NeoStore"
                   x:Class="NeoStore.HomePage.Homepage"
-                  Icon="down.jpg"
-                  Title="Homepage">  
+                  >  
   <MasterDetailPage.Master>
       <masterDetail:MasterPage />
   </MasterDetailPage.Master>
-  
-  
-  
 </MasterDetailPage>

@@ -33,7 +33,7 @@ namespace NeoStore.Loginpage
             MessagingCenter.Subscribe<LoginManager>(this, "Navigate", (sender) => {
 
 
-                App.Current.MainPage = ( new Homepage());
+                App.Current.MainPage =(new Homepage()); 
             });
 
             MessagingCenter.Subscribe<LoginViewModel, string>(this, "Warning", (sender, err) =>
@@ -44,11 +44,11 @@ namespace NeoStore.Loginpage
         }
         void OnTapGestureRecognizerTappedForgetPassword(object sender, EventArgs e)
         {
-           // Navigation.PushAsync(new ForgetPasswordPage());
+            Navigation.PushAsync(new ForgetPasswordPage.ForgetPasswordpage());
         }
         void OnAddNewUser(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Register());
+            App.Current.MainPage=(new Register());
         }
     }
 }
