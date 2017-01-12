@@ -1,2 +1,0 @@
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.WinPhone\NeoStore.WinPhone.csproj;neutral
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\NeoStore.csproj;neutral

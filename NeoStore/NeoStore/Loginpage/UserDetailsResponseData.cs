@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using NeoStore.HomePage;
+using Newtonsoft.Json;
 using SQLite;
 using System;
 
@@ -51,6 +52,7 @@ namespace NeoStore.Loginpage
 
             [JsonProperty(PropertyName = "access_token")]
             public string AccessToken { get; set; }
+            
 
-        }
+    }
     }

@@ -3,7 +3,9 @@ using NeoStore.Droid;
 using Xamarin.Forms.Platform.Android;
 using Android.Graphics.Drawables;
 using NeoStore.CustomView;
+
 using Android.Graphics;
+
 
 [assembly: ExportRenderer(typeof(RoundedButton), typeof(CustomeButtonRenderer))]
 namespace NeoStore.Droid
@@ -17,5 +19,6 @@ namespace NeoStore.Droid
             Control.Typeface = font;
             Control.SetBackgroundResource(Resource.Drawable.rounded_corner_shape);
         }
+
     }
 }

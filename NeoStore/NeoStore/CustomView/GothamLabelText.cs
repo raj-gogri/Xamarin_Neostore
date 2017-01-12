@@ -7,8 +7,8 @@ using Xamarin.Forms;
 
 namespace NeoStore.CustomView
 {
-   public class GothamLabelText:Label
-    {
 
+    public class GothamLabelText:Label
+    {
     }
 }

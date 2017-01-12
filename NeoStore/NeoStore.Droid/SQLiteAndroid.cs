@@ -16,7 +16,6 @@ using Xamarin.Forms;
 using System.Runtime.CompilerServices;
 
 [assembly: Xamarin.Forms.Dependency(typeof(SQLiteAndroid))]
-
 namespace NeoStore.Droid
 {
     class SQLiteAndroid : ISQLite

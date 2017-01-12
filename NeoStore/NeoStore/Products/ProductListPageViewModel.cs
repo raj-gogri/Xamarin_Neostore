@@ -7,6 +7,7 @@ namespace NeoStore.Products
     {
         public ProductListPageManager ProductListpageManager { get; set;}
         public ObservableCollection<ProductListPageResponseData> ProductList;
+        
         public ObservableCollection<ProductListPageResponseData> productList
         {
             get

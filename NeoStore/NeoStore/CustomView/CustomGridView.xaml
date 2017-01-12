@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NeoStore.CustomView;assembly=NeoStore"
+             x:Class="NeoStore.CustomView.CustomGridView">
+     <StackLayout  Padding="5,5,5,5">      
+      <Label x:Name="ItemNameCat" Font="Bold " FontSize="20" TextColor="White" HorizontalOptions="End"  />
+       <Image x:Name="IconImageCat"/>
+    </StackLayout>
+ </ContentView>

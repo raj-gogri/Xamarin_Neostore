@@ -12,7 +12,7 @@ using System.Diagnostics;
 
 namespace NeoStore.RegisterPage
 {
-    public class RestServices : IRestServices
+    class RestServices : IRestServices
     {
         HttpClient client;
         public RestServices()

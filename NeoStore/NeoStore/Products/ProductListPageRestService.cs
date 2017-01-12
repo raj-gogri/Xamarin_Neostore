@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using NeoStore.HomePage;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -18,8 +19,8 @@ namespace NeoStore.Products
         }
         public async Task<ProductListPageResponse> ProductListPageTodoAsync(ProductListPageViewModel item)
         {
-            //var id = MasterPage.tempId;
-            var id = 1;
+            var id = MasterPage.tempId;
+            
             ProductListPageResponse Items = null;
             var uri = new Uri("http://staging.php-dev.in:8844/trainingapp/api/products/getList");
             try

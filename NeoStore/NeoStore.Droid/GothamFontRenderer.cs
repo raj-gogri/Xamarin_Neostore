@@ -1,8 +1,18 @@
-using Xamarin.Forms;
-using NeoStore.CustomView;
-using NeoStore.Droid;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Views;
 using Android.Widget;
+using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
+using NeoStore.Droid;
+using NeoStore.CustomView;
 using Android.Graphics;
 
 [assembly: ExportRenderer(typeof(GothamLabelText), typeof(GothamFontRenderer))]
@@ -18,7 +28,5 @@ namespace NeoStore.Droid
             var font = Typeface.CreateFromAsset(Xamarin.Forms.Forms.Context.ApplicationContext.Assets, "gotham-book.ttf");
             label.Typeface = font;
         }
-
-
     }
 }

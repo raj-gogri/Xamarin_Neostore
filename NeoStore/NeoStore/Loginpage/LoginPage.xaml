@@ -74,6 +74,7 @@
                          FontSize="24"
                          HorizontalOptions="FillAndExpand"
                          TextColor="White"
+                         IsPassword="True"
                          Text="{Binding password}" />
                   <local:AwesomeLabel Text="{x:Static local:FontAwesome.FAEye}"
                                       FontFamily="FontAwesomeForms"

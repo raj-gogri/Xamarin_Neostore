@@ -7,6 +7,7 @@ namespace NeoStore
 {
     public partial class MainPage : ContentPage
     {
+
         public MainPage()
         {
             InitializeComponent();

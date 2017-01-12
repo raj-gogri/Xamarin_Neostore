@@ -1,35 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NeoStore.HomePage.DetailHomepage">
-  <StackLayout Padding="10,0,10,0">
-    <ScrollView Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
-      <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-        <Image Source="one.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Aspect="AspectFit" />
-        <Image Source="two.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Aspect="AspectFit" />
-        <Image Source="three.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Aspect="AspectFit" />
-        <Image Source="four.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Aspect="AspectFit" />
+             xmlns:cv="clr-namespace:NeoStore.HomePage;assembly=NeoStore"
+             x:Class="NeoStore.HomePage.DetailHomepage" Padding="0,0,0,0"
+             Title="Homepage">
+  <ScrollView Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  >    
+    <StackLayout>
+      <ScrollView Orientation="Horizontal"  >
+        <StackLayout x:Name="CarouselSource" Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand">
+
+        </StackLayout>
+      </ScrollView>    
+      <StackLayout Padding="5,5,5,5">
+      <Grid x:Name="grid" Padding="5,5,5,5" ColumnSpacing="10" RowSpacing="10" >
+        
+      </Grid>
       </StackLayout>
-    </ScrollView>
-
-    <Grid>
-      <Grid.RowDefinitions>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="*"/>
-      </Grid.RowDefinitions>
-
-      <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="*"/>
-        <ColumnDefinition Width="*"/>
-        <ColumnDefinition Width="*"/>
-      </Grid.ColumnDefinitions>
-      
-      
-
-    </Grid>
-    
-  </StackLayout>  
-  
+    </StackLayout>
+  </ScrollView>
 </ContentPage>
+

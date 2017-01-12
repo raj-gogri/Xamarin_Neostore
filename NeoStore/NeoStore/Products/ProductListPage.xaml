@@ -3,9 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:NeoStore.CustomView;assembly=NeoStore"
              x:Class="NeoStore.Products.ProductListPage"
-             Title="Tables">
+             >
 
   <StackLayout Orientation="Vertical" Padding="10,10,10,10">
+    <!--<ActivityIndicator x:Name="act"
+                      IsVisible="{Binding Isloading}"
+                      IsRunning="{Binding Isloading}"/>-->
     <ListView x:Name="listview"
               ItemsSource="{Binding productList}"
               RowHeight="120"

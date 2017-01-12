@@ -4,6 +4,7 @@ using Plugin.Connectivity.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,24 +15,25 @@ namespace NeoStore.Products
 {
     public partial class ProductListPage : ContentPage
     {
+
         public static int pd;
         public ProductListPage()
         {
             CrossConnectivity.Current.ConnectivityChanged += Current_ConnectivityChanged;
-            InitializeComponent();           
+            InitializeComponent();
             BindingContext = new ProductListPageViewModel();
-            MessagingCenter.Subscribe<ProductListPageManager,int>(this, "StarRating", (sender, Rating)=> 
+            MessagingCenter.Subscribe<ProductListPageManager, int>(this, "StarRating", (sender, Rating) =>
             {
-                for (int i=0; i<Rating; i++)
+                for (int i = 0; i < Rating; i++)
                 {
-                    var star = new AwesomeLabel { Text = FontAwesome.FAStar};
+                    var star = new AwesomeLabel { Text = FontAwesome.FAStar };
                     star.TextColor = Color.Yellow;
                     //DetailsRating.Childern.Add(star);
                 }
             });
-           
-           
-        }                
+
+
+        }
         private async void Current_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
         {
             if (!e.IsConnected)
@@ -44,7 +46,7 @@ namespace NeoStore.Products
         {
             var selecteditem = (ProductListPageResponseData)e.SelectedItem;
             pd = selecteditem.id;
-            var selectedpage = new ProductDetailPage { Title=selecteditem.ProductName };           
+            var selectedpage = new ProductDetailPage { Title = selecteditem.ProductName };
             selectedpage.BindingContext = selecteditem;
             Navigation.PushAsync(selectedpage);
         }

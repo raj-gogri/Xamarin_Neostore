@@ -1,7 +1,10 @@
-﻿using System.ComponentModel;
+﻿    using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 using SQLite;
+
+
+
 using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
 using System;
@@ -21,14 +24,16 @@ namespace NeoStore.RegisterPage
         public event PropertyChangedEventHandler PropertyChanged;
 
         public ICommand OnRegClicked { get; set; }        
-        string err;
+        string err=null;
+
         public RegisterViewModel()
         {                    
+
             OnRegClicked = new Command(
                 () =>
                  {
                      CrossConnectivity.Current.ConnectivityChanged += Current_ConnectivityChanged;
-                     
+
                      if (first_name == null)
                          err = "First Name can not be null";
                      else if (last_name == null)
@@ -41,7 +46,7 @@ namespace NeoStore.RegisterPage
                          err = "Enter Correct Password";
                      else if (gender == null)
                          err = "Select Gender";
-                     else if ((phone_no.ToString()).Length != 9)
+                     else if ((phone_no.ToString()).Length != 10)
                          err = "Enter Correct Number";
                      else if (phone_no.ToString() == null)
                          err = "Enter Correct Number";
@@ -60,9 +65,11 @@ namespace NeoStore.RegisterPage
         private void Current_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
         {
             if (!e.IsConnected)
-                MessagingCenter.Send<RegisterViewModel, string>
-                    (this, "InternetConnection", "PLease Check Internet Conncetion");
+
+                MessagingCenter.Send<RegisterViewModel, string>(this, "InternetConnection", "PLease Check Internet Conncetion");
         }
+
+
         public string first_name
         {
             get

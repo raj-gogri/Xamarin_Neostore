@@ -12,15 +12,19 @@ namespace NeoStore.RegisterPage
         {
             InitializeComponent();
             BindingContext = new RegisterViewModel();
-            BackgroundColor = Color.FromHex("#E91B1A");                        
-            DoSubscribe();           
+
+            BackgroundColor = Color.FromHex("#E91B1A");   
+                     
+            DoSubscribe();
+            
+
         }
 
         private void DoSubscribe()
         {
             MessagingCenter.Subscribe<RegisterViewModel,string>(this, "validate1", (sender,err) => {
                 DisplayAlert("Message", err, "Ok");
-               // MessagingCenter.Unsubscribe<RegisterViewModel, string>(this, "validate1");
+      // MessagingCenter.Unsubscribe<RegisterViewModel, string>(this, "validate1");
             });
 
             MessagingCenter.Subscribe<DatabaseManager, string>(this, "validate2", (sender, err) => {
@@ -33,6 +37,7 @@ namespace NeoStore.RegisterPage
                 DisplayAlert("Message", err, "Ok");
                // MessagingCenter.Unsubscribe<RegisterViewModel, string>(this, "InternetConnection");
             });
+
         }
 
         public void OnTapped(object sender, EventArgs e)

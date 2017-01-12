@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NeoStore.Loginpage
 {
-    class LoginResponse
+    public class LoginResponse
     {
         public int status { get; set; }
         public UserDetailsResponseData data { get; set; }

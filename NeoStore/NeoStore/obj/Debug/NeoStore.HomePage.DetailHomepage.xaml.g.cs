@@ -17,8 +17,16 @@ namespace NeoStore.HomePage {
     public partial class DetailHomepage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout CarouselSource;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Grid grid;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(DetailHomepage));
+            CarouselSource = this.FindByName<global::Xamarin.Forms.StackLayout>("CarouselSource");
+            grid = this.FindByName<global::Xamarin.Forms.Grid>("grid");
         }
     }
 }

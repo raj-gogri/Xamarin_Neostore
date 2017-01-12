@@ -8,7 +8,6 @@ namespace NeoStore.Loginpage
 {
     public partial class LoginPage : ContentPage
     {
-        bool value=true;
         public LoginPage()
         {
             InitializeComponent();
@@ -17,7 +16,6 @@ namespace NeoStore.Loginpage
             //lblneostore.TextColor = Color.FromHex("#FFFFFF");
             DoSub();
             BindingContext = new LoginViewModel();
-            password.IsPassword = value;
         }
 
         private void DoSub()
@@ -33,7 +31,9 @@ namespace NeoStore.Loginpage
                // MessagingCenter.Unsubscribe<LoginManager, string>(this, "Login");
 
             MessagingCenter.Subscribe<LoginManager>(this, "Navigate", (sender) => {
-                Application.Current.MainPage = new Homepage();
+
+
+                App.Current.MainPage =(new Homepage()); 
             });
 
             MessagingCenter.Subscribe<LoginViewModel, string>(this, "Warning", (sender, err) =>
@@ -46,19 +46,9 @@ namespace NeoStore.Loginpage
         {
             Navigation.PushAsync(new ForgetPasswordPage.ForgetPasswordpage());
         }
-
-        void OnTapGestureRecognizerTappedShowPassword(object sender, EventArgs e)
-        {
-            if (value == true)
-            {
-                value = false;
-            }
-            else
-                value = true;
-        }
         void OnAddNewUser(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Register());
+            App.Current.MainPage=(new Register());
         }
     }
 }

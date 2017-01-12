@@ -100,6 +100,8 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "NeoStore.Droid.dll" comes first in this list. */
 		"NeoStore.Droid.dll",
 		"FormsViewGroup.dll",
+		"ImageCircle.Forms.Plugin.Abstractions.dll",
+		"ImageCircle.Forms.Plugin.Android.dll",
 		"Plugin.Connectivity.Abstractions.dll",
 		"Plugin.Connectivity.dll",
 		"Rg.Plugins.Popup.dll",
@@ -142,8 +144,8 @@ class MonoPackageManager_Resources {
 		"System.ObjectModel.dll",
 		"System.ComponentModel.dll",
 		"System.Xml.ReaderWriter.dll",
-		"System.Dynamic.Runtime.dll",
 		"System.IO.dll",
+		"System.Dynamic.Runtime.dll",
 		"System.ServiceModel.Internals.dll",
 		"System.Text.RegularExpressions.dll",
 		"System.Collections.Concurrent.dll",
