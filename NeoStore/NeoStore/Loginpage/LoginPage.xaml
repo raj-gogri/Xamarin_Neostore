@@ -114,10 +114,9 @@
 
       </StackLayout>
 
-      <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
-        <Label Text="DONT HAVE AN ACCOUNT?                            "
-               HorizontalOptions="Start"
-               VerticalOptions="Center"
+      <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand">
+        <Label Text="DONT HAVE AN ACCOUNT?"
+               HorizontalOptions="StartAndExpand"
                Font="Medium"
                FontSize="18"
                TextColor="White"/>

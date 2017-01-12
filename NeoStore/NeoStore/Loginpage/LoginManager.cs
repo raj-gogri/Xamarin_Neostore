@@ -29,7 +29,6 @@ namespace NeoStore.Loginpage
                 App.Database.SaveItemdb(items.data);
                 msg = "Login Successfull";
                 MessagingCenter.Send<LoginManager, string>(this, "Login", msg);
-               // MessagingCenter.Send<LoginManager>(this, "Navigate");
                 Application.Current.MainPage =new NavigationPage( new ProductListPage());
             }
         }

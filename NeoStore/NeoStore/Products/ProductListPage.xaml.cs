@@ -1,4 +1,5 @@
 ﻿using NeoStore.CustomView;
+using NeoStore.Loginpage;
 using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
 using System;
@@ -20,17 +21,6 @@ namespace NeoStore.Products
             CrossConnectivity.Current.ConnectivityChanged += Current_ConnectivityChanged;
             InitializeComponent();           
             BindingContext = new ProductListPageViewModel();
-            MessagingCenter.Subscribe<ProductListPageManager,int>(this, "StarRating", (sender, Rating)=> 
-            {
-                for (int i=0; i<Rating; i++)
-                {
-                    var star = new AwesomeLabel { Text = FontAwesome.FAStar};
-                    star.TextColor = Color.Yellow;
-                    //DetailsRating.Childern.Add(star);
-                }
-            });
-           
-           
         }                
         private async void Current_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
         {
@@ -47,6 +37,12 @@ namespace NeoStore.Products
             var selectedpage = new ProductDetailPage { Title=selecteditem.ProductName };           
             selectedpage.BindingContext = selecteditem;
             Navigation.PushAsync(selectedpage);
+        }
+
+        void OnLogOutClicked(object sender, EventArgs e)
+        {
+            App.Database.DeleteUserDetails(App.UserLoggedInDetails);
+            App.Current.MainPage = new NavigationPage(new LoginPage());
         }
     }
 }

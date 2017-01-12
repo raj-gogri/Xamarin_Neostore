@@ -25,6 +25,9 @@
     <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.WinPhone\bin\Debug\NeoStore.WinPhone.exe">
       <PackagePath>NeoStore.WinPhone.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\packages\CarouselView.FormsPlugin.2.9.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10\CarouselView.FormsPlugin.Abstractions.dll">
+      <PackagePath>CarouselView.FormsPlugin.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore\bin\Debug\NeoStore.dll">
       <PackagePath>NeoStore.dll</PackagePath>
     </AppxPackagedFile>

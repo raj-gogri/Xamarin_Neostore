@@ -99,6 +99,8 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "NeoStore.Droid.dll" comes first in this list. */
 		"NeoStore.Droid.dll",
+		"CarouselView.FormsPlugin.Abstractions.dll",
+		"CarouselView.FormsPlugin.Android.dll",
 		"FormsViewGroup.dll",
 		"Plugin.Connectivity.Abstractions.dll",
 		"Plugin.Connectivity.dll",
@@ -128,11 +130,11 @@ class MonoPackageManager_Resources {
 		"Java.Interop.dll",
 		"NeoStore.dll",
 		"System.Runtime.dll",
-		"System.Resources.ResourceManager.dll",
+		"System.Diagnostics.Debug.dll",
 		"System.Threading.Tasks.dll",
+		"System.Resources.ResourceManager.dll",
 		"System.Threading.dll",
 		"System.Collections.dll",
-		"System.Diagnostics.Debug.dll",
 		"System.Reflection.dll",
 		"System.Linq.dll",
 		"System.Reflection.Extensions.dll",

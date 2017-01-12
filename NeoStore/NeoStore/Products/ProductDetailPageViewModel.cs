@@ -8,18 +8,17 @@ namespace NeoStore.Products
 {
     class ProductDetailPageViewModel: INotifyPropertyChanged
     {
-        public static ProductDetailPageResponse rp { get; set; }
+        //public static ProductDetailPageResponse rp { get; set; }
         private string productname;
         private string producername;
         private int cost;
-        public string description;       
-
+        public string description;
         public string ProductName
         {
             get { return productname; }
             set
             {
-                productname = rp.data.ProductName; 
+                productname = value; 
                     PropertyChangedEventHandler handler = PropertyChanged;
                     if (handler != null)
                     {
@@ -32,7 +31,7 @@ namespace NeoStore.Products
             get { return producername; }
             set
             {
-                producername = rp.data.ProducerName;
+                producername = value;
                     PropertyChangedEventHandler handler = PropertyChanged;
                     if (handler != null)
                     {
@@ -45,7 +44,7 @@ namespace NeoStore.Products
             get { return cost; }
             set
             {
-                cost = rp.data.Cost;
+                cost = value;
                     PropertyChangedEventHandler handler = PropertyChanged;
                     if (handler != null)
                     {
@@ -58,13 +57,12 @@ namespace NeoStore.Products
             get { return description; }
             set
             {
-                description = rp.data.Description;
+                description = value;
                     PropertyChangedEventHandler handler = PropertyChanged;
                     if (handler != null)
                     {
                         handler(this, new PropertyChangedEventArgs("Description"));
-                    }
-                
+                    }                
             }
         }
         public ProductDetailPageManager productdetailmanager { get; set; }
@@ -86,7 +84,6 @@ namespace NeoStore.Products
         public ProductDetailPageViewModel()
         {
             productdetailmanager = new ProductDetailPageManager();
-
             GetProductDetails();
         }
         public async void GetProductDetails()

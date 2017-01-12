@@ -3,40 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:NeoStore.CustomView;assembly=NeoStore"
              xmlns:ViewModel="clr-namespace:NeoStore.Products;assembly=NeoStore"
+             xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
              x:Class="NeoStore.Products.ProductDetailPage" >
   
-<StackLayout x:Name="stck">
-  <ScrollView Padding="0,0,0,10"  >
-    <StackLayout Orientation="Vertical">
-      <StackLayout BackgroundColor="White">
-        <StackLayout Orientation="Vertical" Padding="10,15,10,10">
-
-          <local:GothamLabelText Text="{Binding ProductName}"
-                 FontSize="25"
-                 TextColor="Black"
-          x:Name="lbl"/>
-
-          <local:GothamLabelText Text="Binding CategoryName"
-                 FontSize="21"
-                 TextColor="Black"/>
-
-          <StackLayout Orientation="Horizontal" VerticalOptions="Center">
-            <local:GothamLabelText Text="{Binding ProducerName}"
-                   FontSize="14"
-                   TextColor="Black"
-                   VerticalOptions="Center"
-                   HorizontalOptions="StartAndExpand"/>
-
-            <StackLayout x:Name="DetailsRating" Orientation="Horizontal" VerticalOptions="EndAndExpand">
+  <StackLayout x:Name="stck">
+    <ScrollView Padding="0,0,0,10"  >
+      <StackLayout Orientation="Vertical">
+        <StackLayout BackgroundColor="White">
+          <StackLayout Orientation="Vertical" Padding="10,15,10,10">
+            <local:GothamLabelText Text="{Binding ProductName}"
+                                   FontSize="25"
+                                   TextColor="Black"
+                                   x:Name="lbl"/>
+            <local:GothamLabelText Text="Binding CategoryName"
+                                   FontSize="21"
+                                   TextColor="Black"/>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+              <local:GothamLabelText Text="{Binding ProducerName}"
+                                     FontSize="14"
+                                     TextColor="Black"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="StartAndExpand"/>
+              <StackLayout x:Name="DetailsRating" Orientation="Horizontal" VerticalOptions="EndAndExpand">
+              </StackLayout>
             </StackLayout>
-
           </StackLayout>
         </StackLayout>
-      </StackLayout>
-      
-      <StackLayout Padding="10,10,10,10" BackgroundColor="White">
-        <StackLayout Padding="10,10,10,10" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-          <local:GothamLabelText Text="Rs. "
+        <StackLayout Padding="10,10,10,10" BackgroundColor="White">
+          <StackLayout Padding="10,10,10,10" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <local:GothamLabelText Text="Rs. "
                Font="Medium"
                FontSize="22"
                TextColor="Red"/>
@@ -53,10 +48,29 @@
                   FontSize="24"
                   TextColor="Gray"/>
         </StackLayout>
-        
-      <StackLayout Padding="35,0,35,0">
+
+        <StackLayout Padding="35,0,35,0">
           <Image x:Name="MainImage" Source="{Binding ProductImages}" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-      </StackLayout>
+            <!--<controls:CarouselViewControl  Orientation="Horizontal" InterPageSpacing="10" Position="0" ItemsSource="{Binding productdetails}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <controls:CarouselViewControl.ItemTemplate>
+              <DataTemplate>
+                <StackLayout>
+                  <Image Source="{Binding ProductImages}" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+              </DataTemplate>
+            </controls:CarouselViewControl.ItemTemplate>
+          </controls:CarouselViewControl>-->            
+            <!--<ContentView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <controls:CarouselView ItemsSource="{Binding productdetails}">
+              <controls:CarouselView.ItemTemplate>
+                <DataTemplate>
+                  <Image Source="{Binding ProductImages}"/>
+                </DataTemplate>
+              </controls:CarouselView.ItemTemplate>
+            </controls:CarouselView>
+          </ContentView>-->
+        </StackLayout>
+        
         <StackLayout>
           <ScrollView Orientation="Horizontal">
             <StackLayout Padding="0,10,0,0" x:Name="Imagelist" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" >

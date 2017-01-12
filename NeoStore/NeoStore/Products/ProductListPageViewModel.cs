@@ -21,6 +21,7 @@ namespace NeoStore.Products
                     handler(this, new PropertyChangedEventArgs("productList"));
             }
         }
+
         public event PropertyChangedEventHandler PropertyChanged;
         public ProductListPageViewModel()
         {

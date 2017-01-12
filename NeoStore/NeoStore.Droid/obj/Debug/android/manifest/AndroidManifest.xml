@@ -8,7 +8,8 @@
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
   <application android:label="Neostore" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="NeoStore" android:theme="@style/MainTheme" android:name="md50bcc843ec7830d982358b1e43dc41fea.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="NeoStore" android:theme="@style/MainTheme" android:name="md50bcc843ec7830d982358b1e43dc41fea.MainActivity" />
+    <activity android:label="NeoSTORE" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md50bcc843ec7830d982358b1e43dc41fea.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

@@ -6,6 +6,9 @@
              Title="Tables">
 
   <StackLayout Orientation="Vertical" Padding="10,10,10,10">
+    <!--<ActivityIndicator x:Name="act"
+                      IsVisible="{Binding Isloading}"
+                      IsRunning="{Binding Isloading}"/>-->
     <ListView x:Name="listview"
               ItemsSource="{Binding productList}"
               RowHeight="120"
@@ -46,5 +49,6 @@
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
+    <Button Text="LogOut" Clicked="OnLogOutClicked" HorizontalOptions="Center"/>
   </StackLayout>
 </ContentPage>

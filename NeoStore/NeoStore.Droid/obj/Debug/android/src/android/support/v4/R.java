@@ -2072,6 +2072,93 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static int voiceIcon=0x7f0100d7;
+        /**  Whether or not the indicators should be centered. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int vpiCentered=0x7f01013d;
+        /**  Style of the circle indicator. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static int vpiCirclePageIndicatorStyle=0x7f01013c;
+        /**  Color of the filled circle that represents the current page. 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int vpiFillColor=0x7f010142;
+        /**  Orientation of the indicator. 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>horizontal</code></td><td>0</td><td></td></tr>
+<tr><td><code>vertical</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int vpiOrientation=0x7f01013f;
+        /**  Color of the filled circles that represents pages. 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int vpiPageColor=0x7f01013e;
+        /**  Radius of the circles. This is also the spacing between circles. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int vpiRadius=0x7f010141;
+        /**  Whether or not the selected indicator snaps to the circles. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int vpiSnap=0x7f010140;
+        /**  Color of the open circles. 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int vpiStrokeColor=0x7f010143;
+        /**  Width of the stroke used to draw the circles. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int vpiStrokeWidth=0x7f010144;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -2192,22 +2279,24 @@ containing a value of this type.
         public static int abc_config_allowActionMenuItemTextWithIcon=0x7f0c0002;
         public static int abc_config_closeDialogWhenTouchOutside=0x7f0c0006;
         public static int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f0c0007;
+        public static int default_circle_indicator_centered=0x7f0c0008;
+        public static int default_circle_indicator_snap=0x7f0c0009;
     }
     public static final class color {
-        public static int abc_background_cache_hint_selector_material_dark=0x7f0b0048;
-        public static int abc_background_cache_hint_selector_material_light=0x7f0b0049;
-        public static int abc_color_highlight_material=0x7f0b004a;
+        public static int abc_background_cache_hint_selector_material_dark=0x7f0b0053;
+        public static int abc_background_cache_hint_selector_material_light=0x7f0b0054;
+        public static int abc_color_highlight_material=0x7f0b0055;
         public static int abc_input_method_navigation_guard=0x7f0b0004;
-        public static int abc_primary_text_disable_only_material_dark=0x7f0b004b;
-        public static int abc_primary_text_disable_only_material_light=0x7f0b004c;
-        public static int abc_primary_text_material_dark=0x7f0b004d;
-        public static int abc_primary_text_material_light=0x7f0b004e;
-        public static int abc_search_url_text=0x7f0b004f;
+        public static int abc_primary_text_disable_only_material_dark=0x7f0b0056;
+        public static int abc_primary_text_disable_only_material_light=0x7f0b0057;
+        public static int abc_primary_text_material_dark=0x7f0b0058;
+        public static int abc_primary_text_material_light=0x7f0b0059;
+        public static int abc_search_url_text=0x7f0b005a;
         public static int abc_search_url_text_normal=0x7f0b0005;
         public static int abc_search_url_text_pressed=0x7f0b0006;
         public static int abc_search_url_text_selected=0x7f0b0007;
-        public static int abc_secondary_text_material_dark=0x7f0b0050;
-        public static int abc_secondary_text_material_light=0x7f0b0051;
+        public static int abc_secondary_text_material_dark=0x7f0b005b;
+        public static int abc_secondary_text_material_light=0x7f0b005c;
         public static int accent_material_dark=0x7f0b0008;
         public static int accent_material_light=0x7f0b0009;
         public static int background_floating_material_dark=0x7f0b000a;
@@ -2226,6 +2315,9 @@ containing a value of this type.
         public static int cardview_light_background=0x7f0b0001;
         public static int cardview_shadow_end_color=0x7f0b0002;
         public static int cardview_shadow_start_color=0x7f0b0003;
+        public static int default_circle_indicator_fill_color=0x7f0b0050;
+        public static int default_circle_indicator_page_color=0x7f0b0051;
+        public static int default_circle_indicator_stroke_color=0x7f0b0052;
         public static int design_fab_shadow_end_color=0x7f0b003e;
         public static int design_fab_shadow_mid_color=0x7f0b003f;
         public static int design_fab_shadow_start_color=0x7f0b0040;
@@ -2274,10 +2366,18 @@ containing a value of this type.
         public static int secondary_text_disabled_material_light=0x7f0b0039;
         public static int switch_thumb_disabled_material_dark=0x7f0b003a;
         public static int switch_thumb_disabled_material_light=0x7f0b003b;
-        public static int switch_thumb_material_dark=0x7f0b0052;
-        public static int switch_thumb_material_light=0x7f0b0053;
+        public static int switch_thumb_material_dark=0x7f0b005d;
+        public static int switch_thumb_material_light=0x7f0b005e;
         public static int switch_thumb_normal_material_dark=0x7f0b003c;
         public static int switch_thumb_normal_material_light=0x7f0b003d;
+        public static int vpi__background_holo_dark=0x7f0b0048;
+        public static int vpi__background_holo_light=0x7f0b0049;
+        public static int vpi__bright_foreground_disabled_holo_dark=0x7f0b004c;
+        public static int vpi__bright_foreground_disabled_holo_light=0x7f0b004d;
+        public static int vpi__bright_foreground_holo_dark=0x7f0b004a;
+        public static int vpi__bright_foreground_holo_light=0x7f0b004b;
+        public static int vpi__bright_foreground_inverse_holo_dark=0x7f0b004e;
+        public static int vpi__bright_foreground_inverse_holo_light=0x7f0b004f;
     }
     public static final class dimen {
         public static int abc_action_bar_content_inset_material=0x7f060019;
@@ -2350,6 +2450,8 @@ containing a value of this type.
         public static int cardview_compat_inset_shadow=0x7f060009;
         public static int cardview_default_elevation=0x7f06000a;
         public static int cardview_default_radius=0x7f06000b;
+        public static int default_circle_indicator_radius=0x7f060074;
+        public static int default_circle_indicator_stroke_width=0x7f060075;
         public static int design_appbar_elevation=0x7f06005f;
         public static int design_bottom_sheet_modal_elevation=0x7f060060;
         public static int design_bottom_sheet_modal_peek_height=0x7f060061;
@@ -2561,166 +2663,171 @@ containing a value of this type.
         public static int mr_ic_pause_light=0x7f0200a0;
         public static int mr_ic_play_dark=0x7f0200a1;
         public static int mr_ic_play_light=0x7f0200a2;
-        public static int notification_template_icon_bg=0x7f0200a8;
+        public static int notification_template_icon_bg=0x7f0200a9;
         public static int one=0x7f0200a3;
         public static int rounded_button_for_productdetails=0x7f0200a4;
         public static int rounded_corner_shape=0x7f0200a5;
-        public static int three=0x7f0200a6;
-        public static int two=0x7f0200a7;
+        public static int splashscreen=0x7f0200a6;
+        public static int three=0x7f0200a7;
+        public static int two=0x7f0200a8;
     }
     public static final class id {
-        public static int action0=0x7f07008b;
-        public static int action_bar=0x7f07005a;
+        public static int action0=0x7f07008d;
+        public static int action_bar=0x7f07005c;
         public static int action_bar_activity_content=0x7f070001;
-        public static int action_bar_container=0x7f070059;
-        public static int action_bar_root=0x7f070055;
+        public static int action_bar_container=0x7f07005b;
+        public static int action_bar_root=0x7f070057;
         public static int action_bar_spinner=0x7f070002;
-        public static int action_bar_subtitle=0x7f07003b;
-        public static int action_bar_title=0x7f07003a;
-        public static int action_context_bar=0x7f07005b;
-        public static int action_divider=0x7f07008f;
+        public static int action_bar_subtitle=0x7f07003d;
+        public static int action_bar_title=0x7f07003c;
+        public static int action_context_bar=0x7f07005d;
+        public static int action_divider=0x7f070091;
         public static int action_menu_divider=0x7f070003;
         public static int action_menu_presenter=0x7f070004;
-        public static int action_mode_bar=0x7f070057;
-        public static int action_mode_bar_stub=0x7f070056;
-        public static int action_mode_close_button=0x7f07003c;
-        public static int activity_chooser_view_content=0x7f07003d;
-        public static int alertTitle=0x7f070049;
+        public static int action_mode_bar=0x7f070059;
+        public static int action_mode_bar_stub=0x7f070058;
+        public static int action_mode_close_button=0x7f07003e;
+        public static int activity_chooser_view_content=0x7f07003f;
+        public static int alertTitle=0x7f07004b;
         public static int always=0x7f07001e;
         public static int beginning=0x7f07001b;
         public static int bottom=0x7f07002a;
-        public static int buttonPanel=0x7f070044;
-        public static int cancel_action=0x7f07008c;
+        public static int buttonPanel=0x7f070046;
+        public static int cancel_action=0x7f07008e;
         public static int center=0x7f07002b;
         public static int center_horizontal=0x7f07002c;
         public static int center_vertical=0x7f07002d;
-        public static int checkbox=0x7f070052;
-        public static int chronometer=0x7f070092;
+        public static int checkbox=0x7f070054;
+        public static int chronometer=0x7f070094;
         public static int clip_horizontal=0x7f070033;
         public static int clip_vertical=0x7f070034;
         public static int collapseActionView=0x7f07001f;
-        public static int contentPanel=0x7f07004a;
-        public static int custom=0x7f070050;
-        public static int customPanel=0x7f07004f;
-        public static int decor_content_parent=0x7f070058;
-        public static int default_activity_button=0x7f070040;
-        public static int design_bottom_sheet=0x7f07006a;
-        public static int design_menu_item_action_area=0x7f070071;
-        public static int design_menu_item_action_area_stub=0x7f070070;
-        public static int design_menu_item_text=0x7f07006f;
-        public static int design_navigation_view=0x7f07006e;
+        public static int contentPanel=0x7f07004c;
+        public static int custom=0x7f070052;
+        public static int customPanel=0x7f070051;
+        public static int decor_content_parent=0x7f07005a;
+        public static int default_activity_button=0x7f070042;
+        public static int design_bottom_sheet=0x7f07006c;
+        public static int design_menu_item_action_area=0x7f070073;
+        public static int design_menu_item_action_area_stub=0x7f070072;
+        public static int design_menu_item_text=0x7f070071;
+        public static int design_navigation_view=0x7f070070;
         public static int disableHome=0x7f07000e;
-        public static int edit_query=0x7f07005c;
+        public static int edit_query=0x7f07005e;
         public static int end=0x7f07001c;
-        public static int end_padder=0x7f070097;
+        public static int end_padder=0x7f070099;
         public static int enterAlways=0x7f070023;
         public static int enterAlwaysCollapsed=0x7f070024;
         public static int exitUntilCollapsed=0x7f070025;
-        public static int expand_activities_button=0x7f07003e;
-        public static int expanded_menu=0x7f070051;
+        public static int expand_activities_button=0x7f070040;
+        public static int expanded_menu=0x7f070053;
         public static int fill=0x7f070035;
         public static int fill_horizontal=0x7f070036;
         public static int fill_vertical=0x7f07002e;
         public static int fixed=0x7f070038;
         public static int home=0x7f070005;
         public static int homeAsUp=0x7f07000f;
-        public static int icon=0x7f070042;
+        public static int horizontal=0x7f07003a;
+        public static int icon=0x7f070044;
         public static int ifRoom=0x7f070020;
-        public static int image=0x7f07003f;
-        public static int info=0x7f070096;
+        public static int image=0x7f070041;
+        public static int indicator=0x7f07009d;
+        public static int info=0x7f070098;
         public static int item_touch_helper_previous_elevation=0x7f070000;
         public static int left=0x7f07002f;
-        public static int line1=0x7f070090;
-        public static int line3=0x7f070094;
+        public static int line1=0x7f070092;
+        public static int line3=0x7f070096;
         public static int listMode=0x7f07000b;
-        public static int list_item=0x7f070041;
-        public static int media_actions=0x7f07008e;
+        public static int list_item=0x7f070043;
+        public static int media_actions=0x7f070090;
         public static int middle=0x7f07001d;
         public static int mini=0x7f070037;
-        public static int mr_art=0x7f07007d;
-        public static int mr_chooser_list=0x7f070072;
-        public static int mr_chooser_route_desc=0x7f070075;
-        public static int mr_chooser_route_icon=0x7f070073;
-        public static int mr_chooser_route_name=0x7f070074;
-        public static int mr_close=0x7f07007a;
-        public static int mr_control_divider=0x7f070080;
-        public static int mr_control_play_pause=0x7f070086;
-        public static int mr_control_subtitle=0x7f070089;
-        public static int mr_control_title=0x7f070088;
-        public static int mr_control_title_container=0x7f070087;
-        public static int mr_custom_control=0x7f07007b;
-        public static int mr_default_control=0x7f07007c;
-        public static int mr_dialog_area=0x7f070077;
-        public static int mr_expandable_area=0x7f070076;
-        public static int mr_group_expand_collapse=0x7f07008a;
-        public static int mr_media_main_control=0x7f07007e;
-        public static int mr_name=0x7f070079;
-        public static int mr_playback_control=0x7f07007f;
-        public static int mr_title_bar=0x7f070078;
-        public static int mr_volume_control=0x7f070081;
-        public static int mr_volume_group_list=0x7f070082;
-        public static int mr_volume_item_icon=0x7f070084;
-        public static int mr_volume_slider=0x7f070085;
+        public static int mr_art=0x7f07007f;
+        public static int mr_chooser_list=0x7f070074;
+        public static int mr_chooser_route_desc=0x7f070077;
+        public static int mr_chooser_route_icon=0x7f070075;
+        public static int mr_chooser_route_name=0x7f070076;
+        public static int mr_close=0x7f07007c;
+        public static int mr_control_divider=0x7f070082;
+        public static int mr_control_play_pause=0x7f070088;
+        public static int mr_control_subtitle=0x7f07008b;
+        public static int mr_control_title=0x7f07008a;
+        public static int mr_control_title_container=0x7f070089;
+        public static int mr_custom_control=0x7f07007d;
+        public static int mr_default_control=0x7f07007e;
+        public static int mr_dialog_area=0x7f070079;
+        public static int mr_expandable_area=0x7f070078;
+        public static int mr_group_expand_collapse=0x7f07008c;
+        public static int mr_media_main_control=0x7f070080;
+        public static int mr_name=0x7f07007b;
+        public static int mr_playback_control=0x7f070081;
+        public static int mr_title_bar=0x7f07007a;
+        public static int mr_volume_control=0x7f070083;
+        public static int mr_volume_group_list=0x7f070084;
+        public static int mr_volume_item_icon=0x7f070086;
+        public static int mr_volume_slider=0x7f070087;
         public static int multiply=0x7f070016;
-        public static int navigation_header_container=0x7f07006d;
+        public static int navigation_header_container=0x7f07006f;
         public static int never=0x7f070021;
         public static int none=0x7f070010;
         public static int normal=0x7f07000c;
+        public static int pager=0x7f07009c;
         public static int parallax=0x7f070028;
-        public static int parentPanel=0x7f070046;
+        public static int parentPanel=0x7f070048;
         public static int pin=0x7f070029;
         public static int progress_circular=0x7f070006;
         public static int progress_horizontal=0x7f070007;
-        public static int radio=0x7f070054;
+        public static int radio=0x7f070056;
         public static int right=0x7f070030;
         public static int screen=0x7f070017;
         public static int scroll=0x7f070026;
-        public static int scrollIndicatorDown=0x7f07004e;
-        public static int scrollIndicatorUp=0x7f07004b;
-        public static int scrollView=0x7f07004c;
+        public static int scrollIndicatorDown=0x7f070050;
+        public static int scrollIndicatorUp=0x7f07004d;
+        public static int scrollView=0x7f07004e;
         public static int scrollable=0x7f070039;
-        public static int search_badge=0x7f07005e;
-        public static int search_bar=0x7f07005d;
-        public static int search_button=0x7f07005f;
-        public static int search_close_btn=0x7f070064;
-        public static int search_edit_frame=0x7f070060;
-        public static int search_go_btn=0x7f070066;
-        public static int search_mag_icon=0x7f070061;
-        public static int search_plate=0x7f070062;
-        public static int search_src_text=0x7f070063;
-        public static int search_voice_btn=0x7f070067;
-        public static int select_dialog_listview=0x7f070068;
-        public static int shortcut=0x7f070053;
+        public static int search_badge=0x7f070060;
+        public static int search_bar=0x7f07005f;
+        public static int search_button=0x7f070061;
+        public static int search_close_btn=0x7f070066;
+        public static int search_edit_frame=0x7f070062;
+        public static int search_go_btn=0x7f070068;
+        public static int search_mag_icon=0x7f070063;
+        public static int search_plate=0x7f070064;
+        public static int search_src_text=0x7f070065;
+        public static int search_voice_btn=0x7f070069;
+        public static int select_dialog_listview=0x7f07006a;
+        public static int shortcut=0x7f070055;
         public static int showCustom=0x7f070011;
         public static int showHome=0x7f070012;
         public static int showTitle=0x7f070013;
-        public static int sliding_tabs=0x7f070098;
-        public static int snackbar_action=0x7f07006c;
-        public static int snackbar_text=0x7f07006b;
+        public static int sliding_tabs=0x7f07009a;
+        public static int snackbar_action=0x7f07006e;
+        public static int snackbar_text=0x7f07006d;
         public static int snap=0x7f070027;
-        public static int spacer=0x7f070045;
+        public static int spacer=0x7f070047;
         public static int split_action_bar=0x7f070008;
         public static int src_atop=0x7f070018;
         public static int src_in=0x7f070019;
         public static int src_over=0x7f07001a;
         public static int start=0x7f070031;
-        public static int status_bar_latest_event_content=0x7f07008d;
-        public static int submit_area=0x7f070065;
+        public static int status_bar_latest_event_content=0x7f07008f;
+        public static int submit_area=0x7f070067;
         public static int tabMode=0x7f07000d;
-        public static int text=0x7f070095;
-        public static int text2=0x7f070093;
-        public static int textSpacerNoButtons=0x7f07004d;
-        public static int time=0x7f070091;
-        public static int title=0x7f070043;
-        public static int title_template=0x7f070048;
-        public static int toolbar=0x7f070099;
+        public static int text=0x7f070097;
+        public static int text2=0x7f070095;
+        public static int textSpacerNoButtons=0x7f07004f;
+        public static int time=0x7f070093;
+        public static int title=0x7f070045;
+        public static int title_template=0x7f07004a;
+        public static int toolbar=0x7f07009b;
         public static int top=0x7f070032;
-        public static int topPanel=0x7f070047;
-        public static int touch_outside=0x7f070069;
+        public static int topPanel=0x7f070049;
+        public static int touch_outside=0x7f07006b;
         public static int up=0x7f070009;
         public static int useLogo=0x7f070014;
+        public static int vertical=0x7f07003b;
         public static int view_offset_helper=0x7f07000a;
-        public static int volume_item_container=0x7f070083;
+        public static int volume_item_container=0x7f070085;
         public static int withText=0x7f070022;
         public static int wrap_content=0x7f070015;
     }
@@ -2730,6 +2837,7 @@ containing a value of this type.
         public static int abc_max_action_buttons=0x7f090003;
         public static int bottom_sheet_slide_duration=0x7f090009;
         public static int cancel_button_image_alpha=0x7f090006;
+        public static int default_circle_indicator_orientation=0x7f09000a;
         public static int design_snackbar_text_max_lines=0x7f090008;
         public static int mr_controller_volume_group_list_animation_duration_ms=0x7f090000;
         public static int mr_controller_volume_group_list_fade_in_duration_ms=0x7f090001;
@@ -2798,6 +2906,8 @@ containing a value of this type.
         public static int support_simple_spinner_dropdown_item=0x7f030036;
         public static int tabbar=0x7f030037;
         public static int toolbar=0x7f030038;
+        public static int vertical_viewpager=0x7f030039;
+        public static int viewpager=0x7f03003a;
     }
     public static final class string {
         public static int abc_action_bar_home_description=0x7f08000f;
@@ -2845,7 +2955,7 @@ containing a value of this type.
         public static int Animation_AppCompat_Dialog=0x7f0a00a3;
         public static int Animation_AppCompat_DropDownUp=0x7f0a00a4;
         public static int Animation_Design_BottomSheetDialog=0x7f0a015a;
-        public static int AppCompatDialogStyle=0x7f0a0174;
+        public static int AppCompatDialogStyle=0x7f0a0178;
         public static int Base_AlertDialog_AppCompat=0x7f0a00a5;
         public static int Base_AlertDialog_AppCompat_Light=0x7f0a00a6;
         public static int Base_Animation_AppCompat_Dialog=0x7f0a00a7;
@@ -2993,10 +3103,10 @@ containing a value of this type.
         public static int CardView=0x7f0a0017;
         public static int CardView_Dark=0x7f0a0019;
         public static int CardView_Light=0x7f0a001a;
-        public static int MainTheme=0x7f0a0172;
+        public static int MainTheme=0x7f0a0176;
         /**  Base theme applied no matter what API 
          */
-        public static int MainTheme_Base=0x7f0a0173;
+        public static int MainTheme_Base=0x7f0a0177;
         public static int Platform_AppCompat=0x7f0a0032;
         public static int Platform_AppCompat_Light=0x7f0a0033;
         public static int Platform_ThemeOverlay_AppCompat=0x7f0a0095;
@@ -3111,11 +3221,14 @@ containing a value of this type.
         public static int Theme_MediaRouter_Light=0x7f0a0001;
         public static int Theme_MediaRouter_Light_DarkControlPanel=0x7f0a0002;
         public static int Theme_MediaRouter_LightControlPanel=0x7f0a0003;
+        public static int Theme_PageIndicatorDefaults=0x7f0a0172;
+        public static int Theme_Splash=0x7f0a0175;
         public static int ThemeOverlay_AppCompat=0x7f0a010e;
         public static int ThemeOverlay_AppCompat_ActionBar=0x7f0a010f;
         public static int ThemeOverlay_AppCompat_Dark=0x7f0a0110;
         public static int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0a0111;
         public static int ThemeOverlay_AppCompat_Light=0x7f0a0112;
+        public static int Widget=0x7f0a0173;
         public static int Widget_AppCompat_ActionBar=0x7f0a0113;
         public static int Widget_AppCompat_ActionBar_Solid=0x7f0a0114;
         public static int Widget_AppCompat_ActionBar_TabBar=0x7f0a0115;
@@ -3186,6 +3299,7 @@ containing a value of this type.
         public static int Widget_AppCompat_TextView_SpinnerItem=0x7f0a0156;
         public static int Widget_AppCompat_Toolbar=0x7f0a0157;
         public static int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0a0158;
+        public static int Widget_CirclePageIndicator=0x7f0a0174;
         public static int Widget_Design_AppBarLayout=0x7f0a0169;
         public static int Widget_Design_BottomSheet_Modal=0x7f0a016a;
         public static int Widget_Design_CollapsingToolbar=0x7f0a016b;
@@ -5910,6 +6024,172 @@ containing a value of this type.
           @attr name android.support.v4:contentPaddingTop
         */
         public static int CardView_contentPaddingTop = 11;
+        /** Attributes that can be used with a CirclePageIndicator.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CirclePageIndicator_vpiCentered android.support.v4:vpiCentered}</code></td><td> Whether or not the indicators should be centered.</td></tr>
+           <tr><td><code>{@link #CirclePageIndicator_vpiFillColor android.support.v4:vpiFillColor}</code></td><td> Color of the filled circle that represents the current page.</td></tr>
+           <tr><td><code>{@link #CirclePageIndicator_vpiOrientation android.support.v4:vpiOrientation}</code></td><td> Orientation of the indicator.</td></tr>
+           <tr><td><code>{@link #CirclePageIndicator_vpiPageColor android.support.v4:vpiPageColor}</code></td><td> Color of the filled circles that represents pages.</td></tr>
+           <tr><td><code>{@link #CirclePageIndicator_vpiRadius android.support.v4:vpiRadius}</code></td><td> Radius of the circles.</td></tr>
+           <tr><td><code>{@link #CirclePageIndicator_vpiSnap android.support.v4:vpiSnap}</code></td><td> Whether or not the selected indicator snaps to the circles.</td></tr>
+           <tr><td><code>{@link #CirclePageIndicator_vpiStrokeColor android.support.v4:vpiStrokeColor}</code></td><td> Color of the open circles.</td></tr>
+           <tr><td><code>{@link #CirclePageIndicator_vpiStrokeWidth android.support.v4:vpiStrokeWidth}</code></td><td> Width of the stroke used to draw the circles.</td></tr>
+           </table>
+           @see #CirclePageIndicator_vpiCentered
+           @see #CirclePageIndicator_vpiFillColor
+           @see #CirclePageIndicator_vpiOrientation
+           @see #CirclePageIndicator_vpiPageColor
+           @see #CirclePageIndicator_vpiRadius
+           @see #CirclePageIndicator_vpiSnap
+           @see #CirclePageIndicator_vpiStrokeColor
+           @see #CirclePageIndicator_vpiStrokeWidth
+         */
+        public static final int[] CirclePageIndicator = {
+            0x7f01013d, 0x7f01013e, 0x7f01013f, 0x7f010140,
+            0x7f010141, 0x7f010142, 0x7f010143, 0x7f010144
+        };
+        /**
+          <p>
+          @attr description
+           Whether or not the indicators should be centered. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android.support.v4:vpiCentered
+        */
+        public static int CirclePageIndicator_vpiCentered = 0;
+        /**
+          <p>
+          @attr description
+           Color of the filled circle that represents the current page. 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android.support.v4:vpiFillColor
+        */
+        public static int CirclePageIndicator_vpiFillColor = 5;
+        /**
+          <p>
+          @attr description
+           Orientation of the indicator. 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>horizontal</code></td><td>0</td><td></td></tr>
+<tr><td><code>vertical</code></td><td>1</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android.support.v4:vpiOrientation
+        */
+        public static int CirclePageIndicator_vpiOrientation = 2;
+        /**
+          <p>
+          @attr description
+           Color of the filled circles that represents pages. 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android.support.v4:vpiPageColor
+        */
+        public static int CirclePageIndicator_vpiPageColor = 1;
+        /**
+          <p>
+          @attr description
+           Radius of the circles. This is also the spacing between circles. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android.support.v4:vpiRadius
+        */
+        public static int CirclePageIndicator_vpiRadius = 4;
+        /**
+          <p>
+          @attr description
+           Whether or not the selected indicator snaps to the circles. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android.support.v4:vpiSnap
+        */
+        public static int CirclePageIndicator_vpiSnap = 3;
+        /**
+          <p>
+          @attr description
+           Color of the open circles. 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android.support.v4:vpiStrokeColor
+        */
+        public static int CirclePageIndicator_vpiStrokeColor = 6;
+        /**
+          <p>
+          @attr description
+           Width of the stroke used to draw the circles. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android.support.v4:vpiStrokeWidth
+        */
+        public static int CirclePageIndicator_vpiStrokeWidth = 7;
         /** Attributes that can be used with a CollapsingAppBarLayout_LayoutParams.
            <p>Includes the following attributes:</p>
            <table>
@@ -9282,6 +9562,31 @@ containing a value of this type.
           @attr name android.support.v4:backgroundTintMode
         */
         public static int ViewBackgroundHelper_backgroundTintMode = 2;
+        /** Attributes that can be used with a ViewPagerIndicator.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ViewPagerIndicator_vpiCirclePageIndicatorStyle android.support.v4:vpiCirclePageIndicatorStyle}</code></td><td> Style of the circle indicator.</td></tr>
+           </table>
+           @see #ViewPagerIndicator_vpiCirclePageIndicatorStyle
+         */
+        public static final int[] ViewPagerIndicator = {
+            0x7f01013c
+        };
+        /**
+          <p>
+          @attr description
+           Style of the circle indicator. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android.support.v4:vpiCirclePageIndicatorStyle
+        */
+        public static int ViewPagerIndicator_vpiCirclePageIndicatorStyle = 0;
         /** Attributes that can be used with a ViewStubCompat.
            <p>Includes the following attributes:</p>
            <table>

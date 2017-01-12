@@ -1,4 +1,6 @@
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\NeoStore.Droid.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\CarouselView.FormsPlugin.Abstractions.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\CarouselView.FormsPlugin.Android.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\FormsViewGroup.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\Plugin.Connectivity.Abstractions.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\Plugin.Connectivity.dll
@@ -35,11 +37,11 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\NeoStore.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\System.Runtime.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\System.Resources.ResourceManager.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\System.Threading.Tasks.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\System.Resources.ResourceManager.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\System.Threading.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\System.Collections.dll
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\System.Reflection.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\System.Linq.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin-Neostore\NeoStore\NeoStore.Droid\obj\Debug\android\assets\System.Reflection.Extensions.dll
