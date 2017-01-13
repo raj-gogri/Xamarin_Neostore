@@ -97,7 +97,9 @@
                        HorizontalOptions="FillAndExpand"
                        x:Name="buynow"
                        TextColor="White"
-                       Grid.Row="0" Grid.Column="0"/>
+                       Grid.Row="0" Grid.Column="0"
+                       Clicked="OnBuyNowClicked"
+    />
         <local:GrayButton Text=" RATE "
                           Font="Medium"
                           FontSize="22"

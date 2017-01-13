@@ -9,6 +9,7 @@ using Xamarin.Forms;
 using Plugin.Connectivity.Abstractions;
 using NeoStore.CustomView;
 using Rg.Plugins.Popup.Extensions;
+using NeoStore.Cart;
 
 namespace NeoStore.Products
 {
@@ -46,7 +47,11 @@ namespace NeoStore.Products
                     DetailsRating.Children.Add(star);
                 }
             });
-
+            MessagingCenter.Subscribe<BuyNowManger>(this, "BuyNow", (sender) => {
+                Navigation.PopPopupAsync();
+                DisplayAlert("Success", "Successfully Added", "OK");
+                Navigation.PushAsync(new Mycart());
+            });
 
             MessagingCenter.Subscribe<RatingPageManger>(this, "Rating", (sender) => {
                 Navigation.PopPopupAsync();
@@ -68,6 +73,14 @@ namespace NeoStore.Products
             var ratingpage = new RatingPage();
             ratingpage.BindingContext = selected;
             await Navigation.PushPopupAsync(ratingpage);
+        }
+
+        async void OnBuyNowClicked(object sender, EventArgs e)
+        {
+            var selected = BindingContext;
+            var buynow = new BuyNow();
+            buynow.BindingContext = selected;
+            await Navigation.PushPopupAsync(buynow);
         }
     }
 }
