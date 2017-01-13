@@ -38,6 +38,17 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Cart\BuyNow.xaml.cs">
+      <DependentUpon>BuyNow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cart\BuyNowManger.cs" />
+    <Compile Include="Cart\BuyNowResponse.cs" />
+    <Compile Include="Cart\BuyNowRestService.cs" />
+    <Compile Include="Cart\BuyNowViewModel.cs" />
+    <Compile Include="Cart\IBuyNow.cs" />
+    <Compile Include="Cart\Mycart.xaml.cs">
+      <DependentUpon>Mycart.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CustomView\AwesomeLabel.cs" />
     <Compile Include="CustomView\CircleImage.cs" />
     <Compile Include="CustomView\ColorButton.cs" />
@@ -273,6 +284,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Products\ProductListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cart\BuyNow.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cart\Mycart.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

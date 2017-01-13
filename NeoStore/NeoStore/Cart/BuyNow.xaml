@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             xmlns:local="clr-namespace:NeoStore.CustomView;assembly=NeoStore"
+             x:Class="NeoStore.Cart.BuyNow" Padding="50,20,50,100">
+  
+  <StackLayout BackgroundColor="White" Padding="20,20,20,20" >
+    <ContentPage.Resources>
+      <ResourceDictionary x:Name="AppDictionary">
+        <Color x:Key="BackgroundColor">White</Color>
+        <Color x:Key="BorderColor">Green</Color>
+        <Color x:Key="BorderColor1">Gray</Color>
+        <Style x:Key="InternalViewStyle" TargetType="ContentView">
+
+          <Setter Property="BackgroundColor"
+              Value="{StaticResource BackgroundColor}"/>
+          <Setter Property="VerticalOptions" Value="Fill"/>
+          <Setter Property="Padding" Value="2,2,2,2"></Setter>
+        </Style>
+
+        <Style x:Key="BorderStyle" TargetType="ContentView">
+          <Setter Property="BackgroundColor" Value="{StaticResource BorderColor}"/>
+          <Setter Property="Padding" Value="1,1,1,1"></Setter>
+        </Style>
+
+        <Style x:Key="BorderStyle1" TargetType="ContentView">
+          <Setter Property="BackgroundColor" Value="{StaticResource BorderColor1}"/>
+          <!--<Setter Property="Padding" Value="1,1,1,1"></Setter>-->
+        </Style>
+
+      </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <local:GothamLabelText Text="{Binding ProductName}"
+                           HorizontalOptions="CenterAndExpand"
+                           FontSize="26"
+                           TextColor="Black"/>
+
+    <StackLayout Padding="35,20,35,0">
+      
+        <Image x:Name="MainImage" Source="{Binding ProductImages}" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+      
+    </StackLayout>
+    
+    <StackLayout x:Name="buy" Padding="35,50,35,0">
+    <StackLayout VerticalOptions="CenterAndExpand"
+                 HorizontalOptions="CenterAndExpand">
+      
+      <StackLayout Padding="0,20,0,0">
+      <local:GothamLabelText Text="Enter Qty"
+                           HorizontalOptions="CenterAndExpand"
+                           FontSize="26"
+                           TextColor="Black"/>
+      <ContentView Style="{StaticResource BorderStyle}" >
+        <ContentView Style="{StaticResource InternalViewStyle}">          
+          <Entry Text="{Binding quantity}"  Keyboard="Numeric" FontSize="Medium" />         
+        </ContentView>
+      </ContentView>
+      </StackLayout>
+    </StackLayout>
+      <StackLayout Padding="75,150,75,20" >
+
+    <local:ColorButton Text="SUBMIT"
+                       Font="Medium"
+                       FontSize="30"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"
+                       x:Name="submit"
+                       Command="{Binding OnSubmitClicked}"/>
+      </StackLayout>
+  </StackLayout>
+  </StackLayout>
+  
+</pages:PopupPage>

@@ -17,6 +17,7 @@ namespace NeoStore.Products
     {
 
         public static int pd;
+        public static string name;
         public ProductListPage()
         {
             CrossConnectivity.Current.ConnectivityChanged += Current_ConnectivityChanged;
@@ -46,6 +47,7 @@ namespace NeoStore.Products
         {
             var selecteditem = (ProductListPageResponseData)e.SelectedItem;
             pd = selecteditem.id;
+            name = selecteditem.ProductName;
             var selectedpage = new ProductDetailPage { Title = selecteditem.ProductName };
             selectedpage.BindingContext = selecteditem;
             Navigation.PushAsync(selectedpage);

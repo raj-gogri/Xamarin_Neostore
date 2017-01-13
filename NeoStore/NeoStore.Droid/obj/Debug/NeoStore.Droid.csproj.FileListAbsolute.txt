@@ -86,12 +86,12 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\Ne
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\obj\Debug\R.cs.flag
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\obj\Debug\uploadflags.txt
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\bin\Debug\NeoStore.Droid.dll.mdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\bin\Debug\NeoStore.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\bin\Debug\Java.Interop.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\bin\Debug\Microsoft.CSharp.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\bin\Debug\Mono.Android.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\bin\Debug\Mono.CSharp.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\bin\Debug\mscorlib.dll.mdb
-C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\bin\Debug\NeoStore.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\bin\Debug\System.Core.dll.mdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\Xamarin_Neostore\NeoStore\NeoStore.Droid\bin\Debug\System.dll.mdb
